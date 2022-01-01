@@ -1,0 +1,101 @@
+.section {
+  width: 10%;
+  height: 100%;
+  border-radius: 7vw;
+  position: relative;
+  margin: 0 1%;
+  color: white;
+  text-shadow: black 2px 2px 2px;
+  text-align: center;
+  box-shadow: 0 0 2vw 0.5vw rgb(30, 30, 30);
+  transition: width 1s, background-size 1s, border-radius 1s, height 1s,
+    margin 1s;
+  background-size: auto 110%;
+  background-repeat: no-repeat;
+  padding-top: 3%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+
+.section:nth-child(1) {
+  background-image: url("https://images.pexels.com/photos/2434267/pexels-photo-2434267.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260");
+  background-position: 80%;
+}
+.section:nth-child(2) {
+  background-image: url("https://images.pexels.com/photos/4253831/pexels-photo-4253831.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260");
+  background-position: 45%;
+}
+.section:nth-child(3) {
+  background-image: url("https://images.pexels.com/photos/248559/pexels-photo-248559.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260");
+  background-position: 20%;
+}
+.section:nth-child(4) {
+  background-image: url("https://images.pexels.com/photos/5650704/pexels-photo-5650704.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+  background-position: 50%;
+}
+
+.section:hover {
+  width: 55%;
+  height: 50vh;
+  background-size: auto 150%;
+  border-radius: 5vw;
+  padding-top: 1%;
+}
+
+.section > .section-title h1,
+.section-title h3,
+.section-infos {
+  display: block;
+  opacity: 0;
+  font-size: 20%;
+  transition: opacity 0.3s, font-size 0.3s;
+}
+
+.section-title {
+  h1 {
+    transition: font-size 1s;
+  }
+  h3 {
+    transition: font-size 1s;
+  }
+}
+
+.section:hover .section-title {
+  opacity: 1;
+  h1 {
+    opacity: 1;
+    font-size: 300%;
+  }
+  h3 {
+    opacity: 1;
+    font-size: 200%;
+  }
+}
+
+.section:hover .section-infos {
+  height: 30%;
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 0 0 5vw 5vw;
+  z-index: 2;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  line-height: 150%;
+  font-size: 1.1vw;
+  font-size-adjust: inherit;
+  padding: 4% 10%;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  animation: coming 1.5s forwards 0.5s;
+}
+
+@keyframes coming {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

@@ -1,0 +1,17 @@
+.homepage,
+.about-me,
+.landing-screen {
+  height: 100vh;
+}
+
+.homepage {
+  -ms-scroll-snap-type: y mandatory;
+      scroll-snap-type: y mandatory;
+  overflow: auto;
+}
+
+.homepage .about-me,
+.homepage .landing-screen {
+  scroll-snap-align: start;
+}
+/*# sourceMappingURL=homepage.css.map */

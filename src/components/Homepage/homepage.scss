@@ -1,0 +1,17 @@
+.homepage,
+.about-me,
+.landing-screen {
+  height: 100vh;
+}
+
+.homepage {
+  scroll-snap-type: y mandatory;
+  overflow: auto;
+}
+
+.homepage {
+  .about-me,
+  .landing-screen {
+    scroll-snap-align: start;
+  }
+}
