@@ -1,6 +1,7 @@
 .homepage,
 .about-me,
-.landing-screen {
+.landing-screen,
+.tech {
   height: 100vh;
 }
 
@@ -11,7 +12,8 @@
 
 .homepage {
   .about-me,
-  .landing-screen {
+  .landing-screen,
+  .tech {
     scroll-snap-align: start;
   }
 }
