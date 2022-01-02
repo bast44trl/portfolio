@@ -1,0 +1,83 @@
+.tech {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  .tech-video {
+    width: 100%;
+    z-index: 1;
+    position: absolute;
+    left: 0;
+  }
+  .overlay {
+    position: absolute;
+    background-color: rgba(#000, 0.7);
+    width: 80%;
+    height: 70%;
+    left: 10%;
+    top: 15%;
+    opacity: 0;
+    border-radius: 10px;
+    border: groove white 5px;
+    z-index: 2;
+    animation: appear 1s forwards 1s;
+  }
+}
+
+.tech-content {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  position: absolute;
+  color: white;
+  font-size: 3vw;
+  text-transform: uppercase;
+  padding-top: 2vw;
+  width: 80%;
+  height: 70%;
+  left: 10%;
+  top: 15%;
+  z-index: 3;
+  animation: appear 1s forwards 1s;
+  h1 {
+    color: white;
+    font-size: 2vw;
+    width: 31ch;
+    overflow: hidden;
+    border-right: 3px solid white;
+    animation: typing 2.5s steps(27) 2s forwards,
+      blink 0.5s step-end infinite alternate, invisible 2s;
+    white-space: nowrap;
+  }
+}
+
+@keyframes invisible {
+  from {
+    width: 0;
+  }
+  to {
+    width: 0;
+  }
+}
+
+@keyframes appear {
+  from {
+    opacity: 0;
+    height: 0;
+  }
+  to {
+    opacity: 1;
+    height: 70%;
+  }
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
