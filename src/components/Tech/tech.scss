@@ -45,7 +45,7 @@
     overflow: hidden;
     border-right: 3px solid white;
     animation: typing 2.5s steps(27) 2s forwards,
-      blink 0.5s step-end infinite alternate, invisible 2s;
+      blink 0.5s step-end 2s infinite alternate, invisible 2s;
     white-space: nowrap;
   }
 }
@@ -53,9 +53,11 @@
 @keyframes invisible {
   from {
     width: 0;
+    border-right: none;
   }
   to {
     width: 0;
+    border-right: none;
   }
 }
 

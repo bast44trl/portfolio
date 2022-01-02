@@ -7,12 +7,11 @@
   color: white;
   text-shadow: black 2px 2px 2px;
   text-align: center;
-  -webkit-box-shadow: 0 0 2vw 0.5vw grey;
-          box-shadow: 0 0 2vw 0.5vw grey;
-  -webkit-transition: width 1s, background-size 1s, border-radius 1s, height 1s, margin 1s;
-  transition: width 1s, background-size 1s, border-radius 1s, height 1s, margin 1s;
-  background-position: center;
-  background-size: 120% 110%;
+  -webkit-box-shadow: 0 0 2vw 0.5vw #1e1e1e;
+          box-shadow: 0 0 2vw 0.5vw #1e1e1e;
+  -webkit-transition: width 1s, background-size 1s, border-radius 1s, height 1s, margin 1s;
+  transition: width 1s, background-size 1s, border-radius 1s, height 1s, margin 1s;
+  background-size: auto 110%;
   background-repeat: no-repeat;
   padding-top: 3%;
   display: -webkit-box;
@@ -30,26 +29,29 @@
 }
 
 .section:nth-child(1) {
-  background-image: url("https://images.pexels.com/photos/3673548/pexels-photo-3673548.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+  background-image: url("https://images.pexels.com/photos/2434267/pexels-photo-2434267.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260");
+  background-position: 80%;
 }
 
 .section:nth-child(2) {
-  background-image: url("https://images.pexels.com/photos/6948010/pexels-photo-6948010.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260");
+  background-image: url("https://images.pexels.com/photos/4253831/pexels-photo-4253831.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260");
+  background-position: 45%;
 }
 
 .section:nth-child(3) {
   background-image: url("https://images.pexels.com/photos/248559/pexels-photo-248559.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260");
-  background-size: auto 110%;
+  background-position: 20%;
 }
 
 .section:nth-child(4) {
-  background-image: url("https://cdn.pixabay.com/photo/2014/02/22/16/01/guitar-272128_960_720.jpg");
+  background-image: url("https://images.pexels.com/photos/5650704/pexels-photo-5650704.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+  background-position: 50%;
 }
 
 .section:hover {
-  width: 60%;
+  width: 55%;
   height: 50vh;
-  background-size: 110% 110%;
+  background-size: auto 150%;
   border-radius: 5vw;
   padding-top: 1%;
 }
@@ -108,8 +110,8 @@
           flex-direction: column;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  -webkit-animation: coming 2s forwards 0.5s;
-          animation: coming 2s forwards 0.5s;
+  -webkit-animation: coming 1s forwards 0.5s;
+          animation: coming 1s forwards 0.5s;
 }
 
 @-webkit-keyframes coming {

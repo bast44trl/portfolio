@@ -16,15 +16,14 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background: -webkit-gradient(linear, left bottom, left top, from(rgba(255, 255, 255, 0.5)), to(rgba(255, 255, 255, 0.1))), url("https://images.pexels.com/photos/6775290/pexels-photo-6775290.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260");
-  background: linear-gradient(0deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.1)), url("https://images.pexels.com/photos/6775290/pexels-photo-6775290.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260");
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(175, 175, 175, 0.1)), to(rgba(175, 175, 175, 0.1))), url("https://images.pexels.com/photos/6775290/pexels-photo-6775290.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260");
+  background: linear-gradient(0deg, rgba(175, 175, 175, 0.1), rgba(175, 175, 175, 0.1)), url("https://images.pexels.com/photos/6775290/pexels-photo-6775290.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260");
   background-repeat: no-repeat;
   background-size: 100% 100%;
 }
 
 .about-me-title {
   height: 35%;
-  margin: 0;
 }
 
 .about-me-title h1 {
