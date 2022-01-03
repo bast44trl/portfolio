@@ -18,7 +18,7 @@ const AboutMe = () => {
         },{
             type: "Hobbies",
             lenght: "",
-            details: ["Bass player", "Pop culture enthousiast", "Hiking", "Theater"],
+            details: ["Bass player", "Pop culture enthousiast", "Bouldering"],
         },];
 
     return (

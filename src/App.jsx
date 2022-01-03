@@ -10,6 +10,7 @@ function App() {
     <div className="App">
       <BrowserRouter basename="/">
         <Header />
+        <div className="update">Portfolio non terminé, merci pour votre indulgence :{`)`}</div>
         <Routes>
           <Route exact path="/" element={<Homepage />} />
           <Route exact path="/tech" element={<Tech />} />
