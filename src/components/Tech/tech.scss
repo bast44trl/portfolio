@@ -30,7 +30,6 @@
   position: absolute;
   color: white;
   font-size: 3vw;
-  text-transform: uppercase;
   padding-top: 2vw;
   width: 80%;
   height: 70%;
@@ -41,10 +40,10 @@
   h1 {
     color: white;
     font-size: 2vw;
-    width: 31ch;
+    width: 22ch;
     overflow: hidden;
     border-right: 3px solid white;
-    animation: typing 2.5s steps(27) 2s forwards,
+    animation: typing 2.5s steps(22) 2s forwards,
       blink 0.5s step-end 2s infinite alternate, invisible 2s;
     white-space: nowrap;
   }
