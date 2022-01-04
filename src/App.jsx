@@ -8,7 +8,7 @@ import AboutMe from "./components/AboutMe/AboutMe";
 function App() {
   return (
     <div className="App">
-      <BrowserRouter basename="/portfolio/welcome">
+      <BrowserRouter basename="/portfolio">
         <Header />
         <div className="update">Portfolio non terminé, merci pour votre indulgence :{`)`}</div>
         <Routes>
