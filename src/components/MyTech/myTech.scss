@@ -15,7 +15,7 @@
   }
   .overlay {
     position: absolute;
-    background-color: rgba(#000, 0.7);
+    background-color: rgba(#000, 0.6);
     width: 80%;
     height: 75%;
     left: 10%;
@@ -30,8 +30,9 @@
 
 .tech-content {
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
   position: absolute;
   color: white;
   font-size: 3vw;
@@ -45,12 +46,81 @@
   h1 {
     color: white;
     font-size: 2vw;
+    height: 6%;
     width: 22ch;
     overflow: hidden;
     border-right: 3px solid white;
     animation: typing 1.5s steps(22) 1s forwards,
       blink 0.5s step-end 2s infinite alternate, invisible 1s;
     white-space: nowrap;
+  }
+  .tech-container {
+    height: 90%;
+    width: 100%;
+  }
+}
+
+.all-tech-container {
+  height: 100%;
+  width: 40%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 4vw;
+  img {
+    opacity: 0;
+    margin: 1vw;
+    width: 3vw;
+    transition: transform 0.3s, background-color 0.3s, border-radius 0.3s;
+    &:hover {
+      transform: scale(2);
+      background-color: white;
+      padding: 3px;
+      border-radius: 8px;
+    }
+    &:nth-child(1) {
+      animation: comeFromLeft 1s, img-appear 2s forwards 2.5s;
+    }
+    &:nth-child(2) {
+      animation: comeFromLeft 1s 2.7s, img-appear 2s forwards 2.7s;
+    }
+    &:nth-child(3) {
+      animation: comeFromLeft 1s 2.9s, img-appear 2s forwards 2.9s;
+    }
+    &:nth-child(4) {
+      animation: comeFromLeft 1s 3.1s, img-appear 2s forwards 3.1s;
+    }
+    &:nth-child(5) {
+      animation: comeFromLeft 1s 3.3s, img-appear 2s forwards 3.3s;
+    }
+    &:nth-child(6) {
+      animation: comeFromLeft 1s 3.7s, img-appear 2s forwards 3.7s;
+    }
+    &:nth-child(7) {
+      animation: comeFromLeft 1s 3.9s, img-appear 2s forwards 3.9s;
+    }
+    &:nth-child(8) {
+      animation: comeFromLeft 1s 4.1s, img-appear 2s forwards 4.1s;
+    }
+    &:nth-child(9) {
+      animation: comeFromLeft 1s 4.3s, img-appear 2s forwards 4.3s;
+    }
+    &:nth-child(10) {
+      animation: comeFromLeft 1s 4.5s, img-appear 2s forwards 4.5s;
+    }
+    &:nth-child(11) {
+      animation: comeFromLeft 1s 4.7s, img-appear 2s forwards 4.7s;
+    }
+  }
+}
+
+@keyframes comeFromLeft {
+  from {
+    transform: translate(-100px);
+  }
+  to {
+    transform: translate(0px);
   }
 }
 
@@ -73,6 +143,15 @@
   to {
     opacity: 1;
     height: 75%;
+  }
+}
+
+@keyframes img-appear {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
   }
 }
 

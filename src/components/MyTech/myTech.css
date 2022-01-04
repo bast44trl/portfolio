@@ -18,7 +18,7 @@
 
 .tech .overlay {
   position: absolute;
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(0, 0, 0, 0.6);
   width: 80%;
   height: 75%;
   left: 10%;
@@ -35,12 +35,16 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   position: absolute;
   color: white;
   font-size: 3vw;
@@ -57,12 +61,129 @@
 .tech-content h1 {
   color: white;
   font-size: 2vw;
+  height: 6%;
   width: 22ch;
   overflow: hidden;
   border-right: 3px solid white;
   -webkit-animation: typing 1.5s steps(22) 1s forwards, blink 0.5s step-end 2s infinite alternate, invisible 1s;
           animation: typing 1.5s steps(22) 1s forwards, blink 0.5s step-end 2s infinite alternate, invisible 1s;
   white-space: nowrap;
+}
+
+.tech-content .tech-container {
+  height: 90%;
+  width: 100%;
+}
+
+.all-tech-container {
+  height: 100%;
+  width: 40%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 4vw;
+}
+
+.all-tech-container img {
+  opacity: 0;
+  margin: 1vw;
+  width: 3vw;
+  -webkit-transition: background-color 0.3s, border-radius 0.3s, -webkit-transform 0.3s;
+  transition: background-color 0.3s, border-radius 0.3s, -webkit-transform 0.3s;
+  transition: transform 0.3s, background-color 0.3s, border-radius 0.3s;
+  transition: transform 0.3s, background-color 0.3s, border-radius 0.3s, -webkit-transform 0.3s;
+}
+
+.all-tech-container img:hover {
+  -webkit-transform: scale(2);
+          transform: scale(2);
+  background-color: white;
+  padding: 3px;
+  border-radius: 8px;
+}
+
+.all-tech-container img:nth-child(1) {
+  -webkit-animation: comeFromLeft 1s, img-appear 2s forwards 2.5s;
+          animation: comeFromLeft 1s, img-appear 2s forwards 2.5s;
+}
+
+.all-tech-container img:nth-child(2) {
+  -webkit-animation: comeFromLeft 1s 2.7s, img-appear 2s forwards 2.7s;
+          animation: comeFromLeft 1s 2.7s, img-appear 2s forwards 2.7s;
+}
+
+.all-tech-container img:nth-child(3) {
+  -webkit-animation: comeFromLeft 1s 2.9s, img-appear 2s forwards 2.9s;
+          animation: comeFromLeft 1s 2.9s, img-appear 2s forwards 2.9s;
+}
+
+.all-tech-container img:nth-child(4) {
+  -webkit-animation: comeFromLeft 1s 3.1s, img-appear 2s forwards 3.1s;
+          animation: comeFromLeft 1s 3.1s, img-appear 2s forwards 3.1s;
+}
+
+.all-tech-container img:nth-child(5) {
+  -webkit-animation: comeFromLeft 1s 3.3s, img-appear 2s forwards 3.3s;
+          animation: comeFromLeft 1s 3.3s, img-appear 2s forwards 3.3s;
+}
+
+.all-tech-container img:nth-child(6) {
+  -webkit-animation: comeFromLeft 1s 3.7s, img-appear 2s forwards 3.7s;
+          animation: comeFromLeft 1s 3.7s, img-appear 2s forwards 3.7s;
+}
+
+.all-tech-container img:nth-child(7) {
+  -webkit-animation: comeFromLeft 1s 3.9s, img-appear 2s forwards 3.9s;
+          animation: comeFromLeft 1s 3.9s, img-appear 2s forwards 3.9s;
+}
+
+.all-tech-container img:nth-child(8) {
+  -webkit-animation: comeFromLeft 1s 4.1s, img-appear 2s forwards 4.1s;
+          animation: comeFromLeft 1s 4.1s, img-appear 2s forwards 4.1s;
+}
+
+.all-tech-container img:nth-child(9) {
+  -webkit-animation: comeFromLeft 1s 4.3s, img-appear 2s forwards 4.3s;
+          animation: comeFromLeft 1s 4.3s, img-appear 2s forwards 4.3s;
+}
+
+.all-tech-container img:nth-child(10) {
+  -webkit-animation: comeFromLeft 1s 4.5s, img-appear 2s forwards 4.5s;
+          animation: comeFromLeft 1s 4.5s, img-appear 2s forwards 4.5s;
+}
+
+.all-tech-container img:nth-child(11) {
+  -webkit-animation: comeFromLeft 1s 4.7s, img-appear 2s forwards 4.7s;
+          animation: comeFromLeft 1s 4.7s, img-appear 2s forwards 4.7s;
+}
+
+@-webkit-keyframes comeFromLeft {
+  from {
+    -webkit-transform: translate(-100px);
+            transform: translate(-100px);
+  }
+  to {
+    -webkit-transform: translate(0px);
+            transform: translate(0px);
+  }
+}
+
+@keyframes comeFromLeft {
+  from {
+    -webkit-transform: translate(-100px);
+            transform: translate(-100px);
+  }
+  to {
+    -webkit-transform: translate(0px);
+            transform: translate(0px);
+  }
 }
 
 @-webkit-keyframes invisible {
@@ -106,6 +227,24 @@
   to {
     opacity: 1;
     height: 75%;
+  }
+}
+
+@-webkit-keyframes img-appear {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes img-appear {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
   }
 }
 
