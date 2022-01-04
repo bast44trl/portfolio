@@ -65,7 +65,7 @@
   grid-area: 3 / 2 / 5 / 3;
   -webkit-animation: fromBottom 0.5s forwards 0.5s;
           animation: fromBottom 0.5s forwards 0.5s;
-  margin: -25% 0 0 0;
+  margin-top: -35%;
   opacity: 0;
 }
 

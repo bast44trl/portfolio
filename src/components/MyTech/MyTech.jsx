@@ -1,4 +1,4 @@
-import './tech.scss';
+import './myTech.scss';
 import techVideo from '../../assets/techVideo.mp4'
 
 const Tech = () => {

@@ -1,4 +1,5 @@
 .tech {
+  height: 100vh;
   width: 100%;
   overflow: hidden;
   position: relative;
@@ -23,7 +24,7 @@
     border-radius: 10px;
     border: groove white 5px;
     z-index: 2;
-    animation: appear 1s forwards 1s;
+    animation: appear 1s forwards 0.5s;
   }
 }
 
@@ -40,15 +41,15 @@
   left: 10%;
   top: 15%;
   z-index: 3;
-  animation: appear 1s forwards 1s;
+  animation: appear 1s forwards 0.5s;
   h1 {
     color: white;
     font-size: 2vw;
     width: 22ch;
     overflow: hidden;
     border-right: 3px solid white;
-    animation: typing 2.5s steps(22) 2s forwards,
-      blink 0.5s step-end 2s infinite alternate, invisible 2s;
+    animation: typing 1.5s steps(22) 1s forwards,
+      blink 0.5s step-end 2s infinite alternate, invisible 1s;
     white-space: nowrap;
   }
 }
