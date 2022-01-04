@@ -30,7 +30,7 @@
   height: 30vh;
   width: 80vw;
   font-family: "Gochi Hand", cursive;
-  font-size: 500%;
+  font-size: 5vw;
   text-shadow: black 5px 5px 5px;
   color: white;
 }
@@ -65,7 +65,7 @@
   grid-area: 3 / 2 / 5 / 3;
   -webkit-animation: fromBottom 0.5s forwards 0.5s;
           animation: fromBottom 0.5s forwards 0.5s;
-  margin: -15vh 0 0 0;
+  margin-top: -35%;
   opacity: 0;
 }
 

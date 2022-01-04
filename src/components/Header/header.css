@@ -1,0 +1,49 @@
+.header {
+  height: 5vw;
+  width: 100%;
+  background: transparent;
+  position: absolute;
+  top: 0;
+  z-index: 2;
+  padding-right: 3%;
+}
+
+.header ul {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.header ul li {
+  color: white;
+  font-family: "Gochi Hand", cursive;
+  text-shadow: 2px 2px 2px black;
+  font-weight: bold;
+  font-size: 2vw;
+  padding: 2% 3%;
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+  transition: transform 0.3s, -webkit-transform 0.3s;
+}
+
+.header ul li .nav-link {
+  text-decoration: none;
+}
+
+.header ul li .nav-link:visited {
+  color: white;
+  text-decoration: none;
+}
+
+.header ul li:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  cursor: pointer;
+}
+/*# sourceMappingURL=header.css.map */

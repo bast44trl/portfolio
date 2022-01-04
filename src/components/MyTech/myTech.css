@@ -1,0 +1,135 @@
+.tech {
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.tech .tech-video {
+  max-height: 150%;
+  min-height: 100%;
+  max-width: 150%;
+  min-width: 100%;
+  z-index: 1;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.tech .overlay {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.7);
+  width: 80%;
+  height: 75%;
+  left: 10%;
+  top: 15%;
+  opacity: 0;
+  border-radius: 10px;
+  border: groove white 5px;
+  z-index: 2;
+  -webkit-animation: appear 1s forwards 0.5s;
+          animation: appear 1s forwards 0.5s;
+}
+
+.tech-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  position: absolute;
+  color: white;
+  font-size: 3vw;
+  padding-top: 2vw;
+  width: 80%;
+  height: 75%;
+  left: 10%;
+  top: 15%;
+  z-index: 3;
+  -webkit-animation: appear 1s forwards 0.5s;
+          animation: appear 1s forwards 0.5s;
+}
+
+.tech-content h1 {
+  color: white;
+  font-size: 2vw;
+  width: 22ch;
+  overflow: hidden;
+  border-right: 3px solid white;
+  -webkit-animation: typing 1.5s steps(22) 1s forwards, blink 0.5s step-end 2s infinite alternate, invisible 1s;
+          animation: typing 1.5s steps(22) 1s forwards, blink 0.5s step-end 2s infinite alternate, invisible 1s;
+  white-space: nowrap;
+}
+
+@-webkit-keyframes invisible {
+  from {
+    width: 0;
+    border-right: none;
+  }
+  to {
+    width: 0;
+    border-right: none;
+  }
+}
+
+@keyframes invisible {
+  from {
+    width: 0;
+    border-right: none;
+  }
+  to {
+    width: 0;
+    border-right: none;
+  }
+}
+
+@-webkit-keyframes appear {
+  from {
+    opacity: 0;
+    height: 0;
+  }
+  to {
+    opacity: 1;
+    height: 75%;
+  }
+}
+
+@keyframes appear {
+  from {
+    opacity: 0;
+    height: 0;
+  }
+  to {
+    opacity: 1;
+    height: 75%;
+  }
+}
+
+@-webkit-keyframes typing {
+  from {
+    width: 0;
+  }
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+}
+
+@-webkit-keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+/*# sourceMappingURL=myTech.css.map */

@@ -1,10 +1,22 @@
 import "./app.css";
-import Homepage from "./components/Homepage/Homepage";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Header from "./components/Header/Header";
+import LandingScreen from "./components/LandingScreen/LandingScreen";
+import MyTech from "./components/MyTech/MyTech";
+import AboutMe from "./components/AboutMe/AboutMe";
 
 function App() {
   return (
     <div className="App">
-      <Homepage />
+      <BrowserRouter basename="/portfolio">
+        <Header />
+        <div className="update">Portfolio non terminé, merci pour votre indulgence :{`)`}</div>
+        <Routes>
+          <Route path="/welcome" element={<LandingScreen />} />
+          <Route exact path="/mytech" element={<MyTech />} />
+          <Route exact path="/aboutme" element={<AboutMe />} />
+        </Routes>
+      </BrowserRouter>
     </div>
   );
 }
