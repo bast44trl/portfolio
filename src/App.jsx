@@ -12,7 +12,7 @@ function App() {
         <Header />
         <div className="update">Portfolio non terminé, merci pour votre indulgence :{`)`}</div>
         <Routes>
-          <Route path="/" element={<LandingScreen />} />
+          <Route exact path="/" element={<LandingScreen />} />
           <Route exact path="/mytech" element={<MyTech />} />
           <Route exact path="/aboutme" element={<AboutMe />} />
         </Routes>
