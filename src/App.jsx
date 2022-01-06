@@ -8,11 +8,11 @@ import AboutMe from "./components/AboutMe/AboutMe";
 function App() {
   return (
     <div className="App">
-      <BrowserRouter basename="/portfolio">
+      <BrowserRouter basename="/">
         <Header />
         <div className="update">Portfolio non terminé, merci pour votre indulgence :{`)`}</div>
         <Routes>
-          <Route path="/welcome" element={<LandingScreen />} />
+          <Route path="/" element={<LandingScreen />} />
           <Route exact path="/mytech" element={<MyTech />} />
           <Route exact path="/aboutme" element={<AboutMe />} />
         </Routes>
