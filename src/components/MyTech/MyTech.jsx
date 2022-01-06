@@ -11,9 +11,35 @@ import logoPostman from '../../assets/logo/postman.png';
 import logoReact from '../../assets/logo/react.png';
 import logoSql from '../../assets/logo/sql.png';
 import logoVsCode from '../../assets/logo/vscode.png';
+import arrowLeft from '../../assets/arrow-left.png';
+import arrowRight from '../../assets/arrow-right.png';
+import { useEffect, useState } from 'react';
 
 const Tech = () => {
-    const logos = [logoCss, logoHtml, logoExpress, logoFigma, logoGit, logoJs, logoNode, logoPostman, logoReact, logoSql, logoVsCode]; 
+    const logos = [logoCss, logoHtml, logoExpress, logoFigma, logoGit, logoJs, logoNode, logoPostman, logoReact, logoSql, logoVsCode];
+    const [logoNb, setLogoNb] = useState(0); 
+    const [slowAppear, setSlowAppear] = useState(false);
+    const slowingAppear = () => {
+        setSlowAppear(false);
+    };
+    const logoMoveLeft = () => {
+        if (logoNb===0) {
+            setLogoNb(logos.length-1);
+        } else {
+            setLogoNb(logoNb-1);
+        };
+    }
+    const logoMoveRight = () => {
+        if (logoNb===logos.length-1) {
+            setLogoNb(0);
+        } else {
+            setLogoNb(logoNb+1);
+        };
+    }
+    useEffect(() => {
+        setSlowAppear(true);
+        setTimeout(() => slowingAppear(), 500);
+    }, [logoNb]);
     return (
         <div className="tech">
             <video className="tech-video" autoPlay loop muted>
@@ -26,7 +52,11 @@ const Tech = () => {
                     <div className="all-tech-container">
                         {logos.map((logo, index) => <img src={logo} alt="" key={index} />)}
                     </div>
-                    <div className="tech-carousel"></div>
+                    <div className="big-logo-container">
+                        <div className="arrow-left"><img src={logoNb===0?logos.length-1:logos[logoNb-1]} onClick={() => logoMoveLeft()} alt="" /></div>
+                        <div className={slowAppear? "big-logo slow-appear" : "big-logo"}><img src={logos[logoNb]} alt="" /></div>
+                        <div className="arrow-right"><img src={logoNb===logos.length-1?logos[0]:logos[logoNb+1]} onClick={() => logoMoveRight()} alt="" /></div>
+                    </div>
                 </div>
             </div>
         </div>
