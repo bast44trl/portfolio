@@ -1,0 +1,86 @@
+.tech-container {
+  position: relative;
+  width: 5rem;
+  height: 6rem;
+  background-color: whitesmoke;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 2px 2px 5px black;
+  border-radius: 10px;
+  margin: 0.25rem;
+  opacity: 0;
+  & img {
+    display: block;
+    width: 4rem;
+    height: 4rem;
+    max-height: 7rem;
+    opacity: 1;
+    transition: opacity 2s, height 2s, transform 0.5s;
+  }
+  & .logo-card-infos {
+    width: 90%;
+    max-height: 7rem;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    opacity: 0;
+    height: 0;
+    overflow: hidden;
+    transition: opacity 1s ease-in, transform 0.8s;
+    transform: rotateX(-90deg);
+    & h4 {
+      font-family: "Gochi Hand", cursive;
+      color: black;
+      font-weight: 150;
+      font-size: 85%;
+      position: absolute;
+      top: 2%;
+      height: 15%;
+      padding: 2px;
+    }
+    & p {
+      color: black;
+      position: absolute;
+      top: 20%;
+      display: flex;
+      align-items: center;
+      width: 95%;
+      height: 80%;
+      font-size: 45%;
+      text-overflow: auto;
+      text-align: center;
+    }
+  }
+  &:hover {
+    overflow: hidden;
+    cursor: pointer;
+    & .logo-card-infos {
+      opacity: 1;
+      height: 96%;
+      transform: rotateX(0deg);
+      transition: opacity 0.6s ease-in, transform 0.6s, height 0.6s;
+    }
+    & img {
+      /* animation: moveUpDisappear 0.8s forwards; */
+      opacity: 0;
+      height: 0;
+      transform: rotateX(90deg);
+      overflow: hidden;
+      transition: opacity 0.6s ease-in, transform 0.6s, height 0.6s;
+    }
+  }
+}
+
+@keyframes moveUpDisappear {
+  to {
+    display: none;
+  }
+}
+
+@keyframes moveUpAppear {
+  to {
+    opacity: 1;
+  }
+}
