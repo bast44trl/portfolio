@@ -14,13 +14,13 @@
   }
   .overlay {
     position: absolute;
-    background-color: rgba(#000, 0.6);
+    /* background-color: rgba(#000, 0.6); */
     width: 90%;
     left: 5%;
     top: 15%;
     opacity: 0;
     border-radius: 2rem;
-    border: groove white 3px;
+    /* border: groove white 3px; */
     z-index: 2;
     animation: overlay-appear 0.8s forwards 0.2s;
     & .tech-content {
@@ -33,17 +33,17 @@
       z-index: 3;
       overflow: hidden;
       h1 {
-        color: white;
+        color: black;
         font-size: 3vw;
-        text-shadow: 2px 2px 2px black;
+        /* text-shadow: 2px 2px 2px black; */
         height: 10%;
-        margin-top: -10%;
+        margin-top: -15%;
         margin-left: 5%;
         display: flex;
         align-items: center;
         width: 22ch;
         overflow: hidden;
-        border-right: 3px solid white;
+        border-right: 3px solid black;
         opacity: 0;
         animation: typing 1s steps(22) 1.2s forwards,
           blink 0.5s step-end 2.2s infinite alternate, invisible-title 1.2s,

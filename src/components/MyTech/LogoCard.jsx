@@ -7,7 +7,7 @@ const LogoCard = (props) => {
 
     return (
         <div className='tech-container'>
-            <a href={link} target={'_blank'}>
+            <a href={link} target={'_blank'} rel="noreferrer">
                 <div className='tech-container'>    
                     <img src={logo} alt="" />
                     <div className='logo-card-infos'>

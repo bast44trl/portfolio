@@ -11,7 +11,7 @@ function App() {
     <div className="App">
       <BrowserRouter basename="/portfolio" element={<LandingScreen />}>
         <Header />
-        <div className="update">Portfolio non terminé, merci pour votre indulgence :{`)`}</div>
+        <div className="update">{`(Desktop only) portfolio non terminé, merci pour votre indulgence 😊`}</div>
         <Routes>
           <Route path="/welcome" element={<LandingScreen />} />
           <Route path="/mytech" element={<MyTech />} />
