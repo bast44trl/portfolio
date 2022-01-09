@@ -1,13 +1,12 @@
 .tech {
   height: 100vh;
-  width: 100%;
-  overflow: hidden;
+  width: 100vw;
   position: relative;
   .tech-video {
-    max-height: 150%;
-    min-height: 100%;
-    max-width: 150%;
-    min-width: 100%;
+    max-height: 180%;
+    min-height: 110%;
+    min-width: 100vw;
+    max-width: 150vw;
     z-index: 1;
     position: absolute;
     bottom: 0;
@@ -15,64 +14,134 @@
   }
   .overlay {
     position: absolute;
-    background-color: rgba(#000, 0.7);
-    width: 80%;
-    height: 75%;
-    left: 10%;
+    background-color: rgba(#000, 0.6);
+    width: 90%;
+    left: 5%;
     top: 15%;
     opacity: 0;
-    border-radius: 10px;
-    border: groove white 5px;
+    border-radius: 2rem;
+    border: groove white 3px;
     z-index: 2;
-    animation: appear 1s forwards 0.5s;
+    animation: overlay-appear 0.8s forwards 0.2s;
+    & .tech-content {
+      display: flex;
+      /* flex-direction: column; */
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      height: 100%;
+      z-index: 3;
+      overflow: hidden;
+      h1 {
+        color: white;
+        font-size: 3vw;
+        text-shadow: 2px 2px 2px black;
+        height: 10%;
+        margin-top: -10%;
+        margin-left: 5%;
+        display: flex;
+        align-items: center;
+        width: 22ch;
+        overflow: hidden;
+        border-right: 3px solid white;
+        opacity: 0;
+        animation: typing 1s steps(22) 1.2s forwards,
+          blink 0.5s step-end 2.2s infinite alternate, invisible-title 1.2s,
+          opacity-appear 0.3s forwards 1.2s;
+        white-space: nowrap;
+      }
+      .all-tech-container {
+        width: 50%;
+        height: 96%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: flex-start;
+        opacity: 0;
+        animation: opacity-appear 1s forwards 2.2s;
+        & .tech-container:nth-child(1) {
+          animation: comeFromLeft 1s forwards, opacity-appear 2s forwards 2.5s;
+        }
+        & .tech-container:nth-child(2) {
+          animation: comeFromLeft 1s 2.6s forwards,
+            opacity-appear 2s forwards 2.6s;
+        }
+        & .tech-container:nth-child(3) {
+          animation: comeFromLeft 1s 2.7s forwards,
+            opacity-appear 2s forwards 2.7s;
+        }
+        & .tech-container:nth-child(4) {
+          animation: comeFromLeft 1s 2.8s forwards,
+            opacity-appear 2s forwards 2.8s;
+        }
+        & .tech-container:nth-child(5) {
+          animation: comeFromLeft 1s 2.9s forwards,
+            opacity-appear 2s forwards 2.9s;
+        }
+        & .tech-container:nth-child(6) {
+          animation: comeFromLeft 1s 3s forwards, opacity-appear 2s forwards 3s;
+        }
+        & .tech-container:nth-child(7) {
+          animation: comeFromLeft 1s 3.1s forwards,
+            opacity-appear 2s forwards 3.1s;
+        }
+        & .tech-container:nth-child(8) {
+          animation: comeFromLeft 1s 3.2s forwards,
+            opacity-appear 2s forwards 3.2s;
+        }
+        & .tech-container:nth-child(9) {
+          animation: comeFromLeft 1s 3.3s forwards,
+            opacity-appear 2s forwards 3.3s;
+        }
+        & .tech-container:nth-child(10) {
+          animation: comeFromLeft 1s 3.4s forwards,
+            opacity-appear 2s forwards 3.4s;
+        }
+        & .tech-container:nth-child(11) {
+          animation: comeFromLeft 1s 3.5s forwards,
+            opacity-appear 2s forwards 3.5s;
+        }
+      }
+    }
   }
 }
 
-.tech-content {
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  position: absolute;
-  color: white;
-  font-size: 3vw;
-  padding-top: 2vw;
-  width: 80%;
-  height: 75%;
-  left: 10%;
-  top: 15%;
-  z-index: 3;
-  animation: appear 1s forwards 0.5s;
-  h1 {
-    color: white;
-    font-size: 2vw;
-    width: 22ch;
-    overflow: hidden;
-    border-right: 3px solid white;
-    animation: typing 1.5s steps(22) 1s forwards,
-      blink 0.5s step-end 2s infinite alternate, invisible 1s;
-    white-space: nowrap;
-  }
-}
-
-@keyframes invisible {
+@keyframes comeFromLeft {
   from {
-    width: 0;
-    border-right: none;
+    transform: translateX(-200px);
   }
   to {
-    width: 0;
-    border-right: none;
+    transform: translateX(0px);
   }
 }
-
-@keyframes appear {
+@keyframes opacity-appear {
   from {
     opacity: 0;
-    height: 0;
   }
   to {
     opacity: 1;
-    height: 75%;
+  }
+}
+
+@keyframes overlay-appear {
+  from {
+    opacity: 0;
+    height: 0%;
+  }
+  to {
+    opacity: 1;
+    height: 80%;
+  }
+}
+
+@keyframes invisible-title {
+  from {
+    width: 0;
+    border-right: none;
+  }
+  to {
+    width: 0;
+    border-right: none;
   }
 }
 
