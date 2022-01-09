@@ -15,34 +15,56 @@ const MyProjects = () => {
     const slowingAppear = () => {
         setSlowAppear(false);
     };
+
     const projectMoveLeft = () => {
         setProjectGoesLeft(!projectGoesLeft);
         if (projectNb===0) {
-            setTimeout(setProjectNb(projects.length-1), 500);
+            setTimeout(() => {setProjectNb(projects.length-1)}, 600);
         } else {
-            setTimeout(setProjectNb(projectNb-1), 500);
+            setTimeout(() => {setProjectNb(projectNb-1)}, 600);
         };
-        setTimeout(setProjectGoesLeft(!projectGoesLeft), 500);
-    }
+        setTimeout(() => {setProjectGoesLeft(false)}, 600);
+    };
+
     const projectMoveRight = () => {
-        setTimeout(() => {setProjectGoesRight(!projectGoesRight)}, 500);
         setProjectGoesRight(!projectGoesRight);
         if (projectNb===projects.length-1) {
-            setTimeout(() => {setProjectNb(0)}, 500);
+            setTimeout(() => {setProjectNb(0)}, 600);
         } else {
-            setTimeout(() => {setProjectNb(projectNb+1)}, 500);
+            setTimeout(() => {setProjectNb(projectNb+1)}, 600);
         };
-    }
+        setTimeout(() => {setProjectGoesRight(false)}, 600);
+    };
+
     useEffect(() => {
         setSlowAppear(true);
-        setTimeout(() => slowingAppear(), 500);
+        setTimeout(() => slowingAppear(), 600);
     }, [projectNb]);
+
     return (
     <div className='my-projects'>
         <div className="big-project-container">
-            <div className={`arrow-left ${projectGoesLeft?'project-goes-left':''}`} onClick={() => projectMoveLeft()}><ProjectCard image={projectNb===0?projects[projects.length-1].image:projects[projectNb-1].image} title={projectNb===0?projects[projects.length-1].title:projects[projectNb-1].title} /></div>
-            <div className={slowAppear? "big-project slow-appear" : "big-project"}><ProjectCard image={projects[projectNb].image} title={projects[projectNb].title} /></div>
-            <div className={`arrow-right ${projectGoesRight?'project-goes-right':''}`} onClick={() => projectMoveRight()}><ProjectCard image={projectNb===projects.length-1?projects[0].image:projects[projectNb+1].image} title={projectNb===projects.length-1?projects[0].title:projects[projectNb+1].title} /></div>
+            <div
+                className={`arrow-left ${projectGoesLeft?'project-goes-left':''}`}
+                onClick={() => projectMoveLeft()}>
+                    <ProjectCard
+                        image={projectNb===0?projects[projects.length-1].image:projects[projectNb-1].image}
+                        title={projectNb===0?projects[projects.length-1].title:projects[projectNb-1].title}
+                    />
+            </div>
+            <div
+                className={slowAppear? "big-project slow-appear" : "big-project"}>
+                    <ProjectCard
+                    image={projects[projectNb].image}
+                    title={projects[projectNb].title} />
+            </div>
+            <div
+                className={`arrow-right ${projectGoesRight?'project-goes-right':''}`}
+                onClick={() => projectMoveRight()}>
+                    <ProjectCard
+                    image={projectNb===projects.length-1?projects[0].image:projects[projectNb+1].image}
+                    title={projectNb===projects.length-1?projects[0].title:projects[projectNb+1].title} />
+            </div>
         </div>
     </div>
     );

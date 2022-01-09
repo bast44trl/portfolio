@@ -1,3 +1,5 @@
+@import "../../variables.scss";
+
 .tech {
   height: 100vh;
   width: 100vw;
@@ -45,9 +47,9 @@
         overflow: hidden;
         border-right: 3px solid black;
         opacity: 0;
-        animation: typing 1s steps(22) 1.2s forwards,
-          blink 0.5s step-end 2.2s infinite alternate, invisible-title 1.2s,
-          opacity-appear 0.3s forwards 1.2s;
+        animation: typing 1s steps(22) 0.5s forwards,
+          blink 0.5s step-end 1.5s infinite alternate, invisible-title 0.5s,
+          opacity-appear 0.5s forwards 0.5s;
         white-space: nowrap;
       }
       .all-tech-container {
@@ -58,48 +60,48 @@
         justify-content: center;
         align-items: flex-start;
         opacity: 0;
-        animation: opacity-appear 1s forwards 2.2s;
+        animation: opacity-appear 1s forwards 1.5s;
         & .tech-container:nth-child(1) {
-          animation: comeFromLeft 1s forwards, opacity-appear 2s forwards 2.5s;
+          animation: comeFromLeft 1s forwards, opacity-appear 2s forwards 1.5s;
         }
         & .tech-container:nth-child(2) {
-          animation: comeFromLeft 1s 2.6s forwards,
-            opacity-appear 2s forwards 2.6s;
+          animation: comeFromLeft 1s 1.6s forwards,
+            opacity-appear 2s forwards 1.6s;
         }
         & .tech-container:nth-child(3) {
-          animation: comeFromLeft 1s 2.7s forwards,
-            opacity-appear 2s forwards 2.7s;
+          animation: comeFromLeft 1s 1.7s forwards,
+            opacity-appear 2s forwards 1.7s;
         }
         & .tech-container:nth-child(4) {
-          animation: comeFromLeft 1s 2.8s forwards,
-            opacity-appear 2s forwards 2.8s;
+          animation: comeFromLeft 1s 1.8s forwards,
+            opacity-appear 2s forwards 1.8s;
         }
         & .tech-container:nth-child(5) {
-          animation: comeFromLeft 1s 2.9s forwards,
-            opacity-appear 2s forwards 2.9s;
+          animation: comeFromLeft 1s 1.9s forwards,
+            opacity-appear 2s forwards 1.9s;
         }
         & .tech-container:nth-child(6) {
-          animation: comeFromLeft 1s 3s forwards, opacity-appear 2s forwards 3s;
+          animation: comeFromLeft 1s 2s forwards, opacity-appear 2s forwards 2s;
         }
         & .tech-container:nth-child(7) {
-          animation: comeFromLeft 1s 3.1s forwards,
-            opacity-appear 2s forwards 3.1s;
+          animation: comeFromLeft 1s 2.1s forwards,
+            opacity-appear 2s forwards 2.1s;
         }
         & .tech-container:nth-child(8) {
-          animation: comeFromLeft 1s 3.2s forwards,
-            opacity-appear 2s forwards 3.2s;
+          animation: comeFromLeft 1s 2.2s forwards,
+            opacity-appear 2s forwards 2.2s;
         }
         & .tech-container:nth-child(9) {
-          animation: comeFromLeft 1s 3.3s forwards,
-            opacity-appear 2s forwards 3.3s;
+          animation: comeFromLeft 1s 2.3s forwards,
+            opacity-appear 2s forwards 2.3s;
         }
         & .tech-container:nth-child(10) {
-          animation: comeFromLeft 1s 3.4s forwards,
-            opacity-appear 2s forwards 3.4s;
+          animation: comeFromLeft 1s 2.4s forwards,
+            opacity-appear 2s forwards 2.4s;
         }
         & .tech-container:nth-child(11) {
-          animation: comeFromLeft 1s 3.5s forwards,
-            opacity-appear 2s forwards 3.5s;
+          animation: comeFromLeft 1s 2.5s forwards,
+            opacity-appear 2s forwards 2.5s;
         }
       }
     }
@@ -126,11 +128,9 @@
 @keyframes overlay-appear {
   from {
     opacity: 0;
-    height: 0%;
   }
   to {
     opacity: 1;
-    height: 80%;
   }
 }
 
