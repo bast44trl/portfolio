@@ -1,7 +1,7 @@
 .tech-container {
   position: relative;
-  width: 5rem;
-  height: 6rem;
+  width: 10em;
+  height: 11rem;
   background-color: whitesmoke;
   display: flex;
   flex-direction: column;
@@ -20,15 +20,14 @@
     justify-content: center;
     & img {
       display: block;
-      width: 4rem;
-      height: 4rem;
+      width: 6rem;
+      height: 6rem;
       max-height: 7rem;
       opacity: 1;
       transition: opacity 2s, height 2s, transform 0.5s;
     }
     & .logo-card-infos {
       width: 90%;
-      max-height: 7rem;
       display: flex;
       justify-content: center;
       align-items: flex-start;
@@ -40,11 +39,12 @@
       & h4 {
         font-family: "Gochi Hand", cursive;
         color: black;
-        font-weight: 150;
-        font-size: 80%;
+        font-weight: 600;
+        font-size: 1.1rem;
         position: absolute;
-        top: 2%;
+        top: 10%;
         height: 15%;
+        max-height: 15%;
         padding: 2px;
       }
       & p {
@@ -55,9 +55,10 @@
         align-items: center;
         width: 95%;
         height: 80%;
-        font-size: 45%;
+        font-size: 0.9rem;
         text-overflow: auto;
         text-align: center;
+        -webkit-text-stroke-width: thin;
       }
     }
   }

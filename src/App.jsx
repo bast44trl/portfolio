@@ -9,7 +9,7 @@ import MyProjects from "./components/MyProjects/MyProjects";
 function App() {
   return (
     <div className="App">
-      <BrowserRouter basename="/portfolio" element={<LandingScreen />}>
+      <BrowserRouter basename="/portfolio">
         <Header />
         <div className="update">{`(Desktop only) portfolio non terminé, merci pour votre indulgence 😊`}</div>
         <Routes>
