@@ -21,13 +21,13 @@
 .container {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 0.5fr 1fr;
-      grid-template-columns: 1fr 0.5fr 1fr;
-  -ms-grid-rows: (1fr)[6];
-      grid-template-rows: repeat(6, 1fr);
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  -ms-grid-rows: (1fr)[10];
+      grid-template-rows: repeat(10, 1fr);
   grid-column-gap: 0px;
   grid-row-gap: 0px;
-  height: 30vh;
+  height: 100%;
   width: 80vw;
   font-family: "Gochi Hand", cursive;
   font-size: 5vw;
@@ -36,22 +36,22 @@
 }
 
 .div-name {
-  -ms-grid-row: 3;
-  -ms-grid-row-span: 2;
+  -ms-grid-row: 5;
+  -ms-grid-row-span: 1;
   -ms-grid-column: 1;
   -ms-grid-column-span: 1;
-  grid-area: 3 / 1 / 5 / 2;
+  grid-area: 5 / 1 / 6 / 2;
   -webkit-animation: fromLeft 2s forwards 1s;
           animation: fromLeft 2s forwards 1s;
   opacity: 0;
 }
 
 .div-dev {
-  -ms-grid-row: 3;
-  -ms-grid-row-span: 2;
+  -ms-grid-row: 5;
+  -ms-grid-row-span: 1;
   -ms-grid-column: 3;
   -ms-grid-column-span: 1;
-  grid-area: 3 / 3 / 5 / 4;
+  grid-area: 5 / 3 / 6 / 4;
   -webkit-animation: fromRight 2s forwards 1s;
           animation: fromRight 2s forwards 1s;
   opacity: 0;
@@ -59,14 +59,54 @@
 
 .div-lottie {
   -ms-grid-row: 3;
-  -ms-grid-row-span: 2;
+  -ms-grid-row-span: 5;
   -ms-grid-column: 2;
   -ms-grid-column-span: 1;
-  grid-area: 3 / 2 / 5 / 3;
+  grid-area: 3 / 2 / 8 / 3;
   -webkit-animation: fromBottom 0.5s forwards 0.5s;
           animation: fromBottom 0.5s forwards 0.5s;
-  margin-top: -35%;
   opacity: 0;
+}
+
+.links {
+  -ms-grid-row: 9;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-area: 9 / 2 / 10 / 3;
+  -webkit-animation: fromBottom 0.8s forwards 1.5s;
+          animation: fromBottom 0.8s forwards 1.5s;
+  opacity: 0;
+  height: 4rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.links a {
+  width: 6rem;
+}
+
+.links a img {
+  height: 100%;
+  -webkit-transition: opacity 0.3s, -webkit-transform 0.3s;
+  transition: opacity 0.3s, -webkit-transform 0.3s;
+  transition: opacity 0.3s, transform 0.3s;
+  transition: opacity 0.3s, transform 0.3s, -webkit-transform 0.3s;
+  opacity: 0.5;
+}
+
+.links a img:hover {
+  opacity: 1;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  cursor: pointer;
 }
 
 @-webkit-keyframes fromLeft {
