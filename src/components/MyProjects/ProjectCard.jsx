@@ -6,8 +6,15 @@ const ProjectCard = (props) => {
     return (
         <a href={link}>
             <div className='project-card'>
-                <img src={image} alt="" />
-                <h2>{title}</h2>
+                <div className='project-card-inner'>
+                    <div className='project-card-front'>
+                        <img src={image} alt="" />
+                        <h2>{title}</h2>
+                    </div>
+                    <div className='project-card-back'>
+                        <p>{presentation}</p>
+                    </div>
+                </div>
             </div>
         </a>
     );
