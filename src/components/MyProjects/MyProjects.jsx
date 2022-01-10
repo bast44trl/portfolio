@@ -6,7 +6,38 @@ import dobby from '../../assets/projets/dobby.png';
 import llm from '../../assets/projets/llm.png';
 
 const MyProjects = () => {
-    const projects = [{title: "La Belle Miche", image: lbm, presentation: ""}, {title: "Dobby And Friends", image: dobby, presentation: ""}, {title: "LLM", image: llm, presentation: ""}];
+    
+    const projects = [{
+        link: "https://bast44trl.github.io/laBelleMiche/",
+        title: "La Belle Miche", 
+        image: lbm,
+        presentation: {
+            name: "La Belle Miche", 
+            team: 4, duration: "4 weeks", 
+            text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi vel quae numquam sequi nesciunt, quas quo optio! Accusamus incidunt reiciendis quas assumenda ab, impedit iure animi dicta cum modi nobis!"},
+            warning:""
+        },{
+        link: "https://bast44trl.github.io/DobbyAndFriends/#/",
+        title: "Dobby And Friends", 
+        image: dobby, 
+        presentation: {
+            name: "Dobby And Friends", 
+            team: 4, 
+            duration: "5 weeks", 
+            text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi vel quae numquam sequi nesciunt, quas quo optio! Accusamus incidunt reiciendis quas assumenda ab, impedit iure animi dicta cum modi nobis!"},
+            warning:""
+        },{
+        link: "https://bast44trl.github.io/LLM_WikiMusic",
+        title: "Live Love Music", 
+        image: llm, 
+        presentation: {
+            name: "Live Love Music", 
+            team: 6, 
+            duration: "31 hours", 
+            text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi vel quae numquam sequi nesciunt, quas quo optio! Accusamus incidunt reiciendis quas assumenda ab, impedit iure animi dicta cum modi nobis!"},
+            warning: "https://cors-anywhere.herokuapp.com/corsdemo",
+        }];
+
     const [projectNb, setProjectNb] = useState(0); 
     const [slowAppear, setSlowAppear] = useState(false);
     const [projectGoesRight, setProjectGoesRight] = useState(false);
@@ -56,7 +87,13 @@ const MyProjects = () => {
                 className={slowAppear? "big-project slow-appear" : "big-project"}>
                     <ProjectCard
                     image={projects[projectNb].image}
-                    title={projects[projectNb].title} />
+                    title={projects[projectNb].title}
+                    presentationText={projects[projectNb].presentation.text}
+                    presentationName={projects[projectNb].presentation.name}
+                    presentationDuration={projects[projectNb].presentation.duration}
+                    presentationTeam={projects[projectNb].presentation.team}
+                    link={projects[projectNb].link}
+                    warning={projects[projectNb].warning} />
             </div>
             <div
                 className={`arrow-right ${projectGoesRight?'project-goes-right':''}`}
