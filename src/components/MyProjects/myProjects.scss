@@ -1,18 +1,23 @@
 @import "../../variables.scss";
 
 .my-projects {
-  height: 100vh;
+  height: 100%;
   width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
   display: flex;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(
+  overflow: hidden;
+  /* background: linear-gradient(
       0deg,
       rgba(255, 255, 255, 0.2),
       rgba(255, 255, 255, 0.2)
     ),
     url("https://images.pexels.com/photos/140945/pexels-photo-140945.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260");
-  background-size: cover;
+  background-size: cover; */
 }
 
 .big-project-container {
@@ -31,22 +36,34 @@
 .arrow-right {
   height: 30%;
   width: 10%;
-  & .project-card {
-    box-shadow: none;
-    opacity: 0.8;
-    transition: box-shadow 0.3s, transform 0.3s, opacity 0.3s;
-    & img {
-      width: 90%;
-      height: 70%;
-      margin-bottom: -15%;
-    }
-    &:hover {
-      transform: scale(1.5);
-      opacity: 1;
-      box-shadow: 3px 3px 4px black;
-      cursor: pointer;
-      & .project-card-inner {
-        transform: rotateY(0deg);
+  & .rotation {
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    animation: project-container-appear 1s forwards 0.5s;
+    & .project-card {
+      box-shadow: none;
+      opacity: 0.8;
+      transition: box-shadow 0.3s, transform 0.3s, opacity 0.3s;
+      & .project-card-img {
+        width: 80%;
+        height: 60%;
+        margin-top: 15%;
+        border-radius: 50px;
+        overflow: hidden;
+        img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+      &:hover {
+        transform: scale(1.5);
+        opacity: 1;
+        box-shadow: 3px 3px 4px black;
+        cursor: pointer;
+        & .project-card-inner {
+          transform: rotateY(0deg);
+        }
       }
     }
   }
@@ -59,9 +76,24 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  & .project-card h2 {
-    font-size: 3vw;
-    @include text-main;
+  & .rotation {
+    height: 100%;
+    width: 100%;
+    & .project-card-img {
+      width: 60%;
+      height: 60%;
+      margin-bottom: -15%;
+      border-radius: 50%;
+      overflow: hidden;
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+    & .project-card h2 {
+      font-size: 3vw;
+      @include text-main;
+    }
   }
 }
 
@@ -74,17 +106,17 @@
 }
 @keyframes projectGoesRight {
   25% {
-    transform: translate(-70px, -40px) rotate(-60deg);
+    transform: translate(-70px, -60px) rotate(-60deg);
   }
   50% {
-    transform: translate(-140px, -80px) rotate(-160deg);
+    transform: translate(-200px, -100px) rotate(-160deg);
   }
   75% {
-    transform: translate(-210px, -40px) rotate(-260deg);
+    transform: translate(-350px, -60px) rotate(-260deg);
   }
   to {
     opacity: 0;
-    transform: translate(-280px, 0px) rotate(-360deg);
+    transform: translate(-500px, 0px) rotate(-360deg);
   }
 }
 .project-goes-left {
@@ -92,17 +124,17 @@
 }
 @keyframes projectGoesLeft {
   25% {
-    transform: translate(70px, -40px) rotate(60deg);
+    transform: translate(70px, -60px) rotate(60deg);
   }
   50% {
-    transform: translate(140px, -80px) rotate(160deg);
+    transform: translate(200px, -100px) rotate(160deg);
   }
   75% {
-    transform: translate(210px, -40px) rotate(260deg);
+    transform: translate(350px, -60px) rotate(260deg);
   }
   to {
     opacity: 0;
-    transform: translate(280px, 0px) rotate(360deg);
+    transform: translate(500px, 0px) rotate(360deg);
   }
 }
 

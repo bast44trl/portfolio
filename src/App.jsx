@@ -5,15 +5,17 @@ import LandingScreen from "./components/LandingScreen/LandingScreen";
 import MyTech from "./components/MyTech/MyTech";
 import AboutMe from "./components/AboutMe/AboutMe";
 import MyProjects from "./components/MyProjects/MyProjects";
+import Background from "./components/Background";
 
 function App() {
   return (
     <div className="App">
       <BrowserRouter basename="/">
         <Header />
+        <Background />
         <div className="update">{`(Desktop only) portfolio non terminé, merci pour votre indulgence 😊`}</div>
         <Routes>
-        <Route path="*" element={<LandingScreen />} />
+          <Route path="*" element={<LandingScreen />} />
           <Route path="/welcome" element={<LandingScreen />} />
           <Route path="/mytech" element={<MyTech />} />
           <Route path="/aboutme" element={<AboutMe />} />

@@ -31,10 +31,6 @@ const Tech = () => {
     ];
 
     return (
-        <div className="tech">
-            <video className="tech-video" autoPlay loop muted>
-                <source src={techVideo} type='video/mp4'/>
-            </video>
             <div className="overlay">
                 <div className="tech-content">
                     <h1>Here are technologies I use</h1>
@@ -43,7 +39,6 @@ const Tech = () => {
                     </div>
                 </div>
             </div>
-        </div>
     )
 };
 
