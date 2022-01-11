@@ -169,8 +169,8 @@
   }
   to {
     opacity: 1;
-    -webkit-transform: translateY(0px);
-            transform: translateY(0px);
+    -webkit-transform: translateY(0px) rotate(360deg);
+            transform: translateY(0px) rotate(360deg);
   }
 }
 
@@ -182,8 +182,8 @@
   }
   to {
     opacity: 1;
-    -webkit-transform: translateY(0px);
-            transform: translateY(0px);
+    -webkit-transform: translateY(0px) rotate(360deg);
+            transform: translateY(0px) rotate(360deg);
   }
 }
 /*# sourceMappingURL=landingScreen.css.map */
