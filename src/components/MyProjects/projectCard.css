@@ -76,8 +76,8 @@ a .project-card .project-card-inner .project-card-back {
   height: 100%;
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
-  background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.6))), url("https://images.pexels.com/photos/2150/sky-space-dark-galaxy.jpg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("https://images.pexels.com/photos/2150/sky-space-dark-galaxy.jpg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.2)), to(rgba(0, 0, 0, 0.2))), url("https://images.pexels.com/photos/235994/pexels-photo-235994.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260");
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("https://images.pexels.com/photos/235994/pexels-photo-235994.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260");
   background-size: cover;
 }
 
@@ -98,15 +98,19 @@ a .project-card .project-card-inner .project-card-back {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  font-weight: bold;
+  text-shadow: 1px 1px 1px white;
 }
 
 a .project-card .project-card-inner .project-card-back h2 {
   color: white;
   font-family: "Gochi Hand", cursive;
   text-shadow: 0.2vw 0.2vw 0.5vw black;
+  font-size: 1.5;
 }
 
 a .project-card .project-card-inner .project-card-back p {
-  color: white;
+  color: #312a2a;
+  font-size: 1.4rem;
 }
 /*# sourceMappingURL=projectCard.css.map */

@@ -48,10 +48,10 @@ a {
         backface-visibility: hidden;
         background: linear-gradient(
             0deg,
-            rgba(0, 0, 0, 0.6),
-            rgba(0, 0, 0, 0.6)
+            rgba(0, 0, 0, 0.2),
+            rgba(0, 0, 0, 0.2)
           ),
-          url("https://images.pexels.com/photos/2150/sky-space-dark-galaxy.jpg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+          url("https://images.pexels.com/photos/235994/pexels-photo-235994.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260");
         background-size: cover;
       }
       & .project-card-back {
@@ -62,11 +62,15 @@ a {
         flex-direction: column;
         justify-content: space-around;
         align-items: center;
+        font-weight: bold;
+        text-shadow: 1px 1px 1px white;
         & h2 {
           @include text-main;
+          font-size: 1.5;
         }
         & p {
-          color: white;
+          color: rgb(49, 42, 42);
+          font-size: 1.4rem;
         }
       }
     }

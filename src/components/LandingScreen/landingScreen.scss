@@ -1,19 +1,24 @@
 @import url("https://fonts.googleapis.com/css2?family=Gochi+Hand&display=swap");
 
 .landing-screen {
-  height: 100vh;
+  height: 100%;
   width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
   display: flex;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(
+  background: transparent;
+  /* background: linear-gradient(
       0deg,
       rgba(255, 255, 255, 0.5),
       rgba(255, 255, 255, 0.1)
     ),
     url("https://images.pexels.com/photos/440731/pexels-photo-440731.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260");
   background-repeat: no-repeat;
-  background-size: 100% 100%;
+  background-size: 100% 100%; */
   overflow: hidden;
 }
 
@@ -32,12 +37,12 @@
 }
 
 .div-name {
-  grid-area: 5 / 1 / 6 / 2;
+  grid-area: 6 / 1 / 7 / 2;
   animation: fromLeft 2s forwards 1s;
   opacity: 0;
 }
 .div-dev {
-  grid-area: 5 / 3 / 6 / 4;
+  grid-area: 6 / 3 / 7 / 4;
   animation: fromRight 2s forwards 1s;
   opacity: 0;
 }
@@ -98,6 +103,6 @@
   }
   to {
     opacity: 1;
-    transform: translateY(0px);
+    transform: translateY(0px) rotate(360deg);
   }
 }

@@ -46,4 +46,20 @@
           transform: scale(1.1);
   cursor: pointer;
 }
+
+/*/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+                                                    MEDIA QUERIES
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+@media screen and (max-width: 450px) {
+  .header {
+    height: 4rem;
+    padding: 0 1%;
+  }
+  .header ul li {
+    font-size: 1rem;
+    padding: 1%;
+  }
+}
 /*# sourceMappingURL=header.css.map */
