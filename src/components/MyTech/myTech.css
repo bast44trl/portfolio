@@ -1,77 +1,61 @@
-.tech {
-  height: 100vh;
-  width: 100vw;
-  position: relative;
-}
-
-.tech .tech-video {
-  max-height: 180%;
-  min-height: 110%;
-  min-width: 100vw;
-  max-width: 150vw;
-  z-index: 1;
-  position: absolute;
-  bottom: 0;
-  right: 0;
-}
-
-.tech .overlay {
+.overlay {
   position: absolute;
   /* background-color: rgba(#000, 0.6); */
-  width: 92%;
-  left: 5%;
-  right: 3%;
-  top: 15%;
-  opacity: 0;
-  border-radius: 2rem;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  left: 0;
+  top: 0;
   /* border: groove white 3px; */
-  z-index: 2;
-  -webkit-animation: overlay-appear 0.8s forwards 0.2s;
-          animation: overlay-appear 0.8s forwards 0.2s;
+  z-index: 0;
+  overflow: hidden;
 }
 
-.tech .overlay .tech-content {
+.overlay .tech-content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   /* flex-direction: column; */
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   width: 100%;
-  height: 100%;
+  height: 90%;
   z-index: 3;
   overflow: hidden;
 }
 
-.tech .overlay .tech-content h1 {
-  color: black;
-  font-size: 3vw;
-  /* text-shadow: 2px 2px 2px black; */
+.overlay .tech-content h1 {
+  color: white;
+  font-size: 3rem;
+  font-weight: 600;
+  text-shadow: 3px 3px 3px black;
   height: 10%;
-  margin-left: 5%;
-  margin-top: -15%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 22ch;
+  width: 23ch;
   overflow: hidden;
-  border-right: 3px solid black;
+  border-right: 3px solid white;
   opacity: 0;
-  -webkit-animation: typing 1s steps(22) 0.5s forwards, blink 0.5s step-end 1.5s infinite alternate, invisible-title 0.5s, opacity-appear 0.5s forwards 0.5s;
-          animation: typing 1s steps(22) 0.5s forwards, blink 0.5s step-end 1.5s infinite alternate, invisible-title 0.5s, opacity-appear 0.5s forwards 0.5s;
+  -webkit-animation: typing 1s steps(23) 0.5s forwards, blink 0.5s step-end 1.5s infinite alternate, invisible-title 0.5s, opacity-appear 0.5s forwards 0.5s;
+          animation: typing 1s steps(23) 0.5s forwards, blink 0.5s step-end 1.5s infinite alternate, invisible-title 0.5s, opacity-appear 0.5s forwards 0.5s;
   white-space: nowrap;
 }
 
-.tech .overlay .tech-content .all-tech-container {
+.overlay .tech-content .all-tech-container {
   width: 50%;
-  height: 100%;
+  height: 80%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -88,57 +72,57 @@
           animation: opacity-appear 1s forwards 1.5s;
 }
 
-.tech .overlay .tech-content .all-tech-container .tech-container:nth-child(1) {
+.overlay .tech-content .all-tech-container .tech-container:nth-child(1) {
   -webkit-animation: comeFromLeft 1s forwards, opacity-appear 2s forwards 1.5s;
           animation: comeFromLeft 1s forwards, opacity-appear 2s forwards 1.5s;
 }
 
-.tech .overlay .tech-content .all-tech-container .tech-container:nth-child(2) {
+.overlay .tech-content .all-tech-container .tech-container:nth-child(2) {
   -webkit-animation: comeFromLeft 1s 1.6s forwards, opacity-appear 2s forwards 1.6s;
           animation: comeFromLeft 1s 1.6s forwards, opacity-appear 2s forwards 1.6s;
 }
 
-.tech .overlay .tech-content .all-tech-container .tech-container:nth-child(3) {
+.overlay .tech-content .all-tech-container .tech-container:nth-child(3) {
   -webkit-animation: comeFromLeft 1s 1.7s forwards, opacity-appear 2s forwards 1.7s;
           animation: comeFromLeft 1s 1.7s forwards, opacity-appear 2s forwards 1.7s;
 }
 
-.tech .overlay .tech-content .all-tech-container .tech-container:nth-child(4) {
+.overlay .tech-content .all-tech-container .tech-container:nth-child(4) {
   -webkit-animation: comeFromLeft 1s 1.8s forwards, opacity-appear 2s forwards 1.8s;
           animation: comeFromLeft 1s 1.8s forwards, opacity-appear 2s forwards 1.8s;
 }
 
-.tech .overlay .tech-content .all-tech-container .tech-container:nth-child(5) {
+.overlay .tech-content .all-tech-container .tech-container:nth-child(5) {
   -webkit-animation: comeFromLeft 1s 1.9s forwards, opacity-appear 2s forwards 1.9s;
           animation: comeFromLeft 1s 1.9s forwards, opacity-appear 2s forwards 1.9s;
 }
 
-.tech .overlay .tech-content .all-tech-container .tech-container:nth-child(6) {
+.overlay .tech-content .all-tech-container .tech-container:nth-child(6) {
   -webkit-animation: comeFromLeft 1s 2s forwards, opacity-appear 2s forwards 2s;
           animation: comeFromLeft 1s 2s forwards, opacity-appear 2s forwards 2s;
 }
 
-.tech .overlay .tech-content .all-tech-container .tech-container:nth-child(7) {
+.overlay .tech-content .all-tech-container .tech-container:nth-child(7) {
   -webkit-animation: comeFromLeft 1s 2.1s forwards, opacity-appear 2s forwards 2.1s;
           animation: comeFromLeft 1s 2.1s forwards, opacity-appear 2s forwards 2.1s;
 }
 
-.tech .overlay .tech-content .all-tech-container .tech-container:nth-child(8) {
+.overlay .tech-content .all-tech-container .tech-container:nth-child(8) {
   -webkit-animation: comeFromLeft 1s 2.2s forwards, opacity-appear 2s forwards 2.2s;
           animation: comeFromLeft 1s 2.2s forwards, opacity-appear 2s forwards 2.2s;
 }
 
-.tech .overlay .tech-content .all-tech-container .tech-container:nth-child(9) {
+.overlay .tech-content .all-tech-container .tech-container:nth-child(9) {
   -webkit-animation: comeFromLeft 1s 2.3s forwards, opacity-appear 2s forwards 2.3s;
           animation: comeFromLeft 1s 2.3s forwards, opacity-appear 2s forwards 2.3s;
 }
 
-.tech .overlay .tech-content .all-tech-container .tech-container:nth-child(10) {
+.overlay .tech-content .all-tech-container .tech-container:nth-child(10) {
   -webkit-animation: comeFromLeft 1s 2.4s forwards, opacity-appear 2s forwards 2.4s;
           animation: comeFromLeft 1s 2.4s forwards, opacity-appear 2s forwards 2.4s;
 }
 
-.tech .overlay .tech-content .all-tech-container .tech-container:nth-child(11) {
+.overlay .tech-content .all-tech-container .tech-container:nth-child(11) {
   -webkit-animation: comeFromLeft 1s 2.5s forwards, opacity-appear 2s forwards 2.5s;
           animation: comeFromLeft 1s 2.5s forwards, opacity-appear 2s forwards 2.5s;
 }
@@ -180,26 +164,6 @@
   }
   to {
     opacity: 1;
-  }
-}
-
-@-webkit-keyframes overlay-appear {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-    height: 80%;
-  }
-}
-
-@keyframes overlay-appear {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-    height: 80%;
   }
 }
 
@@ -255,22 +219,14 @@
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
 @media screen and (max-width: 450px) {
-  .tech .tech-video {
-    max-height: 100%;
-    min-height: 130%;
-    min-width: 100vw;
-    max-width: 200vh;
-    left: -125%;
-    bottom: -20%;
-  }
-  .tech .overlay {
+  .overlay {
     width: 94%;
     left: 3%;
     right: 3%;
     top: 3%;
     bottom: 3%;
   }
-  .tech .overlay .tech-content {
+  .overlay .tech-content {
     -webkit-box-orient: vertical;
     -webkit-box-direction: reverse;
         -ms-flex-direction: column-reverse;
@@ -282,7 +238,7 @@
         -ms-flex-align: start;
             align-items: flex-start;
   }
-  .tech .overlay .tech-content h1 {
+  .overlay .tech-content h1 {
     font-size: 1rem;
     height: 1.1em;
     margin-left: 8rem;
@@ -294,7 +250,7 @@
         -ms-flex-align: center;
             align-items: center;
   }
-  .tech .overlay .tech-content .all-tech-container {
+  .overlay .tech-content .all-tech-container {
     width: -webkit-fit-content;
     width: -moz-fit-content;
     width: fit-content;

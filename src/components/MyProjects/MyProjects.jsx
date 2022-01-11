@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import './myProjects.scss';
 import ProjectCard from './ProjectCard';
-import lbm from '../../assets/projets/lbm.png';
-import dobby from '../../assets/projets/dobby.png';
+import lbm from '../../assets/projets/lbm2.png';
+import dobby from '../../assets/projets/dobby2.jpg';
 import llm from '../../assets/projets/llm.png';
 
 const MyProjects = () => {

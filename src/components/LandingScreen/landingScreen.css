@@ -1,7 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Gochi+Hand&display=swap");
 .landing-screen {
-  height: 100vh;
+  height: 100%;
   width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -11,10 +15,15 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background: -webkit-gradient(linear, left bottom, left top, from(rgba(255, 255, 255, 0.5)), to(rgba(255, 255, 255, 0.1))), url("https://images.pexels.com/photos/440731/pexels-photo-440731.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260");
-  background: linear-gradient(0deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.1)), url("https://images.pexels.com/photos/440731/pexels-photo-440731.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260");
+  background: transparent;
+  /* background: linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 0.5),
+      rgba(255, 255, 255, 0.1)
+    ),
+    url("https://images.pexels.com/photos/440731/pexels-photo-440731.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260");
   background-repeat: no-repeat;
-  background-size: 100% 100%;
+  background-size: 100% 100%; */
   overflow: hidden;
 }
 
@@ -36,22 +45,22 @@
 }
 
 .div-name {
-  -ms-grid-row: 5;
+  -ms-grid-row: 6;
   -ms-grid-row-span: 1;
   -ms-grid-column: 1;
   -ms-grid-column-span: 1;
-  grid-area: 5 / 1 / 6 / 2;
+  grid-area: 6 / 1 / 7 / 2;
   -webkit-animation: fromLeft 2s forwards 1s;
           animation: fromLeft 2s forwards 1s;
   opacity: 0;
 }
 
 .div-dev {
-  -ms-grid-row: 5;
+  -ms-grid-row: 6;
   -ms-grid-row-span: 1;
   -ms-grid-column: 3;
   -ms-grid-column-span: 1;
-  grid-area: 5 / 3 / 6 / 4;
+  grid-area: 6 / 3 / 7 / 4;
   -webkit-animation: fromRight 2s forwards 1s;
           animation: fromRight 2s forwards 1s;
   opacity: 0;
