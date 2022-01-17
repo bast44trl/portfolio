@@ -14,7 +14,7 @@
   overflow: hidden;
   & .tech-content {
     display: flex;
-    /* flex-direction: column; */
+    flex-direction: row-reverse;
     justify-content: space-around;
     align-items: center;
     width: 100%;
@@ -23,25 +23,34 @@
     overflow: hidden;
     h1 {
       color: white;
-      font-size: 3rem;
+      font-size: 3vw;
       font-weight: 600;
       text-shadow: 3px 3px 3px black;
-      height: 10%;
+      height: 4vw;
       display: flex;
       align-items: center;
-      width: 23ch;
       overflow: hidden;
       border-right: 3px solid white;
       opacity: 0;
-      animation: typing 1s steps(23) 0.5s forwards,
-        blink 0.5s step-end 1.5s infinite alternate, invisible-title 0.5s,
-        opacity-appear 0.5s forwards 0.5s;
       white-space: nowrap;
+      &.french-tech-title {
+        width: 38.6vw;
+        animation: typing 1s steps(29) 0.5s forwards,
+          blink 0.5s step-end 1.5s infinite alternate, invisible-title 0.5s,
+          opacity-appear 0.5s forwards 0.5s;
+      }
+      &.english-tech-title {
+        width: 35vw;
+        animation: typing 1s steps(23) 0.5s forwards,
+          blink 0.5s step-end 1.5s infinite alternate, invisible-title 0.5s,
+          opacity-appear 0.5s forwards 0.5s;
+      }
     }
     .all-tech-container {
       width: 50%;
       height: 80%;
       display: flex;
+      flex-direction: row-reverse;
       flex-wrap: wrap;
       justify-content: center;
       align-items: center;
@@ -146,28 +155,30 @@
     right: 3%;
     top: 3%;
     bottom: 3%;
-    .tech-content {
-      flex-direction: column-reverse;
-      justify-content: space-between;
-      align-items: flex-start;
+    & .tech-content {
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+      width: 100%;
       h1 {
-        font-size: 1rem;
-        height: 1.1em;
-        margin-left: 8rem;
-        margin-bottom: 9rem;
+        font-size: 5.7vw;
+        height: 10vw;
+        width: 67vw;
+        margin-top: 10vw;
+        margin-bottom: 10vw;
         display: flex;
         align-items: center;
       }
       .all-tech-container {
         width: fit-content;
-        height: 45%;
+        height: 100%;
+        width: 100%;
         margin-top: 5%;
         display: flex;
         flex-direction: row;
-        flex-wrap: nowrap;
-        left: 0;
+        flex-wrap: wrap;
         align-items: center;
-        overflow-x: auto;
+        overflow: auto;
       }
     }
   }
@@ -179,6 +190,14 @@
     to {
       opacity: 1;
       height: 94%;
+    }
+  }
+  @keyframes comeFromLeft {
+    from {
+      transform: translateY(200px);
+    }
+    to {
+      transform: translateY(0px);
     }
   }
 }

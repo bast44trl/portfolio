@@ -112,7 +112,6 @@
 .section > .section-title h1,
 .section-title h3,
 .section-infos {
-  display: block;
   opacity: 0;
   font-size: 20%;
   -webkit-transition: opacity 0.3s, font-size 0.3s;

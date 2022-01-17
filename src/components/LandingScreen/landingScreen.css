@@ -16,51 +16,47 @@
       -ms-flex-align: center;
           align-items: center;
   background: transparent;
-  /* background: linear-gradient(
-      0deg,
-      rgba(255, 255, 255, 0.5),
-      rgba(255, 255, 255, 0.1)
-    ),
-    url("https://images.pexels.com/photos/440731/pexels-photo-440731.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260");
-  background-repeat: no-repeat;
-  background-size: 100% 100%; */
   overflow: hidden;
 }
 
 .container {
   display: -ms-grid;
   display: grid;
+  position: relative;
   -ms-grid-columns: (1fr)[3];
       grid-template-columns: repeat(3, 1fr);
   -ms-grid-rows: (1fr)[10];
       grid-template-rows: repeat(10, 1fr);
   grid-column-gap: 0px;
   grid-row-gap: 0px;
-  height: 100%;
-  width: 80vw;
-  font-family: "Gochi Hand", cursive;
-  font-size: 5vw;
-  text-shadow: black 5px 5px 5px;
+  height: 50%;
+  width: 100vw;
   color: white;
+  margin-right: -12vw;
 }
 
 .div-name {
-  -ms-grid-row: 6;
+  -ms-grid-row: 4;
   -ms-grid-row-span: 1;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 1;
-  grid-area: 6 / 1 / 7 / 2;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 2;
+  grid-area: 4 / 2 / 5 / 4;
+  font-size: 5vw;
+  font-family: "Gochi Hand", cursive;
+  text-shadow: black 5px 5px 5px;
   -webkit-animation: fromLeft 2s forwards 1s;
           animation: fromLeft 2s forwards 1s;
   opacity: 0;
 }
 
 .div-dev {
-  -ms-grid-row: 6;
+  -ms-grid-row: 5;
   -ms-grid-row-span: 1;
-  -ms-grid-column: 3;
-  -ms-grid-column-span: 1;
-  grid-area: 6 / 3 / 7 / 4;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 2;
+  grid-area: 5 / 2 / 6 / 4;
+  font-size: 2vw;
+  text-shadow: black 2px 2px 2px;
   -webkit-animation: fromRight 2s forwards 1s;
           animation: fromRight 2s forwards 1s;
   opacity: 0;
@@ -78,11 +74,11 @@
 }
 
 .links {
-  -ms-grid-row: 9;
+  -ms-grid-row: 7;
   -ms-grid-row-span: 1;
   -ms-grid-column: 2;
-  -ms-grid-column-span: 1;
-  grid-area: 9 / 2 / 10 / 3;
+  -ms-grid-column-span: 2;
+  grid-area: 7 / 2 / 8 / 4;
   -webkit-animation: fromBottom 0.8s forwards 1.5s;
           animation: fromBottom 0.8s forwards 1.5s;
   opacity: 0;

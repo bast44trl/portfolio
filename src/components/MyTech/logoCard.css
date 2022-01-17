@@ -1,7 +1,7 @@
 .tech-container {
   position: relative;
-  width: 10em;
-  height: 11rem;
+  width: 11vw;
+  height: 11.2vw;
   background-color: whitesmoke;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -43,9 +43,8 @@
 
 .tech-container a img {
   display: block;
-  width: 6rem;
-  height: 6rem;
-  max-height: 7rem;
+  width: 6vw;
+  max-height: 80%;
   opacity: 1;
   -webkit-transition: opacity 2s, height 2s, -webkit-transform 0.5s;
   transition: opacity 2s, height 2s, -webkit-transform 0.5s;
@@ -165,12 +164,29 @@
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
 @media screen and (max-width: 450px) {
   .tech-container {
-    /* width: 4.5rem;
-    height: 4.7rem; */
+    width: 25vw;
+    height: 27vw;
   }
   .tech-container a img {
-    /* width: 3rem;
-        height: 3rem; */
+    width: 15vw;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .tech-container {
+    width: 12vw;
+  }
+  .tech-container a img {
+    width: 9vw;
+  }
+}
+
+@media screen and (min-width: 2000px) {
+  .tech-container {
+    height: 14vw;
+  }
+  .tech-container a img {
+    width: 9vw;
   }
 }
 /*# sourceMappingURL=logoCard.css.map */
