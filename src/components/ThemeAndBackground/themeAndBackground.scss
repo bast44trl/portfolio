@@ -1,0 +1,96 @@
+.full-screen {
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+  z-index: -2;
+  .video {
+    min-width: 100%;
+    min-height: 100%;
+    max-width: 140%;
+    z-index: -1;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    opacity: 0.7;
+  }
+}
+
+.theme-container {
+  position: absolute;
+  z-index: 3;
+  top: 1vw;
+  left: 0.5vw;
+  height: 1.3vw;
+  max-width: 200px;
+  width: 9vw;
+  padding: 0 0.1vw;
+  border-radius: 1vw;
+  font-size: 0.7rem;
+  background-color: rgba($color: #000000, $alpha: 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: height 0.3s, width 0.3s;
+  & p {
+    color: silver;
+    cursor: default;
+    height: auto;
+    opacity: 1;
+  }
+  &:hover {
+    height: 3vw;
+    width: 12vw;
+    padding: 0.5vw;
+    & p {
+      opacity: 0;
+      height: 0;
+      transition: opacity 0.3s, height 0.3s;
+    }
+    & .bg-buttons {
+      height: 4vw;
+      opacity: 1;
+      & > div {
+        height: 2vw;
+        opacity: 1;
+        border-radius: 2vw;
+      }
+    }
+  }
+  & .bg-buttons {
+    height: 0px;
+    opacity: 0;
+    width: 100%;
+    transition: height 0.8s, opacity 0.8s;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    & > div {
+      box-sizing: border-box;
+      width: 2vw;
+      height: 0vw;
+      opacity: 0;
+      background-color: black;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 0.9vw;
+      color: darkgrey;
+      transition: transform 0.3s, color 1s, opacity 1.1s;
+      overflow: hidden;
+      margin: 0 0.2vw;
+      & img {
+        width: 100%;
+        height: 100%;
+      }
+      &:hover {
+        transform: scale(1.1);
+        cursor: pointer;
+        color: white;
+      }
+    }
+  }
+}
