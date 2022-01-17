@@ -20,7 +20,10 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  /* flex-direction: column; */
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
   -ms-flex-pack: distribute;
       justify-content: space-around;
   -webkit-box-align: center;
@@ -34,17 +37,17 @@
 
 .overlay .tech-content h1 {
   color: white;
-  font-size: 3rem;
+  font-size: 3vw;
   font-weight: 600;
   text-shadow: 3px 3px 3px black;
-  height: 10%;
+  height: 4vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 23ch;
+  width: 35vw;
   overflow: hidden;
   border-right: 3px solid white;
   opacity: 0;
@@ -59,6 +62,10 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   -webkit-box-pack: center;
@@ -228,21 +235,22 @@
   }
   .overlay .tech-content {
     -webkit-box-orient: vertical;
-    -webkit-box-direction: reverse;
-        -ms-flex-direction: column-reverse;
-            flex-direction: column-reverse;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
   }
   .overlay .tech-content h1 {
-    font-size: 1rem;
-    height: 1.1em;
-    margin-left: 8rem;
-    margin-bottom: 9rem;
+    font-size: 5.7vw;
+    height: 10vw;
+    width: 67vw;
+    margin-top: 10vw;
+    margin-bottom: 10vw;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -254,7 +262,8 @@
     width: -webkit-fit-content;
     width: -moz-fit-content;
     width: fit-content;
-    height: 45%;
+    height: 100%;
+    width: 100%;
     margin-top: 5%;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -263,13 +272,12 @@
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    -ms-flex-wrap: nowrap;
-        flex-wrap: nowrap;
-    left: 0;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    overflow-x: auto;
+    overflow: auto;
   }
   @-webkit-keyframes overlay-appear {
     from {
@@ -287,6 +295,26 @@
     to {
       opacity: 1;
       height: 94%;
+    }
+  }
+  @-webkit-keyframes comeFromLeft {
+    from {
+      -webkit-transform: translateY(200px);
+              transform: translateY(200px);
+    }
+    to {
+      -webkit-transform: translateY(0px);
+              transform: translateY(0px);
+    }
+  }
+  @keyframes comeFromLeft {
+    from {
+      -webkit-transform: translateY(200px);
+              transform: translateY(200px);
+    }
+    to {
+      -webkit-transform: translateY(0px);
+              transform: translateY(0px);
     }
   }
 }

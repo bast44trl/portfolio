@@ -57,7 +57,6 @@ a .project-card .project-card-inner .project-card-back {
   -webkit-box-shadow: 4px 4px 6px #2f2e2e;
           box-shadow: 4px 4px 6px #2f2e2e;
   border-radius: 2vw;
-  border: groove gray 2px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -76,8 +75,8 @@ a .project-card .project-card-inner .project-card-back {
   height: 100%;
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
-  background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.2)), to(rgba(0, 0, 0, 0.2))), url("https://images.pexels.com/photos/235994/pexels-photo-235994.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260");
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("https://images.pexels.com/photos/235994/pexels-photo-235994.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260");
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(255, 255, 255, 0.7)), to(rgba(255, 255, 255, 0.7))), url("https://images.pexels.com/photos/1572386/pexels-photo-1572386.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260");
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url("https://images.pexels.com/photos/1572386/pexels-photo-1572386.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260");
   background-size: cover;
 }
 
