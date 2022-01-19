@@ -166,6 +166,10 @@
           animation: coming 1s forwards 0.5s;
 }
 
+.spartan-a:visited {
+  color: white;
+}
+
 @-webkit-keyframes coming {
   from {
     opacity: 0;

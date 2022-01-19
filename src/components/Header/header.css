@@ -5,7 +5,6 @@
   position: absolute;
   top: 0;
   z-index: 2;
-  padding-right: 3%;
 }
 
 .header ul {
@@ -17,23 +16,41 @@
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .header ul li {
+  height: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 1vw;
   color: white;
   font-family: "Gochi Hand", cursive;
   text-shadow: 2px 2px 2px black;
-  font-weight: bold;
   font-size: 2vw;
-  padding: 2% 3%;
+}
+
+.header ul li .nav-link {
+  text-decoration: none;
+  margin-right: 2vw;
+  color: white;
+  text-decoration: none;
   -webkit-transition: -webkit-transform 0.3s;
   transition: -webkit-transform 0.3s;
   transition: transform 0.3s;
   transition: transform 0.3s, -webkit-transform 0.3s;
 }
 
-.header ul li .nav-link {
-  text-decoration: none;
+.header ul li .nav-link:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  cursor: pointer;
 }
 
 .header ul li .nav-link:visited {
@@ -41,10 +58,44 @@
   text-decoration: none;
 }
 
-.header ul li:hover {
+.header ul li .flags-container {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.header ul li .flags-container:hover {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.header ul li .flags-container div {
+  width: 80%;
+  height: 80%;
+  margin: 0 0.1vw;
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+  transition: transform 0.3s, -webkit-transform 0.3s;
+}
+
+.header ul li .flags-container div:hover {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
   cursor: pointer;
+}
+
+.header ul li .flags-container div img {
+  width: 100%;
+  height: 100%;
 }
 
 /*/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
