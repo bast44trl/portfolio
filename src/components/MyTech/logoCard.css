@@ -43,7 +43,8 @@
 
 .tech-container a img {
   display: block;
-  width: 6vw;
+  width: 7vw;
+  height: 7vw;
   max-height: 80%;
   opacity: 1;
   -webkit-transition: opacity 2s, height 2s, -webkit-transform 0.5s;
@@ -172,15 +173,16 @@
   }
 }
 
-@media screen and (min-width: 1440px) {
+/* @media screen and (min-width: 1440px) {
   .tech-container {
     width: 12vw;
+    & a {
+      & img {
+        width: 9vw;
+      }
+    }
   }
-  .tech-container a img {
-    width: 9vw;
-  }
-}
-
+} */
 @media screen and (min-width: 2000px) {
   .tech-container {
     height: 14vw;

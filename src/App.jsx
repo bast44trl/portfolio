@@ -8,6 +8,7 @@ import MyProjects from "./components/MyProjects/MyProjects";
 import { ContextProvider } from "./Context";
 import { ThemeAndBackground, BackgroundTech, BackgroundSunset, BackgroundMontains, BackgroundSmoke, BackgroundOcean } from "./components/ThemeAndBackground/ThemeAndBackground";
 import { useState } from "react";
+import Update from "./components/Update/Update";
 
 function App() {
 const [background, setBackground] = useState();
@@ -21,6 +22,7 @@ const [background, setBackground] = useState();
       {background === "Montains" && <BackgroundMontains />}
       {background === "Smoke" && <BackgroundSmoke />}
       {background === "Ocean" && <BackgroundOcean />}
+      <Update />
       <Routes>
         <Route path="*" element={<LandingScreen />} />
         <Route path="/welcome" element={<LandingScreen />} />

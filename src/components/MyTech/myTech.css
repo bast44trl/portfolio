@@ -47,13 +47,22 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 35vw;
   overflow: hidden;
   border-right: 3px solid white;
   opacity: 0;
+  white-space: nowrap;
+}
+
+.overlay .tech-content h1.french-tech-title {
+  width: 38.6vw;
+  -webkit-animation: typing 1s steps(29) 0.5s forwards, blink 0.5s step-end 1.5s infinite alternate, invisible-title 0.5s, opacity-appear 0.5s forwards 0.5s;
+          animation: typing 1s steps(29) 0.5s forwards, blink 0.5s step-end 1.5s infinite alternate, invisible-title 0.5s, opacity-appear 0.5s forwards 0.5s;
+}
+
+.overlay .tech-content h1.english-tech-title {
+  width: 35vw;
   -webkit-animation: typing 1s steps(23) 0.5s forwards, blink 0.5s step-end 1.5s infinite alternate, invisible-title 0.5s, opacity-appear 0.5s forwards 0.5s;
           animation: typing 1s steps(23) 0.5s forwards, blink 0.5s step-end 1.5s infinite alternate, invisible-title 0.5s, opacity-appear 0.5s forwards 0.5s;
-  white-space: nowrap;
 }
 
 .overlay .tech-content .all-tech-container {
