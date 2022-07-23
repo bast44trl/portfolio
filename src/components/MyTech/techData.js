@@ -1,6 +1,3 @@
-// import logoCss from '../../assets/logo/css.png';
-// import logoHtml from '../../assets/logo/html.png';
-// import logoJs from '../../assets/logo/js.png';
 import logoExpress from '../../assets/logo/svg/express.svg';
 import logoFigma from '../../assets/logo/svg/figma.svg';
 import logoGit from '../../assets/logo/svg/github.svg';
@@ -13,33 +10,6 @@ import logoSass from '../../assets/logo/svg/sass.svg';
 import logoTailwind from '../../assets/logo/svg/tailwind.svg';
 
 export const logos = [
-  /* {
-      techTextFrench:
-        'Le HyperText Markup Language, généralement abrégé HTML ou, dans sa dernière version, HTML5, est le langage de balisage conçu pour représenter les pages web.',
-      techTextEnglish:
-        'HTML5 is a markup language used for structuring and presenting content on the World Wide Web.',
-      techName: 'HTML5',
-      logo: logoHtml,
-      link: 'https://html.spec.whatwg.org/multipage/',
-    },
-    {
-      techTextFrench:
-        'Les feuilles de style en cascade, généralement appelées CSS, forment un langage informatique qui décrit la présentation des documents HTML et XML.',
-      techTextEnglish:
-        'Cascading Style Sheets (CSS) is a style sheet language used for describing the look and formatting of a document written in a markup language.',
-      techName: 'CSS3',
-      logo: logoCss,
-      link: 'https://developer.mozilla.org/fr/docs/Web/CSS',
-    },
-    {
-      techTextFrench:
-        'JavaScript est un langage de programmation de scripts principalement employé dans les pages web interactives.',
-      techTextEnglish:
-        'JavaScript is a high-level, often just-in-time compiled language that conforms to the ECMAScript standard.',
-      techName: 'Javascript',
-      logo: logoJs,
-      link: 'https://www.javascript.com/',
-    }, */
   {
     techTextFrench:
       "React.js est une bibliothèque JavaScript dont le but principal est de faciliter la création d'application web monopage, via la création de composants.",
@@ -51,21 +21,21 @@ export const logos = [
   },
   {
     techTextFrench:
-      "React.js est une bibliothèque JavaScript dont le but principal est de faciliter la création d'application web monopage, via la création de composants.",
+      "Sass est un langage de styles qui est compilé en CSS. Il permet d'utiliser des variables, règles nichées, mixins, fonctions et plus encore.",
     techTextEnglish:
-      'React (also known as React.js or ReactJS) is a free and open-source front-end JavaScript library[3] for building user interfaces based on UI components.',
-    techName: 'ReactJS',
+      'Sass is a stylesheet language that’s compiled to CSS. It allows you to use variables, nested rules, mixins, functions, and much more.',
+    techName: 'Sass',
     logo: logoSass,
-    link: 'https://reactjs.org/',
+    link: 'https://sass-lang.com/',
   },
   {
     techTextFrench:
-      "React.js est une bibliothèque JavaScript dont le but principal est de faciliter la création d'application web monopage, via la création de composants.",
+      "Tailwind CSS analyse toutes les 'class names' afin de générer le CSS dans un fichier CSS statique.",
     techTextEnglish:
-      'React (also known as React.js or ReactJS) is a free and open-source front-end JavaScript library[3] for building user interfaces based on UI components.',
-    techName: 'ReactJS',
+      'Tailwind CSS works by scanning all of your class names, generating the corresponding styles and then writing them to a static CSS file.',
+    techName: 'Tailwind CSS',
     logo: logoTailwind,
-    link: 'https://reactjs.org/',
+    link: 'https://tailwindcss.com/',
   },
   {
     techTextFrench:

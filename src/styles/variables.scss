@@ -6,3 +6,20 @@ $timeFromLeft: 2;
   font-family: "Gochi Hand", cursive;
   text-shadow: $text-shadow;
 }
+
+@mixin link ($color: #fff, $textShadow: $text-shadow, $scale: 1.1, $cursor: pointer) {
+  text-decoration: none;
+  margin-right: 2vw;
+  text-shadow: $textShadow;
+  color: $color;
+  text-decoration: none;
+  transition: transform 0.3s;
+  &:hover {
+    transform: scale($scale);
+    cursor: $cursor;
+  }
+  &:visited {
+    color: $color;
+    text-decoration: none;
+  }
+}
