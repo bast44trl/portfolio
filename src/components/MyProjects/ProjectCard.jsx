@@ -11,14 +11,13 @@ const ProjectCard = (props) => {
     image,
     techs,
     presentationText,
-    presentationName,
     presentationDuration,
     presentationDates,
     presentationTeam,
     link,
   } = props;
   const { french } = useContext(Context);
-  console.log(techs);
+
   return (
     <a href={link} target={'blank'}>
       <div className="rotation">
@@ -31,7 +30,7 @@ const ProjectCard = (props) => {
               <h2>{title}</h2>
             </div>
             <div className="project-card-back">
-              <h2>{presentationName}</h2>
+              <h2>{title}</h2>
               <div className="stats-tech">
                 {techs &&
                   techs.map((tech, idx) => <img src={tech} alt="" key={idx} />)}

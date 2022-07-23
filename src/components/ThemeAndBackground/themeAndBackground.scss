@@ -18,12 +18,12 @@
 .theme-container {
   position: absolute;
   z-index: 3;
-  top: 3vw;
-  left: 0.5vw;
-  height: 1.3vw;
+  top: .7vw;
+  left: 2vw;
+  height: 3vw;
   max-width: 200px;
-  width: 9vw;
-  padding: 0 0.1vw;
+  width: 10vw;
+  padding: 0 0.3vw;
   border-radius: 1vw;
   font-size: 0.7rem;
   background-color: rgba($color: #000000, $alpha: 0.7);
@@ -34,27 +34,28 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  transition: height 0.3s, width 0.3s;
+  transition: height 0.5s, width 0.5s, transform 1s;
   & p {
     color: silver;
     cursor: default;
     height: auto;
     opacity: 1;
+    transition: opacity 3s, height 3s;
   }
   &:hover {
-    height: 3vw;
-    width: 12vw;
+    transform: scale(1.3);
     padding: 0.5vw;
     & p {
       opacity: 0;
       height: 0;
-      transition: opacity 0.3s, height 0.3s;
+      transition: opacity 0.2s, height 0.2s;
     }
     & .bg-buttons {
       height: 4vw;
       opacity: 1;
       & > div {
-        height: 2vw;
+        height: 1.7vw;
+        width: 1.7vw;
         opacity: 1;
         border-radius: 2vw;
       }
@@ -79,17 +80,19 @@
       align-items: center;
       font-size: 0.9vw;
       color: darkgrey;
-      transition: transform 0.3s, color 1s, opacity 1.1s;
       overflow: hidden;
       margin: 0 0.2vw;
+      transition: transform .5s, border-color .5s;
       & img {
         width: 100%;
         height: 100%;
       }
       &:hover {
-        transform: scale(1.1);
+        transform: scale(1.3);
         cursor: pointer;
-        color: white;
+        border: solid 1px;
+        border-color: white;
+        transition: transform .5s, border-color .5s;
       }
     }
   }

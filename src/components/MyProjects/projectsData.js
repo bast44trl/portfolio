@@ -1,5 +1,5 @@
-import lbm from '../../assets/projets/svg/lbm22.svg';
-import dobby from '../../assets/projets/dobby2.jpg';
+import lbm from '../../assets/projets/svg/lbm.svg';
+import dobby from '../../assets/projets/dobby.jpg';
 import llm from '../../assets/projets/svg/llm.svg';
 
 import logoExpress from '../../assets/logo/svg/express.svg';
@@ -20,7 +20,6 @@ export const projects = [
     image: lbm,
     techs: [logoReact, logoGit, logoVsCode],
     presentation: {
-      name: 'La Belle Miche',
       team: 4,
       durationFR: '4 semaines',
       durationEN: '4 weeks',
@@ -38,7 +37,6 @@ export const projects = [
     image: dobby,
     techs: [logoReact, logoFigma, logoGit, logoVsCode],
     presentation: {
-      name: 'Dobby And Friends',
       team: 4,
       durationFR: '5 semaines',
       durationEN: '5 weeks',
@@ -56,7 +54,6 @@ export const projects = [
     image: llm,
     techs: [logoReact, logoFigma, logoGit, logoVsCode],
     presentation: {
-      name: 'Live Love Music',
       team: 6,
       durationFR: '31 heures',
       durationEN: '31 hours',
