@@ -1,4 +1,4 @@
-import LogoCard from './LogoCard';
+import TechCard from './TechCard';
 import { useContext } from 'react';
 import Context from '../../Context';
 import { logos } from './techData';
@@ -16,7 +16,7 @@ const Tech = () => {
         </h1>
         <div className="all-tech-container">
           {logos.map((logo, index) => (
-            <LogoCard
+            <TechCard
               className="logo-card"
               key={index}
               index={index}

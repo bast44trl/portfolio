@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import frenchImg from '../../assets/theme&backgrounds/frenchImg.png';
 import englishImg from '../../assets/theme&backgrounds/englishImg.png';
 import { useContext } from 'react';
@@ -10,24 +10,36 @@ const Header = () => {
     <div className="header">
       <ul className="menu">
         <li>
-          <Link className="nav-link" to="/welcome">
+          <NavLink
+            className={({ isActive }) => (isActive ? 'activeLink' : 'nav-link')}
+            to="/welcome"
+          >
             {french ? 'Acceuil' : 'Home'}
-          </Link>
+          </NavLink>
         </li>
         <li>
-          <Link className="nav-link" to="/mytech">
+          <NavLink
+            className={({ isActive }) => (isActive ? 'activeLink' : 'nav-link')}
+            to="/mytech"
+          >
             {french ? 'Mes tech' : 'My Tech'}
-          </Link>
+          </NavLink>
         </li>
         <li>
-          <Link className="nav-link" to="/myprojects">
+          <NavLink
+            className={({ isActive }) => (isActive ? 'activeLink' : 'nav-link')}
+            to="/myprojects"
+          >
             {french ? 'Mes projets' : 'My Projects'}
-          </Link>
+          </NavLink>
         </li>
         <li>
-          <Link className="nav-link" to="/aboutme">
+          <NavLink
+            className={({ isActive }) => (isActive ? 'activeLink' : 'nav-link')}
+            to="/aboutme"
+          >
             {french ? 'A propos de moi' : 'About Me'}
-          </Link>
+          </NavLink>
         </li>
         <li className="li-languages">
           <div className="flags-container">
