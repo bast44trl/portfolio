@@ -1,19 +1,24 @@
-import React from 'react';
-import { useContext } from 'react';
+import React, { useContext } from 'react';
+
 import Context from '../../Context';
+import team from '../../assets/stats/team.png';
+import duration from '../../assets/stats/duration.png';
+import calendar from '../../assets/stats/calendar.png';
 
 const ProjectCard = (props) => {
   const {
     title,
     image,
+    techs,
     presentationText,
     presentationName,
     presentationDuration,
+    presentationDates,
     presentationTeam,
     link,
   } = props;
   const { french } = useContext(Context);
-
+  console.log(techs);
   return (
     <a href={link} target={'blank'}>
       <div className="rotation">
@@ -27,15 +32,28 @@ const ProjectCard = (props) => {
             </div>
             <div className="project-card-back">
               <h2>{presentationName}</h2>
-              <p>
-                {french ? 'Durée : ' : 'Duration : '}
-                {presentationDuration}
-              </p>
-              <p>
-                {french
-                  ? `Projet réalisé par une équipe de ${presentationTeam} étudiants développeurs`
-                  : `Project realised by a team of ${presentationTeam} student devs`}
-              </p>
+              <div className="stats-tech">
+                {techs &&
+                  techs.map((tech, idx) => <img src={tech} alt="" key={idx} />)}
+              </div>
+              <div className="card-back-stats">
+                <div className="stats-duration">
+                  <img src={duration} alt="" />
+                  <span>{presentationDuration}</span>
+                </div>
+                <div className="stats-team">
+                  <img src={team} alt="" />
+                  <span>
+                    {french
+                      ? `${presentationTeam} étudiants développeurs`
+                      : `${presentationTeam} student devs`}
+                  </span>
+                </div>
+                <div className="stats-calendar">
+                  <img src={calendar} alt="" />
+                  <span>{presentationDates}</span>
+                </div>
+              </div>
               <p>{presentationText}</p>
             </div>
           </div>

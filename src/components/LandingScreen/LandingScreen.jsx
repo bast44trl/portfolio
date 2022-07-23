@@ -1,7 +1,7 @@
 /* import Lottie from 'react-lottie';
 import lottieDev from './lottie-dev.json'; */
-import git from './../../assets/logo/git.png';
-import linkedin from './../../assets/logo/linkedin.png';
+import git from './../../assets/logo/svg/github.svg';
+import linkedin from './../../assets/logo/svg/linkedin.svg';
 import email from './../../assets/logo/email.png';
 import { useContext } from 'react';
 import Context from '../../Context';

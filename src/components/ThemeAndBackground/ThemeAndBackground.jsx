@@ -12,6 +12,14 @@ import techImg from '../../assets/theme&backgrounds/techImg.png';
 import { useContext } from 'react';
 import Context from '../../Context';
 
+export const backgrounds = [
+  sunsetVideo,
+  smokeVideo,
+  montainVideo,
+  oceanVideo,
+  techVideo,
+];
+
 export const ThemeAndBackground = ({ setBackground }) => {
   const { french } = useContext(Context);
   async function handleBgSunset() {
