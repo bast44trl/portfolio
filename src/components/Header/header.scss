@@ -11,18 +11,18 @@
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    padding-right: 2vw;
     li {
       height: 50%;
+      font-family: "Gochi Hand", cursive;
       display: flex;
       align-items: center;
-      margin-right: 1vw;
-      font-family: "Gochi Hand", cursive;
       font-size: 2vw;
       .nav-link {
         @include link;
       }
       .activeLink {
-        @include link ($color: rgb(9, 27, 54), $textShadow: 2px 2px 2px #fff, $scale: 1, $cursor: default);
+        @include link ($color: rgb(77, 60, 81), $textShadow: 1px 1px 1px rgb(255, 255, 255), $scale: 1, $cursor: default, $anim: bgAppear 1s forwards);
       }
       & .flags-container {
         width: 100%;
@@ -52,21 +52,56 @@
   }
 }
 
-/*/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+/*------------------------------------------
+  Responsive Grid Media Queries - 1280, 1024, 768, 480
+   1280-1024   - desktop (default grid)
+   1024-768    - tablet landscape
+   768-480     - tablet 
+   480-less    - phone landscape & smaller
+--------------------------------------------*/
+@media all and (min-width: 1024px) and (max-width: 1280px) { }
 
-                                                    MEDIA QUERIES
+@media all and (min-width: 768px) and (max-width: 1024px) { }
 
-/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+@media all and (min-width: 480px) and (max-width: 768px) { }
 
-@media screen and (max-width: 450px) {
-  .header {
-    height: 4rem;
-    padding: 0 1%;
-    ul {
-      li {
-        font-size: 1rem;
-        padding: 1%;
-      }
-    }
-  }
+@media all and (max-width: 480px) { }
+
+
+/* Portrait */
+@media screen and (orientation:portrait) { 
+  
+ }
+
+/* Landscape */
+@media screen and (orientation:landscape) { /* Landscape styles here */ }
+
+
+/* CSS for iPhone, iPad, and Retina Displays */
+
+/* Non-Retina */
+@media screen and (-webkit-max-device-pixel-ratio: 1) {
+}
+
+/* Retina */
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+only screen and (-o-min-device-pixel-ratio: 3/2),
+only screen and (min--moz-device-pixel-ratio: 1.5),
+only screen and (min-device-pixel-ratio: 1.5) {
+}
+
+/* iPhone Portrait */
+@media screen and (max-device-width: 480px) and (orientation:portrait) {
+} 
+
+/* iPhone Landscape */
+@media screen and (max-device-width: 480px) and (orientation:landscape) {
+}
+
+/* iPad Portrait */
+@media screen and (min-device-width: 481px) and (orientation:portrait) {
+}
+
+/* iPad Landscape */
+@media screen and (min-device-width: 481px) and (orientation:landscape) {
 }

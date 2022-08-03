@@ -1,25 +1,20 @@
-import sunsetVideo from '../../assets/theme&backgrounds/sunsetVideo.mp4';
-import smokeVideo from '../../assets/theme&backgrounds/smokeVideo.mp4';
-import montainsVideo from '../../assets/theme&backgrounds/montainVideo.mp4';
-import oceanVideo from '../../assets/theme&backgrounds/oceanVideo.mp4';
-import techVideo from '../../assets/theme&backgrounds/techVideo.mp4';
-import montainsImg from '../../assets/theme&backgrounds/montainImg.png';
-import smokeImg from '../../assets/theme&backgrounds/smokeImg.png';
-import oceanImg from '../../assets/theme&backgrounds/oceanImg.png';
-import sunsetImg from '../../assets/theme&backgrounds/sunsetImg.png';
-import techImg from '../../assets/theme&backgrounds/techImg.png';
+import sunsetVideo from '../../assets/theme&backgrounds/landscape/sunsetVideo.mp4';
+import forestVideo from '../../assets/theme&backgrounds/landscape/forestVideo.mp4';
+import oceanVideo from '../../assets/theme&backgrounds/landscape/oceanVideo.mp4';
+import skyVideo from '../../assets/theme&backgrounds/landscape/skyVideo.mp4';
+import skyImg from '../../assets/theme&backgrounds/landscape/skyImg.png';
+import spaceVideo from '../../assets/theme&backgrounds/landscape/spaceVideo.mp4';
+import spaceImg from '../../assets/theme&backgrounds/landscape/spaceImg.png';
+import forestImg from '../../assets/theme&backgrounds/landscape/forestImg.png';
+import oceanImg from '../../assets/theme&backgrounds/landscape/oceanImg.png';
+import sunsetImg from '../../assets/theme&backgrounds/landscape/sunsetImg.png';
+import oceanVideoPortrait from '../../assets/theme&backgrounds/portrait/ocean.mp4';
+import sunsetVideoPortrait from '../../assets/theme&backgrounds/portrait/sunset.mp4';
+import skyVideoPortrait from '../../assets/theme&backgrounds/portrait/sky.mp4';
+import forestVideoPortrait from '../../assets/theme&backgrounds/portrait/forest.mp4';
+import spaceVideoPortrait from '../../assets/theme&backgrounds/portrait/space.mp4';
 
-const backgrounds = [
-  {
-    theme: 'montains',
-    image: montainsImg,
-    video: montainsVideo,
-  },
-  {
-    theme: 'smoke',
-    image: smokeImg,
-    video: smokeVideo,
-  },
+export const desktopBackgrounds = [
   {
     theme: 'sunset',
     image: sunsetImg,
@@ -31,10 +26,46 @@ const backgrounds = [
     video: oceanVideo,
   },
   {
-    theme: 'tech',
-    image: techImg,
-    video: techVideo,
+    theme: 'space',
+    image: spaceImg,
+    video: spaceVideo,
+  },
+  {
+    theme: 'sky',
+    image: skyImg,
+    video: skyVideo,
+  },
+  {
+    theme: 'forest',
+    image: forestImg,
+    video: forestVideo,
   },
 ];
 
-export default backgrounds;
+export const mobileBackgrounds = [
+  {
+    theme: 'sunset',
+    image: sunsetImg,
+    video: sunsetVideoPortrait,
+  },
+  {
+    theme: 'ocean',
+    image: oceanImg,
+    video: oceanVideoPortrait,
+  },
+  {
+    theme: 'space',
+    image: spaceImg,
+    video: spaceVideoPortrait,
+  },
+  {
+    theme: 'sky',
+    image: skyImg,
+    video: skyVideoPortrait,
+  },
+  {
+    theme: 'forest',
+    image: forestImg,
+    video: forestVideoPortrait,
+  },
+];

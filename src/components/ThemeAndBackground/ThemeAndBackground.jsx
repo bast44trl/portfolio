@@ -1,23 +1,51 @@
-import React, { useState, useContext } from 'react';
+import React, { useState, useEffect, useContext } from 'react';
 
 import Context from '../../Context';
-import backgrounds from './ThemeAndBackgroundsData';
+import {
+  desktopBackgrounds,
+  mobileBackgrounds,
+} from './ThemeAndBackgroundsData';
+import useWindowSize from '../../Hooks/useWindowSize';
 
 const ThemeAndBackground = () => {
   const { french } = useContext(Context);
-  const [backgroundVideo, setBackgroundVideo] = useState(backgrounds[1].video);
+  const [currentBackground, setCurrentBackground] = useState({});
+  const [backgrounds, setBackgrounds] = useState([]);
+  const size = useWindowSize();
 
   const handleBg = (e) => {
     const selectedBackground = backgrounds.find((bg) => e === bg.theme);
-    setBackgroundVideo(selectedBackground.video);
+    setCurrentBackground(selectedBackground);
   };
+
+  useEffect(() => {
+    setCurrentBackground(
+      size.width < size.height
+        ? { ...mobileBackgrounds[0] }
+        : { ...desktopBackgrounds[0] }
+    );
+  }, []);
+
+  useEffect(() => {
+    setBackgrounds(
+      size.width < size.height ? mobileBackgrounds : desktopBackgrounds
+    );
+  }, [size]);
+
+  useEffect(() => {
+    const selectedBackground = backgrounds.find(
+      (bg) => bg.theme === currentBackground.theme
+    );
+    !!selectedBackground && setCurrentBackground(selectedBackground);
+  }, [backgrounds]);
+  console.log(currentBackground);
   return (
     <>
       <div className="theme-container">
         <p>{french ? 'Choissisez votre ambiance' : 'Select your ambiance'}</p>
         <div className="bg-buttons">
-          {backgrounds.map((bg, idx) => {
-            if (bg.video !== backgroundVideo) {
+          {desktopBackgrounds.map((bg, idx) => {
+            if (bg.theme !== currentBackground.theme) {
               return (
                 <div
                   key={idx}
@@ -37,7 +65,7 @@ const ThemeAndBackground = () => {
           autoPlay
           loop
           muted
-          src={backgroundVideo}
+          src={currentBackground.video}
           type="video/mp4"
         />
       </div>
