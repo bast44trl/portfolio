@@ -7,7 +7,10 @@ import MyTech from './components/MyTech/MyTech';
 import AboutMe from './components/AboutMe/AboutMe';
 import MyProjects from './components/MyProjects/MyProjects.container';
 import { ContextProvider } from './Context';
-import ThemeAndBackground from './components/ThemeAndBackground/ThemeAndBackground';
+import {
+  Background,
+  BackgroundsContainerDesktop,
+} from './components/ThemeAndBackground/ThemeAndBackground';
 import Update from './components/Update/Update';
 
 function App() {
@@ -15,7 +18,8 @@ function App() {
     <ContextProvider>
       <div className="App">
         <Header />
-        <ThemeAndBackground />
+        <BackgroundsContainerDesktop />
+        <Background />
         <Update />
         <Routes>
           <Route path="*" element={<LandingScreen />} />
