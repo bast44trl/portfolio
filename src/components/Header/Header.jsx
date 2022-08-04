@@ -1,13 +1,16 @@
+import { useContext } from 'react';
 import { NavLink } from 'react-router-dom';
+
 import frenchImg from '../../assets/theme&backgrounds/frenchImg.png';
 import englishImg from '../../assets/theme&backgrounds/englishImg.png';
-import { useContext } from 'react';
 import Context from '../../Context';
+import BurgerMenu from './BurgerMenu';
 
 const Header = () => {
   const { french, setFrench } = useContext(Context);
   return (
     <div className="header">
+      <BurgerMenu />
       <ul className="menu">
         <li>
           <NavLink

@@ -67,6 +67,12 @@
 
 @media all and (max-width: 480px) { }
 
+@media all and (max-width: 1370px) {
+  .menu * {
+    display: none;
+  }
+ }
+
 
 /* Portrait */
 @media screen and (orientation:portrait) { 

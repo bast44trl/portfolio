@@ -1,6 +1,17 @@
 $text-shadow: 0.2vw 0.2vw 0.5vw black;
 $timeFromLeft: 2;
 
+// ====== burger menu variables ========== //
+$burgerSize: 20vmin; // default : 7rem
+$burgerPosition: 5vmin; // default : 6rem (burgerSize -1)
+$burgerBackgroundSize: 8vmin; // default : 6rem (burgerSize -1)
+$burgerBackgroundPos: 12vmin; // default : 6.5rem (burgerSize -0.5)
+$color-secondary-grey: #eee9f4;
+$color-primary-blue: #afd0ed;
+$color-primary-dark: #36393B;
+$color-white: #fff;
+$color-black: #000;
+
 @mixin text-main () {
   color: white;
   font-family: "Gochi Hand", cursive;

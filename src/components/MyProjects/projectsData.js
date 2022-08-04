@@ -3,6 +3,10 @@ import dobby from '../../assets/projets/dobby.jpg';
 import llm from '../../assets/projets/svg/llm.svg';
 
 import logoExpress from '../../assets/logo/svg/express.svg';
+import logoHtml5 from '../../assets/logo/svg/html5.svg';
+import logoCss3 from '../../assets/logo/svg/css3.svg';
+import logoJavascript from '../../assets/logo/svg/javascript.svg';
+import logoTypescript from '../../assets/logo/svg/typescript.svg';
 import logoFigma from '../../assets/logo/svg/figma.svg';
 import logoGit from '../../assets/logo/svg/github.svg';
 import logoNode from '../../assets/logo/svg/nodejs.svg';
@@ -18,7 +22,7 @@ export const projects = [
     link: 'https://bast44trl.github.io/laBelleMiche/',
     title: 'La Belle Miche',
     image: lbm,
-    techs: [logoReact, logoGit, logoVsCode],
+    techs: [logoHtml5, logoCss3, logoJavascript, logoGit, logoVsCode],
     presentation: {
       team: 4,
       durationFR: '4 semaines',
@@ -35,7 +39,7 @@ export const projects = [
     link: 'https://bast44trl.github.io/DobbyAndFriends/#/',
     title: 'Dobby And Friends',
     image: dobby,
-    techs: [logoReact, logoFigma, logoGit, logoVsCode],
+    techs: [logoReact, logoCss3, logoFigma, logoGit, logoVsCode],
     presentation: {
       team: 4,
       durationFR: '5 semaines',
