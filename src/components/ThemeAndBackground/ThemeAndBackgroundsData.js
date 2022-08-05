@@ -16,6 +16,11 @@ import spaceVideoPortrait from '../../assets/theme&backgrounds/portrait/space.mp
 
 export const desktopBackgrounds = [
   {
+    theme: 'sky',
+    image: skyImg,
+    video: skyVideo,
+  },
+  {
     theme: 'sunset',
     image: sunsetImg,
     video: sunsetVideo,
@@ -31,11 +36,6 @@ export const desktopBackgrounds = [
     video: spaceVideo,
   },
   {
-    theme: 'sky',
-    image: skyImg,
-    video: skyVideo,
-  },
-  {
     theme: 'forest',
     image: forestImg,
     video: forestVideo,
@@ -43,6 +43,11 @@ export const desktopBackgrounds = [
 ];
 
 export const mobileBackgrounds = [
+  {
+    theme: 'sky',
+    image: skyImg,
+    video: skyVideoPortrait,
+  },
   {
     theme: 'sunset',
     image: sunsetImg,
@@ -57,11 +62,6 @@ export const mobileBackgrounds = [
     theme: 'space',
     image: spaceImg,
     video: spaceVideoPortrait,
-  },
-  {
-    theme: 'sky',
-    image: skyImg,
-    video: skyVideoPortrait,
   },
   {
     theme: 'forest',

@@ -5,6 +5,8 @@ import {
   desktopBackgrounds,
   mobileBackgrounds,
 } from './ThemeAndBackgroundsData';
+import load from '../../assets/theme&backgrounds/load.jpg';
+import matrice from '../../assets/theme&backgrounds/matrice.mp4';
 
 export const BackgroundsContainerDesktop = () => {
   const {
@@ -18,11 +20,14 @@ export const BackgroundsContainerDesktop = () => {
 
   const handleBg = (e) => {
     const selectedBackground = backgrounds.find((bg) => e === bg.theme);
-    setCurrentBackground(selectedBackground);
+    setTimeout(() => {
+      setCurrentBackground(selectedBackground);
+    }, 1000);
     setChecked(false);
+    setCurrentBackground({ video: matrice });
   };
 
-  if (size.width > 1370) {
+  if (size.width > 1320) {
     return (
       <div className="theme-container">
         <p>{french ? 'Choissisez votre ambiance' : 'Select your ambiance'}</p>
