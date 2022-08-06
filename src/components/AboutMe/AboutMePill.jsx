@@ -1,5 +1,6 @@
-const AboutMePill = (props) => {
-  const { type, length, details } = props;
+import React from 'react';
+
+const AboutMePill = ({ type, length, details }) => {
   return (
     <div className="section">
       <div className="section-title">

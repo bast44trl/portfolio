@@ -32,15 +32,15 @@
       }
     & .french-tech-title {
       width: 12.3em;
-      animation: typing 1s steps(29) 0.5s forwards,
+      animation: typing .8s steps(29) .2s forwards,
         blink 0.5s step-end 1.5s infinite alternate, invisible-title 0.5s,
-        opacity-appear 0.5s forwards 0.5s;
+        opacity-appear 0.5s forwards .2s;
     }
     & .english-tech-title {
       width: 35vw;
-      animation: typing 1s steps(23) 0.5s forwards,
+      animation: typing .8s steps(23) .2s forwards,
         blink 0.5s step-end 1.5s infinite alternate, invisible-title 0.5s,
-        opacity-appear 0.5s forwards 0.5s;
+        opacity-appear 0.5s forwards .2s;
     }
     .all-tech-container {
       width: 50%;
@@ -51,48 +51,48 @@
       justify-content: center;
       align-items: center;
       opacity: 0;
-      animation: opacity-appear 1s forwards 1.5s;
+      animation: opacity-appear .5s forwards;
       & .tech-container:nth-child(1) {
-        animation: comeFromLeft 1s forwards, opacity-appear 2s forwards 1.5s;
+        animation: comeFromLeft 1s forwards, opacity-appear 2s forwards 1s;
       }
       & .tech-container:nth-child(2) {
+        animation: comeFromLeft 1s 1.1s forwards,
+          opacity-appear 2s forwards 1.1s;
+      }
+      & .tech-container:nth-child(3) {
+        animation: comeFromLeft 1s 1.2s forwards,
+          opacity-appear 2s forwards 1.2s;
+      }
+      & .tech-container:nth-child(4) {
+        animation: comeFromLeft 1s 1.3s forwards,
+          opacity-appear 2s forwards 1.3s;
+      }
+      & .tech-container:nth-child(5) {
+        animation: comeFromLeft 1s 1.4s forwards,
+          opacity-appear 2s forwards 1.4s;
+      }
+      & .tech-container:nth-child(6) {
+        animation: comeFromLeft 1s 1.4s forwards, opacity-appear 2s forwards 1.4s;
+      }
+      & .tech-container:nth-child(7) {
+        animation: comeFromLeft 1s 1.5s forwards,
+          opacity-appear 2s forwards 1.5s;
+      }
+      & .tech-container:nth-child(8) {
         animation: comeFromLeft 1s 1.6s forwards,
           opacity-appear 2s forwards 1.6s;
       }
-      & .tech-container:nth-child(3) {
+      & .tech-container:nth-child(9) {
         animation: comeFromLeft 1s 1.7s forwards,
           opacity-appear 2s forwards 1.7s;
       }
-      & .tech-container:nth-child(4) {
+      & .tech-container:nth-child(10) {
         animation: comeFromLeft 1s 1.8s forwards,
           opacity-appear 2s forwards 1.8s;
       }
-      & .tech-container:nth-child(5) {
+      & .tech-container:nth-child(11) {
         animation: comeFromLeft 1s 1.9s forwards,
           opacity-appear 2s forwards 1.9s;
-      }
-      & .tech-container:nth-child(6) {
-        animation: comeFromLeft 1s 2s forwards, opacity-appear 2s forwards 2s;
-      }
-      & .tech-container:nth-child(7) {
-        animation: comeFromLeft 1s 2.1s forwards,
-          opacity-appear 2s forwards 2.1s;
-      }
-      & .tech-container:nth-child(8) {
-        animation: comeFromLeft 1s 2.2s forwards,
-          opacity-appear 2s forwards 2.2s;
-      }
-      & .tech-container:nth-child(9) {
-        animation: comeFromLeft 1s 2.3s forwards,
-          opacity-appear 2s forwards 2.3s;
-      }
-      & .tech-container:nth-child(10) {
-        animation: comeFromLeft 1s 2.4s forwards,
-          opacity-appear 2s forwards 2.4s;
-      }
-      & .tech-container:nth-child(11) {
-        animation: comeFromLeft 1s 2.5s forwards,
-          opacity-appear 2s forwards 2.5s;
       }
     }
   }
@@ -144,56 +144,50 @@
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 1320px) {
   .overlay {
-    width: 94%;
-    left: 3%;
-    right: 3%;
-    top: 3%;
-    bottom: 3%;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    left: 0;
+    top: 0;
     & .tech-content {
       flex-direction: column;
-      justify-content: space-around;
+      justify-content: flex-start;
       align-items: center;
       width: 100%;
+      margin-top: 35vmin;
       h1 {
-        font-size: 5.7vw;
-        height: 10vw;
-        width: 67vw;
-        margin-top: 10vw;
-        margin-bottom: 10vw;
-        display: flex;
-        align-items: center;
+        font-size: 7vmin;
+        height: 10vmin !important;
+        margin: 10vmin 0;
+        padding: 5vmin 0;
+        }
+      & .french-tech-title {
+        width: 87vmin;
+        animation: typing 1s steps(29) 0.5s forwards,
+          blink 0.5s step-end 1.5s infinite alternate, invisible-title 0.5s,
+          opacity-appear 0.5s forwards 0.5s;
+      }
+      & .english-tech-title {
+        width: 82vmin;
+        animation: typing 1s steps(23) 0.5s forwards,
+          blink 0.5s step-end 1.5s infinite alternate, invisible-title 0.5s,
+          opacity-appear 0.5s forwards 0.5s;
       }
       .all-tech-container {
-        width: fit-content;
-        height: 100%;
-        width: 100%;
-        margin-top: 5%;
-        display: flex;
+        width: 95%;
         flex-direction: row;
-        flex-wrap: wrap;
-        align-items: center;
-        overflow: auto;
+        height: auto !important;
       }
     }
   }
+}
 
-  @keyframes overlay-appear {
-    from {
-      opacity: 0;
-    }
-    to {
-      opacity: 1;
-      height: 94%;
-    }
-  }
-  @keyframes comeFromLeft {
-    from {
-      transform: translateY(200px);
-    }
-    to {
-      transform: translateY(0px);
-    }
+@media screen and (max-width: 1370px) and (orientation: landscape) {
+  .tech-content {
+    margin-top: 20vmin !important;
   }
 }

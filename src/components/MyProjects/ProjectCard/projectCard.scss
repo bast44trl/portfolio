@@ -72,7 +72,7 @@ a {
           align-items: center;
           padding: 0 0 10px 0;
           & img {
-            height: 11vmin;
+            max-height: 8vmin;
             padding: 5px;
           }
           & img:nth-child(1) {
@@ -185,7 +185,7 @@ a {
         }
       }
       p {
-        line-height: 0.9em !important;
+        line-height: 1em !important;
         font-size: 60% !important;
       }
       .project-button {

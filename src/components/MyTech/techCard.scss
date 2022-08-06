@@ -18,6 +18,11 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    text-decoration: none;
+    &:visited .logo-card-infos p {
+      text-decoration: none;
+      color: #000;
+    }
     & img {
       display: block;
       width: 7vw;
@@ -29,8 +34,9 @@
     & .logo-card-infos {
       width: 90%;
       display: flex;
-      justify-content: center;
-      align-items: flex-start;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
       opacity: 0;
       height: 0;
       overflow: hidden;
@@ -41,24 +47,16 @@
         color: black;
         font-weight: 600;
         font-size: 1.1rem;
-        position: absolute;
-        top: 10%;
         height: 15%;
-        max-height: 15%;
         padding: 2px;
       }
       & p {
         color: black;
-        position: absolute;
-        top: 20%;
         display: flex;
         align-items: center;
-        width: 95%;
-        height: 80%;
         font-size: 0.9rem;
         text-overflow: auto;
         text-align: center;
-        -webkit-text-stroke-width: thin;
       }
     }
   }
@@ -69,7 +67,7 @@
       opacity: 1;
       height: 96%;
       transform: rotateX(0deg);
-      transition: opacity 0.6s ease-in, transform 0.6s, height 0.6s;
+      transition: all 0.6s;
     }
     & img {
       /* animation: moveUpDisappear 0.8s forwards; */
@@ -77,7 +75,7 @@
       height: 0;
       transform: rotateX(90deg);
       overflow: hidden;
-      transition: opacity 0.6s ease-in, transform 0.6s, height 0.6s;
+      transition: all 0.6s;
     }
   }
 }
@@ -100,28 +98,54 @@
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 1370px) {
   .tech-container {
-    width: 25vw;
-    height: 27vw;
+    width: 21vmin;
+    height: 22vmin;
     & a {
       & img {
-        width: 15vw;
+        width: 60%;
+        height: 60%;
+      }
+    }
+    & .logo-card-infos {
+      h4 {
+        font-size: 60% !important;
+      }
+      p {
+        font-size: 40% !important;
+        line-height: 0.9em !important;
       }
     }
   }
 }
-
-/* @media screen and (min-width: 1440px) {
+@media screen and (max-width: 1370px) and (orientation: portrait) {
   .tech-container {
-    width: 12vw;
+    & .logo-card-infos {
+        justify-content: space-evenly !important;
+        h4 {
+          font-size: 80% !important;
+          margin-top: -15%;
+        }
+        p {
+          margin-bottom: -15%;
+        }
+    }
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .tech-container {
+    width: 30%;
+    height: 25%;
     & a {
       & img {
-        width: 9vw;
+        width: 60%;
+        height: 60%;
       }
     }
   }
-} */
+}
 
 @media screen and (min-width: 2000px) {
   .tech-container {

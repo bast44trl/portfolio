@@ -11,7 +11,6 @@ import {
   Background,
   BackgroundsContainerDesktop,
 } from './components/ThemeAndBackground/ThemeAndBackground';
-import Update from './components/Update/Update';
 
 function App() {
   return (
@@ -20,7 +19,6 @@ function App() {
         <Header />
         <BackgroundsContainerDesktop />
         <Background />
-        <Update />
         <Routes>
           <Route path="*" element={<LandingScreen />} />
           <Route path="/mytech" element={<MyTech />} />

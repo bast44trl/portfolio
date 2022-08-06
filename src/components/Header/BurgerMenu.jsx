@@ -72,13 +72,19 @@ const BurgerMenu = () => {
           <li className="navigation__item">
             <div className="navigation__flags-container">
               <div
-                onClick={() => setFrench(true)}
+                onClick={() => {
+                  setFrench(true);
+                  handleCheck();
+                }}
                 className="navigation__flags-container__french"
               >
                 <img src={frenchImg} alt="french" />
               </div>
               <div
-                onClick={() => setFrench(false)}
+                onClick={() => {
+                  setFrench(false);
+                  handleCheck();
+                }}
                 className="navigation__flags-container__english"
               >
                 <img src={englishImg} alt="english" />

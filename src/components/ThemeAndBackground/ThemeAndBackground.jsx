@@ -5,8 +5,7 @@ import {
   desktopBackgrounds,
   mobileBackgrounds,
 } from './ThemeAndBackgroundsData';
-import load from '../../assets/theme&backgrounds/load.jpg';
-import matrice from '../../assets/theme&backgrounds/matrice.mp4';
+import matrixVideo from '../../assets/theme&backgrounds/matrix.mp4';
 
 export const BackgroundsContainerDesktop = () => {
   const {
@@ -22,9 +21,12 @@ export const BackgroundsContainerDesktop = () => {
     const selectedBackground = backgrounds.find((bg) => e === bg.theme);
     setTimeout(() => {
       setCurrentBackground(selectedBackground);
-    }, 1000);
+    }, 1200);
     setChecked(false);
-    setCurrentBackground({ video: matrice });
+    setCurrentBackground({
+      video: matrixVideo,
+      theme: 'matrix',
+    });
   };
 
   if (size.width > 1320) {
@@ -32,19 +34,23 @@ export const BackgroundsContainerDesktop = () => {
       <div className="theme-container">
         <p>{french ? 'Choissisez votre ambiance' : 'Select your ambiance'}</p>
         <div className="bg-buttons">
-          {desktopBackgrounds.map((bg, idx) => {
-            if (bg.theme !== currentBackground.theme) {
-              return (
-                <div
-                  key={idx}
-                  className={`bg-${bg.theme}`}
-                  onClick={(e) => handleBg(e.target.alt)}
-                >
-                  <img src={bg.image} alt={bg.theme} />
-                </div>
-              );
-            }
-          })}
+          {desktopBackgrounds
+            .filter((background) =>
+              currentBackground.theme === 'matrix' ? '' : background
+            )
+            .map((bg, idx) => {
+              if (bg.theme !== currentBackground.theme) {
+                return (
+                  <div
+                    key={idx}
+                    className={`bg-${bg.theme}`}
+                    onClick={(e) => handleBg(e.target.alt)}
+                  >
+                    <img src={bg.image} alt={bg.theme} />
+                  </div>
+                );
+              }
+            })}
         </div>
       </div>
     );

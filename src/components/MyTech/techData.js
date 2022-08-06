@@ -15,7 +15,7 @@ export const logos = [
     techTextFrench:
       "React.js est une bibliothèque JavaScript dont le but principal est de faciliter la création d'application web monopage, via la création de composants.",
     techTextEnglish:
-      'React (also known as React.js or ReactJS) is a free and open-source front-end JavaScript library[3] for building user interfaces based on UI components.',
+      'React (also known as React.js or ReactJS) is a free and open-source front-end JavaScript library for building user interfaces based on UI components.',
     techName: 'ReactJS',
     logo: logoReact,
     link: 'https://reactjs.org/',

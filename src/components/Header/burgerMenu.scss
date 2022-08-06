@@ -124,13 +124,13 @@
 
   &__icon {
     position: relative;
-    margin-top: 9.2vmin; // default 3.5rem
+    margin-top: 7.2vmin; // default 3.5rem
 
     &,
     &::before,
     &::after {
-        width: 12vmin; // default 3rem
-        height: 3px;
+        width: 9vmin; // default 3rem
+        height: 2px; // default 3px
         background-color: $color-primary-dark;
         display: inline-block;
     }
@@ -143,8 +143,8 @@
         transition: all .2s;
     }
 
-    &::before { top: -.8rem; }
-    &::after { top: .8rem; }
+    &::before { top: .5rem; }
+    &::after { top: -.5rem; }
   }
 
   &__button:hover &__icon::before {
