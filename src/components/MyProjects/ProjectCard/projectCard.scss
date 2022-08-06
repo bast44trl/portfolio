@@ -60,18 +60,20 @@ a {
         align-items: center;
         & h2 {
           @include text-main;
-          font-size: 1.5;
+          font-size: 1.5em;
           height: 20%;
         }
         & .stats-tech {
-          height: 17%;
-          width: 100%;
+          max-height: 40%;
+          width: 95%;
           display: flex;
+          flex-wrap: wrap;
           justify-content: space-evenly;
           align-items: center;
           padding: 0 0 10px 0;
           & img {
-            height: 100%;
+            height: 11vmin;
+            padding: 5px;
           }
           & img:nth-child(1) {
           animation: iconMoving 0.3s 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) infinite alternate;
@@ -90,6 +92,18 @@ a {
           }
           & img:nth-child(6) {
           animation: iconMoving 0.3s 0s cubic-bezier(0.390, 0.575, 0.565, 1.000) infinite alternate;
+          }
+          & img:nth-child(7) {
+          animation: iconMoving 0.3s 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) infinite alternate;
+          }
+          & img:nth-child(8) {
+          animation: iconMoving 0.3s 0.5s cubic-bezier(0.390, 0.575, 0.565, 1.000) infinite alternate;
+          }
+          & img:nth-child(9) {
+          animation: iconMoving 0.3s 0s cubic-bezier(0.390, 0.575, 0.565, 1.000) infinite alternate;
+          }
+          & img:nth-child(10) {
+          animation: iconMoving 0.3s 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) infinite alternate;
           }
         }
         & .card-back-stats {
@@ -124,6 +138,9 @@ a {
           text-shadow: 1px 1px 1px black;
           line-height: 1.1em;
         }
+        & .project-button {
+          display: none;
+        }
       }
     }
   }
@@ -132,5 +149,64 @@ a {
 @keyframes iconMoving {
   100%{
     transform: translateY(-7px);
+  }
+}
+
+@media screen and (max-width: 1320px) {
+  .project-card {
+    .project-card-back {
+      h2 {
+        font-size: 25%;
+        height: 20%;
+      }
+      .stats-tech {
+        max-height: none !important;
+        img {
+          height: 8vmin !important;
+        }
+      }
+      .card-back-stats {
+        width: 100%;
+        height: 20% !important;
+        margin-bottom: 5%;
+        div {
+          margin: 0 5% !important;
+          padding: 0 1%;
+          width: 30% !important;
+          height: 100% !important;
+          img {
+            width: 50% !important;
+            height: 50% !important;
+            padding-bottom: 10% !important;
+          }
+          span {
+            font-size: 40%;
+          }
+        }
+      }
+      p {
+        line-height: 0.9em !important;
+        font-size: 60% !important;
+      }
+      .project-button {
+        display: inline-block !important;
+        height: min-content;
+        width: auto;
+        padding: 2% 8%;
+        margin-top: 7%;
+        margin-bottom: 4%;
+        color: #000;
+        font-size: 70%;
+        box-shadow: 1px 1px 1px #000;
+        border-radius: 15px;
+        border: #fff solid 1px;
+        text-decoration: none;
+        background: linear-gradient(
+          135deg,
+          rgb(255, 255, 255),
+          rgb(230, 230, 230)
+        );;
+      }
+    }
   }
 }
