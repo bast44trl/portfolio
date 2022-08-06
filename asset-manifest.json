@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.7058819b.chunk.css",
-    "main.js": "/portfolio/static/js/main.8ade34d6.chunk.js",
-    "main.js.map": "/portfolio/static/js/main.8ade34d6.chunk.js.map",
+    "main.css": "/portfolio/static/css/main.442554ca.chunk.css",
+    "main.js": "/portfolio/static/js/main.f819fc54.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.f819fc54.chunk.js.map",
     "runtime-main.js": "/portfolio/static/js/runtime-main.ac62f40c.js",
     "runtime-main.js.map": "/portfolio/static/js/runtime-main.ac62f40c.js.map",
     "static/js/2.a84720e6.chunk.js": "/portfolio/static/js/2.a84720e6.chunk.js",
     "static/js/2.a84720e6.chunk.js.map": "/portfolio/static/js/2.a84720e6.chunk.js.map",
     "index.html": "/portfolio/index.html",
-    "static/css/main.7058819b.chunk.css.map": "/portfolio/static/css/main.7058819b.chunk.css.map",
+    "static/css/main.442554ca.chunk.css.map": "/portfolio/static/css/main.442554ca.chunk.css.map",
     "static/js/2.a84720e6.chunk.js.LICENSE.txt": "/portfolio/static/js/2.a84720e6.chunk.js.LICENSE.txt",
     "static/media/css3.4e47c312.svg": "/portfolio/static/media/css3.4e47c312.svg",
     "static/media/dobby.8b5ddcd9.jpg": "/portfolio/static/media/dobby.8b5ddcd9.jpg",
@@ -27,6 +27,7 @@
     "static/media/linkedin.32e20978.svg": "/portfolio/static/media/linkedin.32e20978.svg",
     "static/media/llm.f1749d80.svg": "/portfolio/static/media/llm.f1749d80.svg",
     "static/media/load.45155202.jpg": "/portfolio/static/media/load.45155202.jpg",
+    "static/media/logoMonCarnet.275fc3ec.svg": "/portfolio/static/media/logoMonCarnet.275fc3ec.svg",
     "static/media/matrice.3587a552.mp4": "/portfolio/static/media/matrice.3587a552.mp4",
     "static/media/mysql.6d88cbd9.svg": "/portfolio/static/media/mysql.6d88cbd9.svg",
     "static/media/nodejs.52cbf9a8.svg": "/portfolio/static/media/nodejs.52cbf9a8.svg",
@@ -34,6 +35,7 @@
     "static/media/oceanImg.9b44d4d3.png": "/portfolio/static/media/oceanImg.9b44d4d3.png",
     "static/media/oceanVideo.a27e44e1.mp4": "/portfolio/static/media/oceanVideo.a27e44e1.mp4",
     "static/media/postman.e65afafe.svg": "/portfolio/static/media/postman.e65afafe.svg",
+    "static/media/prisma.671d8645.svg": "/portfolio/static/media/prisma.671d8645.svg",
     "static/media/react.e68b35f4.svg": "/portfolio/static/media/react.e68b35f4.svg",
     "static/media/sass.8aa78a83.svg": "/portfolio/static/media/sass.8aa78a83.svg",
     "static/media/sky.497580a1.mp4": "/portfolio/static/media/sky.497580a1.mp4",
@@ -52,7 +54,7 @@
   "entrypoints": [
     "static/js/runtime-main.ac62f40c.js",
     "static/js/2.a84720e6.chunk.js",
-    "static/css/main.7058819b.chunk.css",
-    "static/js/main.8ade34d6.chunk.js"
+    "static/css/main.442554ca.chunk.css",
+    "static/js/main.f819fc54.chunk.js"
   ]
 }
