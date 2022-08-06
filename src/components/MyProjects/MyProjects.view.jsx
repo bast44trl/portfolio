@@ -1,5 +1,5 @@
 import React from 'react';
-import ProjectCard from './ProjectCard';
+import ProjectCard from './ProjectCard/ProjectCard';
 
 const MyProjectsView = ({
   lastProjectIndex,
@@ -16,23 +16,33 @@ const MyProjectsView = ({
   projectGoesLeft,
   projectGoesRight,
 }) => {
+  const leftCardProject = projectNb === 0 ? lastProject : previousProject;
+  const rightCardProject =
+    projectNb === lastProjectIndex ? firstProject : nextProject;
+
   return (
     <div className="my-projects">
       <div className="big-project-container">
         {/* card on the left side */}
         <div
-          className={`project-left ${
+          className={`${leftCardProject.className} project-left ${
             projectGoesLeft ? 'project-goes-left' : ''
           }`}
           onClick={() => projectMoveLeft()}
         >
           <ProjectCard
-            image={projectNb === 0 ? lastProject.image : previousProject.image}
-            title={projectNb === 0 ? lastProject.title : previousProject.title}
+            image={leftCardProject.image}
+            title={leftCardProject.title}
           />
         </div>
         {/* big card in the middle */}
-        <div className={slowAppear ? 'big-project slow-appear' : 'big-project'}>
+        <div
+          className={
+            slowAppear
+              ? `big-project slow-appear big-project-responsive ${currentProject.className}`
+              : `big-project big-project-responsive ${currentProject.className}`
+          }
+        >
           <ProjectCard
             image={currentProject.image}
             title={currentProject.title}
@@ -58,22 +68,14 @@ const MyProjectsView = ({
         </div>
         {/* card on the right side */}
         <div
-          className={`project-right ${
+          className={`${rightCardProject.className} project-right ${
             projectGoesRight ? 'project-goes-right' : ''
           }`}
           onClick={() => projectMoveRight()}
         >
           <ProjectCard
-            image={
-              projectNb === lastProjectIndex
-                ? firstProject.image
-                : nextProject.image
-            }
-            title={
-              projectNb === lastProjectIndex
-                ? firstProject.title
-                : nextProject.title
-            }
+            image={rightCardProject.image}
+            title={rightCardProject.title}
           />
         </div>
       </div>

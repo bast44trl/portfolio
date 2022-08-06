@@ -1,6 +1,7 @@
 import lbm from '../../assets/projets/svg/lbm.svg';
 import dobby from '../../assets/projets/dobby.jpg';
 import llm from '../../assets/projets/svg/llm.svg';
+import monCarnet from '../../assets/projets/svg/logoMonCarnet.svg';
 
 import logoExpress from '../../assets/logo/svg/express.svg';
 import logoHtml5 from '../../assets/logo/svg/html5.svg';
@@ -16,6 +17,7 @@ import logoSql from '../../assets/logo/svg/mysql.svg';
 import logoVsCode from '../../assets/logo/svg/vs-code.svg';
 import logoSass from '../../assets/logo/svg/sass.svg';
 import logoTailwind from '../../assets/logo/svg/tailwind.svg';
+import logoPrisma from '../../assets/logo/svg/prisma.svg';
 
 export const projects = [
   {
@@ -33,6 +35,32 @@ export const projects = [
         "Le premier projet, quelques jours après mon entrée en formation à la Wild Code School, réalisé avec un brin d'humour, nous ayant surtout permit de prendre en main des outils tels que Git et GitHub, ainsi que l'utilisation de Flex et Grid en CSS",
       textEN:
         'My very first project, just few days after I started my training at Wild Code School. Realised with a tiny bit of humor, it allowed us to get used to Git and GitHub, but also made us use Flex and Grid on CSS',
+    },
+  },
+  {
+    link: 'https://github.com/bast44trl/moncarnet-frontend',
+    title: 'Mon Carnet',
+    className: 'moncarnet',
+    image: monCarnet,
+    techs: [
+      logoTypescript,
+      logoReact,
+      logoTailwind,
+      logoSql,
+      logoPrisma,
+      logoPostman,
+      logoGit,
+      logoVsCode,
+    ],
+    presentation: {
+      team: 3,
+      durationFR: '8 semaines',
+      durationEN: '8 weeks',
+      datesFR: 'Déc - Jan 2022',
+      datesEN: 'Dec - Jan 2022',
+      textFR: 'Le 3ème projet de la formation, ',
+      textEN:
+        'Third training project, made with imposed tech such as Prisma or TailWind',
     },
   },
   {

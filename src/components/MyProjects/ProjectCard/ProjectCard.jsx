@@ -1,9 +1,9 @@
 import React, { useContext } from 'react';
 
-import Context from '../../Context';
-import team from '../../assets/stats/team.png';
-import duration from '../../assets/stats/duration.png';
-import calendar from '../../assets/stats/calendar.png';
+import Context from '../../../Context';
+import team from '../../../assets/stats/team.png';
+import duration from '../../../assets/stats/duration.png';
+import calendar from '../../../assets/stats/calendar.png';
 
 const ProjectCard = (props) => {
   const {
@@ -16,10 +16,18 @@ const ProjectCard = (props) => {
     presentationTeam,
     link,
   } = props;
-  const { french } = useContext(Context);
-
+  const { french, size } = useContext(Context);
+  function handleResponsiveFlip(e) {
+    e.target.className !== 'project-button' && e.preventDefault();
+  }
   return (
-    <a href={link} target={'blank'}>
+    <a
+      href={link}
+      target={'blank'}
+      defaultValue="card"
+      value="card"
+      onClick={size.width < 1320 ? (e) => handleResponsiveFlip(e) : undefined}
+    >
       <div className="rotation">
         <div className="project-card">
           <div className="project-card-inner">
@@ -54,6 +62,13 @@ const ProjectCard = (props) => {
                 </div>
               </div>
               <p>{presentationText}</p>
+              <button
+                defaultValue="button"
+                onClick={(e) => handleResponsiveFlip(e)}
+                className="project-button"
+              >
+                {french ? 'Allez voir' : 'Have a look'}
+              </button>
             </div>
           </div>
         </div>

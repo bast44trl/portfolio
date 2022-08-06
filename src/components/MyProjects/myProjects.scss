@@ -94,6 +94,15 @@
   }
 }
 
+.moncarnet .project-card-img {
+    border-radius: 0px !important;
+    margin-bottom: -20% !important;
+    img {
+      height: 95% !important;
+      width: 95% !important;
+    }
+}
+
 .slow-appear {
   animation: project-appear 0.5s forwards;
 }
@@ -103,17 +112,17 @@
 }
 @keyframes projectGoesRight {
   25% {
-    transform: translate(-70px, -60px) rotate(-60deg);
+    transform: translate(-40%, -24%) rotate(-60deg);
   }
   50% {
-    transform: translate(-200px, -100px) rotate(-160deg);
+    transform: translate(-100%, -40%) rotate(-160deg);
   }
   75% {
-    transform: translate(-350px, -60px) rotate(-260deg);
+    transform: translate(-170%, -24%) rotate(-260deg);
   }
   to {
     opacity: 0;
-    transform: translate(-500px, 0px) rotate(-360deg);
+    transform: translate(-250%, 0px) rotate(-360deg);
   }
 }
 .project-goes-left {
@@ -121,17 +130,17 @@
 }
 @keyframes projectGoesLeft {
   25% {
-    transform: translate(70px, -60px) rotate(60deg);
+    transform: translate(40%, -24%) rotate(60deg);
   }
   50% {
-    transform: translate(200px, -100px) rotate(160deg);
+    transform: translate(100%, -40%) rotate(160deg);
   }
   75% {
-    transform: translate(350px, -60px) rotate(260deg);
+    transform: translate(170%, -24%) rotate(260deg);
   }
   to {
     opacity: 0;
-    transform: translate(500px, 0px) rotate(360deg);
+    transform: translate(250%, 0px) rotate(360deg);
   }
 }
 
@@ -150,5 +159,63 @@
   }
   to {
     opacity: 1;
+  }
+}
+
+
+/* Portrait */
+@media screen and (max-width: 1320px) and (orientation:portrait) { 
+  .my-projects {
+    .big-project-container {
+      width: 95%;
+      height: 70%;
+      margin-top: 30%;
+      flex-wrap: wrap;
+      .big-project {
+        order: -1;
+        min-width: 60%;
+        max-width: 96%;
+        height: 48%;
+      }
+      .project-left, .project-right {
+        width: 48%;
+        height: 42%;
+        & .project-card {
+          opacity: 0.8;  
+          &:hover {
+            transform: scale(1);
+            box-shadow: none;
+            opacity: 0.8;
+          }
+        }
+      }
+    }
+  }
+  .project-goes-right, .project-goes-left {
+    animation: move-up-from-right 0.6s linear;
+  }
+  @keyframes move-up-from-right {
+    to {
+      opacity: 0;
+      transform: translate(-100px, -250px) rotate(360deg);
+    }
+  }
+  .project-goes-left {
+    animation: move-up-from-left 0.6s linear;
+  }
+  @keyframes move-up-from-left {
+    to {
+      opacity: 0;
+      transform: translate(100px, -250px) rotate(-360deg);
+    }
+  }
+ }
+
+/* Landscape */
+@media screen and (max-width: 1320px) and (orientation:landscape) { /* Landscape styles here */ }
+
+@media screen and (max-width: 1320px) {
+  .turn {
+    transform: rotateY(180deg);
   }
 }

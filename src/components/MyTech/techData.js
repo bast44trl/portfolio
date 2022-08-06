@@ -8,6 +8,7 @@ import logoSql from '../../assets/logo/svg/mysql.svg';
 import logoVsCode from '../../assets/logo/svg/vs-code.svg';
 import logoSass from '../../assets/logo/svg/sass.svg';
 import logoTailwind from '../../assets/logo/svg/tailwind.svg';
+import logoPrisma from '../../assets/logo/svg/prisma.svg';
 
 export const logos = [
   {
@@ -63,6 +64,15 @@ export const logos = [
     techName: 'MySql',
     logo: logoSql,
     link: 'https://www.mysql.com/',
+  },
+  {
+    techTextFrench:
+      'ORM nouvelle génération, Prisma écrit automatiquement les migrations et génère du code entièrement typé',
+    techTextEnglish:
+      'New generation ORM, Prisma uses a custom Schema Definition Language (SDL) that automatically writes migrations and generates type-safe code.',
+    techName: 'Prisma',
+    logo: logoPrisma,
+    link: 'https://www.prisma.io/',
   },
   {
     techTextFrench:
