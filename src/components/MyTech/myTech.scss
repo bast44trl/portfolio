@@ -188,6 +188,7 @@
 
 @media screen and (max-width: 1370px) and (orientation: landscape) {
   .tech-content {
-    margin-top: 20vmin !important;
+    margin-top: -10vmin !important;
+    height: 100% !important;
   }
 }

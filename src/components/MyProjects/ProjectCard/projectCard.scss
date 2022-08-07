@@ -135,8 +135,9 @@ a {
         & p {
           color: white;
           text-shadow: 1px 1px 1px black;
-          font-size: 150%;
-          line-height: 1.1em;
+          font-size: 100%;
+          line-height: 1em;
+          margin: 0 5%;
         }
         & .project-button {
           display: none;
@@ -192,7 +193,6 @@ a {
         }
       }
       p {
-        line-height: 1em !important;
         font-size: 60% !important;
       }
       .project-button {
@@ -251,7 +251,6 @@ a {
       }
       p {
         font-size: 90% !important;
-        line-height: 1em !important;
       }
       .project-button {
         display: inline-block !important;
