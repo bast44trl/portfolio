@@ -177,30 +177,36 @@
   }
 }
 
+/*/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+                                                    MEDIA QUERIES
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
 
 /* Portrait */
 @media screen and (max-width: 1370px) and (orientation:portrait) { 
   .my-projects {
     .big-project-container {
       width: 95%;
-      height: 70%;
-      margin-top: 30%;
       flex-wrap: wrap;
+      align-items: flex-end !important;
       .big-project {
         order: -1;
-        min-width: 60%;
+        min-width: 94%;
         max-width: 96%;
-        height: 48%;
+        height: 55%;
       }
       .project-left, .project-right {
-        width: 48%;
-        height: 42%;
+        width: 45%;
+        height: 35%;
+
         & .project-card {
-          opacity: 0.8;  
+          opacity: 1;  
           &:hover {
             transform: scale(1);
             box-shadow: none;
-            opacity: 0.8;
+            opacity: 1;
           }
         }
       }
@@ -228,13 +234,38 @@
 
 /* Landscape */
 @media screen and (max-width: 1370px) and (orientation:landscape) { 
+  .my-projects {
+    .big-project-container {
+      width: 95%;
+      flex-wrap: nowrap;
+      align-items: center !important;
+      margin-top: 0 !important;
+      .big-project {
+        min-width: 50%;
+        max-width: 70%;
+        height: 100%;
+      }
+      .project-left, .project-right {
+        width: 15%;
+        height: 45%;
+
+        & .project-card {
+          opacity: 1;
+          h2 {
+            font-size: 80% !important;
+            width: 80% !important;
+          }
+          &:hover {
+            transform: scale(1);
+            box-shadow: none;
+            opacity: 1;
+          }
+        }
+      }
+    }
+  }
+
   a .project-card h2 {
     font-size: 1.5em;
   }
  }
-
-@media screen and (max-width: 1320px) {
-  .turn {
-    transform: rotateY(180deg);
-  }
-}

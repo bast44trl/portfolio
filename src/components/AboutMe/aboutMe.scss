@@ -14,6 +14,7 @@
   justify-content: center;
   align-items: center;
   box-sizing: content-box;
+  background: fixed transparent;
 }
 
 .about-me-title {
@@ -49,8 +50,8 @@
     }
   }
   .sections {
-    width: 80%;
-    min-height: 40%;
+    width: 90%;
+    min-height: 60%;
     max-height: 100%;
     transform: translateY(5vmin);
     flex-direction: column;
