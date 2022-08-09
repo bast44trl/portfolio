@@ -103,6 +103,19 @@
     width: 21vmin;
     height: 22vmin;
     & a {
+      &:hover {
+        & .logo-card-infos {
+          opacity: 0;
+          height: 0;
+          transform: rotateX(-90deg);
+        }
+        & img {
+          transform: rotateX(0deg);
+          opacity: 1;
+          height: 60%;
+          width: 60%;
+        }
+      }
       & img {
         width: 60%;
         height: 60%;
@@ -121,6 +134,7 @@
 }
 @media screen and (max-width: 1370px) and (orientation: portrait) {
   .tech-container {
+    margin: 2% 1%;
     & .logo-card-infos {
         justify-content: space-evenly !important;
         h4 {
