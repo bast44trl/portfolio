@@ -47,25 +47,30 @@ export const mobileBackgrounds = [
     theme: 'sky',
     image: skyImg,
     video: skyVideoPortrait,
+    color: 'radial-gradient(#afd0ed, #fff)',
   },
   {
     theme: 'sunset',
     image: sunsetImg,
     video: sunsetVideoPortrait,
+    color: 'radial-gradient(#F99C59, #4A2A29)',
   },
   {
     theme: 'ocean',
     image: oceanImg,
     video: oceanVideoPortrait,
+    color: 'radial-gradient(#89A5A7, #A6B8BE)',
   },
   {
     theme: 'space',
     image: spaceImg,
     video: spaceVideoPortrait,
+    color: 'radial-gradient(#293B72, #0F132A)',
   },
   {
     theme: 'forest',
     image: forestImg,
     video: forestVideoPortrait,
+    color: 'radial-gradient(#536352, #384E5B)',
   },
 ];

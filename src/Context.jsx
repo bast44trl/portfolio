@@ -13,6 +13,9 @@ export const ContextProvider = ({ children }) => {
   const [checked, setChecked] = useState(false);
   const [currentBackground, setCurrentBackground] = useState({});
   const [backgrounds, setBackgrounds] = useState([]);
+  const [burgerMenuBackground, setBurgerMenuBackground] = useState(
+    'radial-gradient(#afd0ed, #fff)'
+  );
   const size = useWindowSize();
 
   function handleCheck() {
@@ -32,6 +35,8 @@ export const ContextProvider = ({ children }) => {
         backgrounds,
         setBackgrounds,
         size,
+        burgerMenuBackground,
+        setBurgerMenuBackground,
       }}
     >
       {children}

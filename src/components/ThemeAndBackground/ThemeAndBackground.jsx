@@ -58,12 +58,18 @@ export const BackgroundsContainerDesktop = () => {
 };
 
 export const BackgroundsContainerMobile = () => {
-  const { currentBackground, setCurrentBackground, backgrounds, setChecked } =
-    useContext(Context);
+  const {
+    currentBackground,
+    setCurrentBackground,
+    backgrounds,
+    setChecked,
+    setBurgerMenuBackground,
+  } = useContext(Context);
 
   const handleBg = (e) => {
     const selectedBackground = backgrounds.find((bg) => e === bg.theme);
     setCurrentBackground(selectedBackground);
+    setBurgerMenuBackground(selectedBackground.color);
     setChecked(false);
   };
 
@@ -120,8 +126,8 @@ export const Background = () => {
     <div className="full-screen">
       <video
         className="video"
-        autoPlay
         preload="auto"
+        autoPlay
         loop
         muted
         src={currentBackground.video}

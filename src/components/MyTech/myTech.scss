@@ -160,7 +160,7 @@
       width: 100%;
       margin-top: 30vh !important;
       h1 {
-        font-size: 7vmin;
+        font-size: 6vmin;
         height: 10vmin !important;
         margin: 5vmin 0;
         padding: 2vmin 0;
@@ -209,13 +209,13 @@
         padding: 2vmin 0;
         }
       & .french-tech-title {
-        width: 86vmin;
+        width: 100vmin;
         animation: typing 1s steps(29) 0.5s forwards,
           blink 0.5s step-end 1.5s infinite alternate, invisible-title 0.5s,
           opacity-appear 0.5s forwards 0.5s;
       }
       & .english-tech-title {
-        width: 81.5vmin;
+        width: 95.5vmin;
         animation: typing 1s steps(23) 0.5s forwards,
           blink 0.5s step-end 1.5s infinite alternate, invisible-title 0.5s,
           opacity-appear 0.5s forwards 0.5s;

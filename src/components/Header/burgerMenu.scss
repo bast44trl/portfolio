@@ -26,7 +26,7 @@
     position: fixed;
     top: $burgerBackgroundPos;
     right: $burgerBackgroundPos;
-    background-image: radial-gradient($color-primary-blue, $color-white);
+    // background-image: radial-gradient($color-primary-blue, $color-white);
     z-index: 1000;
     transition: transform 1s cubic-bezier(0.86, 0, 0.07, 1);
   }
@@ -45,7 +45,7 @@
 
     &__list {
     position: absolute;
-    top: 55%;
+    top: 50%;
     left: 50%;
     width: 100%;
     height: 70% !important;

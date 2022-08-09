@@ -7,7 +7,8 @@ import Context from '../../Context';
 import { BackgroundsContainerMobile } from '../ThemeAndBackground/ThemeAndBackground';
 
 const BurgerMenu = () => {
-  const { french, setFrench, checked, handleCheck } = useContext(Context);
+  const { french, setFrench, checked, handleCheck, burgerMenuBackground } =
+    useContext(Context);
 
   return (
     <div className="navigation">
@@ -22,7 +23,12 @@ const BurgerMenu = () => {
       <label htmlFor="navi-toggle" className="navigation__button">
         <span className="navigation__icon">&nbsp;</span>
       </label>
-      <div className="navigation__background">&nbsp;</div>
+      <div
+        className="navigation__background"
+        style={{ backgroundImage: burgerMenuBackground }}
+      >
+        &nbsp;
+      </div>
       <nav className="navigation__nav">
         <ul className="navigation__list">
           <li className="navigation__item">
