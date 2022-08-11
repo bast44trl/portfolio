@@ -2,7 +2,7 @@
 import lottieDev from './lottie-dev.json'; */
 import git from './../../assets/logo/svg/github.svg';
 import linkedin from './../../assets/logo/svg/linkedin.svg';
-import email from './../../assets/logo/email.png';
+import email from './../../assets/logo/email.webp';
 import { useContext } from 'react';
 import Context from '../../Context';
 

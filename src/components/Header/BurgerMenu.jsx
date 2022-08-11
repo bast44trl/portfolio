@@ -1,8 +1,8 @@
 import React, { useContext } from 'react';
 import { NavLink } from 'react-router-dom';
 
-import frenchImg from '../../assets/theme&backgrounds/frenchImg.png';
-import englishImg from '../../assets/theme&backgrounds/englishImg.png';
+import frenchImg from '../../assets/theme&backgrounds/frenchImg.webp';
+import englishImg from '../../assets/theme&backgrounds/englishImg.webp';
 import Context from '../../Context';
 import { BackgroundsContainerMobile } from '../ThemeAndBackground/ThemeAndBackground';
 

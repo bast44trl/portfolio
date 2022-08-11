@@ -15,12 +15,14 @@ export const BackgroundsContainerDesktop = () => {
     backgrounds,
     size,
     setChecked,
+    setBurgerMenuBackground,
   } = useContext(Context);
 
   const handleBg = (e) => {
     const selectedBackground = backgrounds.find((bg) => e === bg.theme);
     setTimeout(() => {
       setCurrentBackground(selectedBackground);
+      setBurgerMenuBackground(selectedBackground.color);
     }, 1200);
     setChecked(false);
     setCurrentBackground({

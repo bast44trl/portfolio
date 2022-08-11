@@ -1,5 +1,5 @@
 import lbm from '../../assets/projets/svg/lbm.svg';
-import dobby from '../../assets/projets/dobby.jpg';
+import dobby from '../../assets/projets/dobby.webp';
 import llm from '../../assets/projets/svg/llm.svg';
 import monCarnet from '../../assets/projets/svg/logoMonCarnet.svg';
 
