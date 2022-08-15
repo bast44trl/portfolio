@@ -23,7 +23,7 @@ export const BackgroundsContainerDesktop = () => {
     setTimeout(() => {
       setCurrentBackground(selectedBackground);
       setBurgerMenuBackground(selectedBackground.color);
-    }, 1200);
+    }, 2000);
     setChecked(false);
     setCurrentBackground({
       video: matrixVideo,
