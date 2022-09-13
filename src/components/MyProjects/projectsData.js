@@ -58,9 +58,10 @@ export const projects = [
       durationEN: '8 weeks',
       datesFR: 'Déc - Jan 2022',
       datesEN: 'Dec - Jan 2022',
-      textFR: 'Le 3ème projet de la formation, ',
+      textFR:
+        "Le 3ème projet de la formation, réalisé avec des stacks imposées telles que Prisma ou TailwindCSS, et qui consiste en la création d'un carnet d'entretien de véhicule numérique",
       textEN:
-        'Third training project, made with imposed tech such as Prisma or TailWind',
+        'Third training project, made with imposed tech such as Prisma or TailWindCSS, and consisting in the creation of a digital vehicule maintenance book',
     },
   },
   {

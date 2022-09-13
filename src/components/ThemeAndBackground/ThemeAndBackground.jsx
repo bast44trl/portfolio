@@ -94,7 +94,7 @@ export const BackgroundsContainerMobile = () => {
   );
 };
 
-export const Background = () => {
+const Background = () => {
   const {
     currentBackground,
     size,
@@ -138,3 +138,5 @@ export const Background = () => {
     </div>
   );
 };
+
+export default Background;

@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Gochi+Hand&display=swap");
 
 .about-me {
-  font-family: "Gochi Hand", cursive;
+  @include text-main;
   width: 100%;
   height: 100%;
   position: absolute;
@@ -41,8 +41,9 @@
 /* Portrait */
 @media screen and (max-width: 1370px) and (orientation: portrait) { 
   .about-me {
-    height: auto;
+    height: fit-content;
     min-height: 100%;
+    padding-bottom: 10vh;
   }
   .about-me-title {
     h1 {

@@ -40,7 +40,7 @@ a {
         background: linear-gradient(
             180deg,
             #fff,
-            rgb(94, 94, 94)
+            #000
           );
         background-size: cover;
       }
@@ -64,14 +64,16 @@ a {
           height: 20%;
         }
         & .stats-tech {
+          min-height: max-content;
           max-height: 40%;
           width: 95%;
           display: flex;
           flex-wrap: wrap;
-          justify-content: space-evenly;
+          justify-content: center;
           align-items: center;
           & img {
             max-height: 8vmin;
+            height: auto;
             padding: 5px;
           }
           & img:nth-child(1) {
@@ -135,8 +137,8 @@ a {
         & p {
           color: white;
           text-shadow: 1px 1px 1px black;
-          font-size: 100%;
-          line-height: 1em;
+          font-size: 1.2em;
+          line-height: 1.1em;
           margin: 0 5%;
         }
         & .project-button {
@@ -166,11 +168,12 @@ a {
         font-size: 150% !important;
         height: 20%;
       }
-      .stats-tech {
+      & .stats-tech {
         max-height: none !important;
+        height: fit-content;
         padding: 2vmin 0 !important;
-        img {
-          height: 8vmin !important;
+        & img {
+          max-height: 15vmin !important;
         }
       }
       .card-back-stats {
@@ -178,22 +181,22 @@ a {
         height: 20% !important;
         margin: 2% !important;
         div {
-          margin: 0 5% !important;
-          padding: 0 1%;
-          width: 30% !important;
-          height: 100% !important;
+          margin: 0 3% !important;
+          padding: 1%;
+          width: 50% !important;
+          height: 80% !important;
           img {
-            width: 50% !important;
+            width: 40% !important;
             height: 50% !important;
-            padding-bottom: 10% !important;
+            padding-bottom: 3% !important;
           }
           span {
-            font-size: 40%;
+            font-size: 80%;
           }
         }
       }
       p {
-        font-size: 60% !important;
+        font-size: 90% !important;
       }
       .project-button {
         display: inline-block !important;

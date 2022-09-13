@@ -14,10 +14,9 @@
     padding-right: 2vw;
     li {
       height: 50%;
-      font-family: "Gochi Hand", cursive;
       display: flex;
       align-items: center;
-      font-size: 2vw;
+      font-size: 1.5vw;
       .nav-link {
         @include link;
       }

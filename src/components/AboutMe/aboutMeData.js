@@ -2,7 +2,7 @@ import React from 'react';
 
 export const aboutMeData = [
   {
-    typeFR: 'Australie',
+    typeFR: 'AUSTRALIE',
     typeEN: 'AUSTRALIA',
     lenghtFR: '2 ans',
     lenghtEN: '2 years',
@@ -18,7 +18,7 @@ export const aboutMeData = [
     ],
   },
   {
-    typeFR: 'Etats-Unis',
+    typeFR: 'ETATS-UNIS',
     typeEN: 'USA',
     lenghtFR: '1 an',
     lenghtEN: '1 year',
@@ -34,8 +34,8 @@ export const aboutMeData = [
     ],
   },
   {
-    typeFR: 'Sports',
-    typeEN: 'Sports',
+    typeFR: 'SPORTS',
+    typeEN: 'SPORTS',
     lenghtFR: '',
     lenghtEN: '',
     detailsFR: [
@@ -50,8 +50,8 @@ export const aboutMeData = [
     ],
   },
   {
-    typeFR: 'Passe-temps',
-    typeEN: 'Hobbies',
+    typeFR: 'LOISIRS',
+    typeEN: 'HOBBIES',
     lenghtFR: '',
     lenghtEN: '',
     detailsFR: ['Guitare basse', 'Fan de pop culture', 'Escalade en salle'],

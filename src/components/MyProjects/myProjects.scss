@@ -195,14 +195,33 @@
         order: -1;
         min-width: 94%;
         max-width: 96%;
-        height: 55%;
+        height: 75%;
+        & .project-card h2 {
+          font-size: 200%;
+        }
+      }
+      .big-project.moncarnet {
+          & .project-card-img {
+            padding-top: 10%;
+            height: 50%;
+            & img {
+              height: 100% !important;
+            }
+          }
+      }
+      & .project-card-img {
+        height: 50%;
       }
       .project-left, .project-right {
         width: 45%;
-        height: 35%;
-
+        height: 20%;
         & .project-card {
-          opacity: 1;  
+          opacity: 1;
+          & .project-card-img {
+            width: 50%;
+            height: 100%;
+            margin-top: 5%;
+          }  
           &:hover {
             transform: scale(1);
             box-shadow: none;
@@ -231,6 +250,16 @@
     }
   }
  }
+ .moncarnet {
+  .project-card h2 {
+    margin-bottom: -3%;
+  }
+  .project-card-img {
+    img {
+      height: 65% !important;
+      width: 65% !important;
+    }}
+}
 
 /* Landscape */
 @media screen and (max-width: 1370px) and (orientation:landscape) { 

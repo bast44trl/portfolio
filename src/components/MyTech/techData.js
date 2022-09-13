@@ -9,6 +9,7 @@ import logoVsCode from '../../assets/logo/svg/vs-code.svg';
 import logoSass from '../../assets/logo/svg/sass.svg';
 import logoTailwind from '../../assets/logo/svg/tailwind.svg';
 import logoPrisma from '../../assets/logo/svg/prisma.svg';
+import logoTypescript from '../../assets/logo/svg/typescript.svg';
 
 export const logos = [
   {
@@ -109,5 +110,14 @@ export const logos = [
     techName: 'Figma',
     logo: logoFigma,
     link: 'https://www.figma.com/',
+  },
+  {
+    techTextFrench:
+      "TypeScript est un langage de programmation libre et open source développé par Microsoft qui a pour but d'améliorer et de sécuriser la production de code",
+    techTextEnglish:
+      'TypeScript is a strongly typed programming language that builds on JavaScript, giving you better tooling at any scale',
+    techName: 'TypeScript',
+    logo: logoTypescript,
+    link: 'https://www.typescriptlang.org',
   },
 ];

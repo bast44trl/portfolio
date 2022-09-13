@@ -13,7 +13,8 @@ const LandingScreen = () => {
         animationData: lottieDev,
       }; */
 
-  const { french } = useContext(Context);
+  const { french, currentBackground } = useContext(Context);
+  console.log(currentBackground);
   return (
     <div className="landing-screen">
       <div className="container">
@@ -26,7 +27,17 @@ const LandingScreen = () => {
           </h1>
         </div>
         <div className="links">
-          <a href="https://github.com/bast44trl" target="blank" className="git">
+          <a
+            href="https://github.com/bast44trl"
+            target="blank"
+            className={
+              currentBackground.theme === 'space' ||
+              currentBackground.theme === 'forest' ||
+              currentBackground.theme === 'matrix'
+                ? 'white-git'
+                : 'git'
+            }
+          >
             <img src={git} alt="My Github account" />
           </a>
           <a href="mailto:bastien.traille@gmail.com">
