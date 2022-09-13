@@ -1,15 +1,17 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.19444b72.chunk.css",
-    "main.js": "/portfolio/static/js/main.97b9eac6.chunk.js",
-    "main.js.map": "/portfolio/static/js/main.97b9eac6.chunk.js.map",
-    "runtime-main.js": "/portfolio/static/js/runtime-main.ac62f40c.js",
-    "runtime-main.js.map": "/portfolio/static/js/runtime-main.ac62f40c.js.map",
-    "static/js/2.a978c6ba.chunk.js": "/portfolio/static/js/2.a978c6ba.chunk.js",
-    "static/js/2.a978c6ba.chunk.js.map": "/portfolio/static/js/2.a978c6ba.chunk.js.map",
+    "main.css": "/portfolio/static/css/main.1f1d1f14.chunk.css",
+    "main.js": "/portfolio/static/js/main.5cbf27cc.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.5cbf27cc.chunk.js.map",
+    "runtime-main.js": "/portfolio/static/js/runtime-main.eed6b4f5.js",
+    "runtime-main.js.map": "/portfolio/static/js/runtime-main.eed6b4f5.js.map",
+    "static/js/2.3b11260d.chunk.js": "/portfolio/static/js/2.3b11260d.chunk.js",
+    "static/js/2.3b11260d.chunk.js.map": "/portfolio/static/js/2.3b11260d.chunk.js.map",
+    "static/js/3.78763da5.chunk.js": "/portfolio/static/js/3.78763da5.chunk.js",
+    "static/js/3.78763da5.chunk.js.map": "/portfolio/static/js/3.78763da5.chunk.js.map",
     "index.html": "/portfolio/index.html",
-    "static/css/main.19444b72.chunk.css.map": "/portfolio/static/css/main.19444b72.chunk.css.map",
-    "static/js/2.a978c6ba.chunk.js.LICENSE.txt": "/portfolio/static/js/2.a978c6ba.chunk.js.LICENSE.txt",
+    "static/css/main.1f1d1f14.chunk.css.map": "/portfolio/static/css/main.1f1d1f14.chunk.css.map",
+    "static/js/2.3b11260d.chunk.js.LICENSE.txt": "/portfolio/static/js/2.3b11260d.chunk.js.LICENSE.txt",
     "static/media/calendar.1ecdccf8.webp": "/portfolio/static/media/calendar.1ecdccf8.webp",
     "static/media/css3.4e47c312.svg": "/portfolio/static/media/css3.4e47c312.svg",
     "static/media/dobby.5b6d4c7e.webp": "/portfolio/static/media/dobby.5b6d4c7e.webp",
@@ -54,9 +56,9 @@
     "static/media/vs-code.b8b1e001.svg": "/portfolio/static/media/vs-code.b8b1e001.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.ac62f40c.js",
-    "static/js/2.a978c6ba.chunk.js",
-    "static/css/main.19444b72.chunk.css",
-    "static/js/main.97b9eac6.chunk.js"
+    "static/js/runtime-main.eed6b4f5.js",
+    "static/js/2.3b11260d.chunk.js",
+    "static/css/main.1f1d1f14.chunk.css",
+    "static/js/main.5cbf27cc.chunk.js"
   ]
 }
