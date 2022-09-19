@@ -4,18 +4,18 @@ import { Routes, Route } from 'react-router-dom';
 import Header from './components/Header/Header';
 import LandingScreen from './components/LandingScreen/LandingScreen';
 import MyTech from './components/MyTech/MyTech';
-//import AboutMe from './components/AboutMe/AboutMe';
+import AboutMe from './components/AboutMe/AboutMe';
 import MyProjects from './components/MyProjects/MyProjects.container';
 import { ContextProvider } from './Context';
 import {
-  //Background,
+  // Background,
   BackgroundsContainerDesktop,
 } from './components/ThemeAndBackground/ThemeAndBackground';
+import Loader from './components/Loader/Loader';
 
 const Background = React.lazy(() =>
   import('./components/ThemeAndBackground/ThemeAndBackground')
 );
-const AboutMe = React.lazy(() => import('./components/AboutMe/AboutMe'));
 
 function App() {
   return (
@@ -23,32 +23,13 @@ function App() {
       <div className="App">
         <Header />
         <BackgroundsContainerDesktop />
-        <Suspense
-          fallback={
-            <div>
-              <h1>Loading...</h1>
-            </div>
-          }
-        >
+        <Suspense fallback={<Loader />}>
           <Background />
         </Suspense>
         <Routes>
           <Route path="*" element={<LandingScreen />} />
           <Route path="/mytech" element={<MyTech />} />
-          <Route
-            path="/aboutme"
-            element={
-              <Suspense
-                fallback={
-                  <div>
-                    <h1>Loading...</h1>
-                  </div>
-                }
-              >
-                <AboutMe />
-              </Suspense>
-            }
-          />
+          <Route path="/aboutme" element={<AboutMe />} />
           <Route path="/myprojects" element={<MyProjects />} />
         </Routes>
       </div>

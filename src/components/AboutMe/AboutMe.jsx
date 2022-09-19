@@ -1,12 +1,12 @@
 import React, { useContext, Suspense } from 'react';
 
 import Context from '../../Context';
+import AboutMePill from './AboutMePill';
 import Loader from '../Loader/Loader';
 import { aboutMeData } from './aboutMeData';
 
 const AboutMe = () => {
   const { french } = useContext(Context);
-  const AboutMePill = React.lazy(() => import('./AboutMePill'));
 
   return (
     <div className="about-me">

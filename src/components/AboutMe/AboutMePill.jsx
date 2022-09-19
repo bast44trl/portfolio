@@ -17,6 +17,9 @@ const AboutMePill = ({ type, length, details }) => {
 
   useEffect(() => {
     checked && setSectionOpen('-off');
+    return () => {
+      setSectionOpen('');
+    };
   }, [checked]);
 
   return (
