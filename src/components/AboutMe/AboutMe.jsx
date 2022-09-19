@@ -1,11 +1,12 @@
-import React, { useContext } from 'react';
+import React, { useContext, Suspense } from 'react';
 
-import AboutMePill from './AboutMePill';
 import Context from '../../Context';
+import Loader from '../Loader/Loader';
 import { aboutMeData } from './aboutMeData';
 
 const AboutMe = () => {
   const { french } = useContext(Context);
+  const AboutMePill = React.lazy(() => import('./AboutMePill'));
 
   return (
     <div className="about-me">
@@ -14,12 +15,13 @@ const AboutMe = () => {
       </div>
       <div className="sections">
         {aboutMeData.map((data, index) => (
-          <AboutMePill
-            key={index}
-            type={french ? data.typeFR : data.typeEN}
-            length={french ? data.lenghtFR : data.lenghtEN}
-            details={french ? data.detailsFR : data.detailsEN}
-          />
+          <Suspense fallback={<Loader />} key={index}>
+            <AboutMePill
+              type={french ? data.typeFR : data.typeEN}
+              length={french ? data.lenghtFR : data.lenghtEN}
+              details={french ? data.detailsFR : data.detailsEN}
+            />
+          </Suspense>
         ))}
       </div>
     </div>

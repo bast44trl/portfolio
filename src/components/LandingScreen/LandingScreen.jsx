@@ -1,20 +1,14 @@
-/* import Lottie from 'react-lottie';
-import lottieDev from './lottie-dev.json'; */
-import git from './../../assets/logo/svg/github.svg';
-import linkedin from './../../assets/logo/svg/linkedin.svg';
-import email from './../../assets/logo/email.webp';
+import git from '../../assets/logo/svg/github.svg';
+import linkedin from '../../assets/logo/svg/linkedin.svg';
+import email from '../../assets/logo/email.webp';
+import cv from '../../assets/curriculum/curriculum.svg';
+import frenchResume from '../../assets/curriculum/frenchResume.pdf';
+import englishResume from '../../assets/curriculum/englishResume.pdf';
 import { useContext } from 'react';
 import Context from '../../Context';
 
 const LandingScreen = () => {
-  /*     const defaultOptions = {
-        loop: false,
-        autoplay: true,
-        animationData: lottieDev,
-      }; */
-
   const { french, currentBackground } = useContext(Context);
-  console.log(currentBackground);
   return (
     <div className="landing-screen">
       <div className="container">
@@ -23,7 +17,7 @@ const LandingScreen = () => {
         </div>
         <div className="div-dev">
           <h1>
-            {french ? 'Développeur Web Full Stack' : 'Full Stack Web Developer'}
+            {french ? 'Développeur Web Front-End' : 'Front-End Web Developer'}
           </h1>
         </div>
         <div className="links">
@@ -40,14 +34,17 @@ const LandingScreen = () => {
           >
             <img src={git} alt="My Github account" />
           </a>
-          <a href="mailto:bastien.traille@gmail.com">
-            <img src={email} alt="email icon" />
-          </a>
           <a
             href="https://www.linkedin.com/in/bastientraille/"
             className="linkedin"
           >
             <img src={linkedin} alt="My LinkedIn account" />
+          </a>
+          <a href={french ? frenchResume : englishResume} target="blank">
+            <img src={cv} alt="curriculum" />
+          </a>
+          <a href="mailto:bastien.traille@gmail.com">
+            <img src={email} alt="email icon" />
           </a>
         </div>
       </div>

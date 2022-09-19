@@ -25,7 +25,7 @@ const Header = () => {
             className={({ isActive }) => (isActive ? 'activeLink' : 'nav-link')}
             to="/mytech"
           >
-            {french ? 'Mes tech' : 'My Tech'}
+            {french ? 'Mes techs' : 'My Techs'}
           </NavLink>
         </li>
         <li>

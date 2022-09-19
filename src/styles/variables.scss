@@ -45,7 +45,7 @@ $hobbiton: url("https://cdn.pixabay.com/photo/2017/08/14/12/10/hobbiton-2640294_
   text-decoration: none;
   transition: transform 0.3s;
   animation: $anim;
-  padding: 10px 10px 5px;
+  padding: 10px 10px;
   border-radius: 15px;
   &:hover {
     transform: scale($scale);

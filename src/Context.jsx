@@ -1,6 +1,6 @@
 import React, { createContext, useState } from 'react';
 
-import useWindowSize from './Hooks/useWindowSize';
+import useWindowSize from './hooks/useWindowSize';
 
 const Context = createContext({
   french: false,

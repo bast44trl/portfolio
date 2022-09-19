@@ -1,23 +1,50 @@
-import React from 'react';
+import React, { useContext, useState, useEffect } from 'react';
+
+import Context from '../../Context';
 
 const AboutMePill = ({ type, length, details }) => {
+  const { size, checked } = useContext(Context);
+  const [sectionOpen, setSectionOpen] = useState('');
+
+  const handleSectionOpen = () => {
+    if (sectionOpen === '' || sectionOpen === '-close') {
+      setSectionOpen('-open');
+    }
+    if (sectionOpen === '-open') {
+      setSectionOpen('-close');
+    }
+  };
+
+  useEffect(() => {
+    checked && setSectionOpen('-off');
+  }, [checked]);
+  console.log(sectionOpen);
+
   return (
-    <div className="section">
-      <div className="section-title">
+    <div
+      onClick={() => (size.width < 1370 ? handleSectionOpen() : {})}
+      className={`section${sectionOpen}`}
+    >
+      <div className={`section-title${sectionOpen}`}>
         <h1>{type}</h1>
         <h3>{length}</h3>
       </div>
-      <ul className="section-infos">
+      <ul className={`section-infos${sectionOpen}`}>
         {details.map((detail, index) => (
           <li key={index}>
             {detail.includes('Spartan') ? (
-              <a
-                className="spartan-a"
-                href="https://fr.spartan.com/fr/race/super"
-                target="blank"
-              >
-                {detail}
-              </a>
+              <>
+                <span>{detail}</span>{' '}
+                {sectionOpen.endsWith('open') && (
+                  <a
+                    className="spartan-a"
+                    href="https://fr.spartan.com/fr/race/super"
+                    target="blank"
+                  >
+                    🔗
+                  </a>
+                )}
+              </>
             ) : (
               detail
             )}

@@ -50,7 +50,7 @@ const BurgerMenu = () => {
               }
               to="/mytech"
             >
-              {french ? 'Mes tech' : 'My Tech'}
+              {french ? 'Mes techs' : 'My Techs'}
             </NavLink>
           </li>
           <li className="navigation__item">

@@ -21,23 +21,6 @@ import logoPrisma from '../../assets/logo/svg/prisma.svg';
 
 export const projects = [
   {
-    link: 'https://bast44trl.github.io/laBelleMiche/',
-    title: 'La Belle Miche',
-    image: lbm,
-    techs: [logoHtml5, logoCss3, logoJavascript, logoGit, logoVsCode],
-    presentation: {
-      team: 4,
-      durationFR: '4 semaines',
-      durationEN: '4 weeks',
-      datesFR: 'Sept - Oct 2021',
-      datesEN: 'Sept - Oct 2021',
-      textFR:
-        "Le premier projet, quelques jours après mon entrée en formation à la Wild Code School, réalisé avec un brin d'humour, nous ayant surtout permit de prendre en main des outils tels que Git et GitHub, ainsi que l'utilisation de Flex et Grid en CSS",
-      textEN:
-        'My very first project, just few days after I started my training at Wild Code School. Realised with a tiny bit of humor, it allowed us to get used to Git and GitHub, but also made us use Flex and Grid on CSS',
-    },
-  },
-  {
     link: 'https://github.com/bast44trl/moncarnet-frontend',
     title: 'Mon Carnet',
     className: 'moncarnet',
@@ -62,6 +45,23 @@ export const projects = [
         "Le 3ème projet de la formation, réalisé avec des stacks imposées telles que Prisma ou TailwindCSS, et qui consiste en la création d'un carnet d'entretien de véhicule numérique",
       textEN:
         'Third training project, made with imposed tech such as Prisma or TailWindCSS, and consisting in the creation of a digital vehicule maintenance book',
+    },
+  },
+  {
+    link: 'https://bast44trl.github.io/laBelleMiche/',
+    title: 'La Belle Miche',
+    image: lbm,
+    techs: [logoHtml5, logoCss3, logoJavascript, logoGit, logoVsCode],
+    presentation: {
+      team: 4,
+      durationFR: '4 semaines',
+      durationEN: '4 weeks',
+      datesFR: 'Sept - Oct 2021',
+      datesEN: 'Sept - Oct 2021',
+      textFR:
+        "Le premier projet, quelques jours après mon entrée en formation à la Wild Code School, réalisé avec un brin d'humour, nous ayant surtout permit de prendre en main des outils tels que Git et GitHub, ainsi que l'utilisation de Flex et Grid en CSS",
+      textEN:
+        'My very first project, just few days after I started my training at Wild Code School. Realised with a tiny bit of humor, it allowed us to get used to Git and GitHub, but also made us use Flex and Grid on CSS',
     },
   },
   {
