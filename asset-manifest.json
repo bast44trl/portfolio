@@ -1,22 +1,15 @@
 {
   "files": {
-    "main.css": "https://www.bastientraille.fr/static/css/main.809a5c2f.chunk.css",
-    "main.js": "https://www.bastientraille.fr/static/js/main.504828d7.chunk.js",
-    "main.js.map": "https://www.bastientraille.fr/static/js/main.504828d7.chunk.js.map",
-    "runtime-main.js": "https://www.bastientraille.fr/static/js/runtime-main.4d0094d9.js",
-    "runtime-main.js.map": "https://www.bastientraille.fr/static/js/runtime-main.4d0094d9.js.map",
-    "static/js/2.e08db980.chunk.js": "https://www.bastientraille.fr/static/js/2.e08db980.chunk.js",
-    "static/js/2.e08db980.chunk.js.map": "https://www.bastientraille.fr/static/js/2.e08db980.chunk.js.map",
-    "static/js/3.550c7f86.chunk.js": "https://www.bastientraille.fr/static/js/3.550c7f86.chunk.js",
-    "static/js/3.550c7f86.chunk.js.map": "https://www.bastientraille.fr/static/js/3.550c7f86.chunk.js.map",
-    "static/js/4.124472d1.chunk.js": "https://www.bastientraille.fr/static/js/4.124472d1.chunk.js",
-    "static/js/4.124472d1.chunk.js.map": "https://www.bastientraille.fr/static/js/4.124472d1.chunk.js.map",
-    "static/js/5.3ec061d6.chunk.js": "https://www.bastientraille.fr/static/js/5.3ec061d6.chunk.js",
-    "static/js/5.3ec061d6.chunk.js.map": "https://www.bastientraille.fr/static/js/5.3ec061d6.chunk.js.map",
+    "main.css": "https://www.bastientraille.fr/static/css/main.7f140a10.chunk.css",
+    "main.js": "https://www.bastientraille.fr/static/js/main.18fcad36.chunk.js",
+    "main.js.map": "https://www.bastientraille.fr/static/js/main.18fcad36.chunk.js.map",
+    "runtime-main.js": "https://www.bastientraille.fr/static/js/runtime-main.db1ff044.js",
+    "runtime-main.js.map": "https://www.bastientraille.fr/static/js/runtime-main.db1ff044.js.map",
+    "static/js/2.144e8f8f.chunk.js": "https://www.bastientraille.fr/static/js/2.144e8f8f.chunk.js",
+    "static/js/2.144e8f8f.chunk.js.map": "https://www.bastientraille.fr/static/js/2.144e8f8f.chunk.js.map",
     "index.html": "https://www.bastientraille.fr/index.html",
-    "static/css/main.809a5c2f.chunk.css.map": "https://www.bastientraille.fr/static/css/main.809a5c2f.chunk.css.map",
-    "static/js/2.e08db980.chunk.js.LICENSE.txt": "https://www.bastientraille.fr/static/js/2.e08db980.chunk.js.LICENSE.txt",
-    "static/js/3.550c7f86.chunk.js.LICENSE.txt": "https://www.bastientraille.fr/static/js/3.550c7f86.chunk.js.LICENSE.txt",
+    "static/css/main.7f140a10.chunk.css.map": "https://www.bastientraille.fr/static/css/main.7f140a10.chunk.css.map",
+    "static/js/2.144e8f8f.chunk.js.LICENSE.txt": "https://www.bastientraille.fr/static/js/2.144e8f8f.chunk.js.LICENSE.txt",
     "static/media/calendar.1ecdccf8.webp": "https://www.bastientraille.fr/static/media/calendar.1ecdccf8.webp",
     "static/media/css3.4e47c312.svg": "https://www.bastientraille.fr/static/media/css3.4e47c312.svg",
     "static/media/curriculum.f21ded99.svg": "https://www.bastientraille.fr/static/media/curriculum.f21ded99.svg",
@@ -64,9 +57,9 @@
     "static/media/vs-code.b8b1e001.svg": "https://www.bastientraille.fr/static/media/vs-code.b8b1e001.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.4d0094d9.js",
-    "static/js/2.e08db980.chunk.js",
-    "static/css/main.809a5c2f.chunk.css",
-    "static/js/main.504828d7.chunk.js"
+    "static/js/runtime-main.db1ff044.js",
+    "static/js/2.144e8f8f.chunk.js",
+    "static/css/main.7f140a10.chunk.css",
+    "static/js/main.18fcad36.chunk.js"
   ]
 }
