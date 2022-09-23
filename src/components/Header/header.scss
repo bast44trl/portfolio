@@ -7,21 +7,26 @@
   z-index: 2;
   ul {
     width: 100%;
-    height: 100%;
+    height: 50%;
     display: flex;
     justify-content: flex-end;
     align-items: center;
     padding-right: 2vw;
+    margin-top: 2vh;
     li {
-      height: 50%;
+      height: 100%;
       display: flex;
       align-items: center;
-      font-size: 1.5vw;
+      font-size: 1.4vw;
       .nav-link {
         @include link;
       }
       .activeLink {
         @include link ($color: rgb(77, 60, 81), $textShadow: 1px 1px 1px rgb(255, 255, 255), $scale: 1, $cursor: default, $anim: bgAppear 1s forwards);
+        &:hover::before {
+          width: 0;
+          height: 0;
+        }
       }
       & .flags-container {
         width: 100%;

@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Gochi+Hand&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Gochi+Hand&display=swap');
 
 .about-me {
   @include text-main;
@@ -21,9 +21,10 @@
   height: 25%;
   display: flex;
   align-items: center;
-  padding: 5%;
+  padding: 5% 0 2%;
   h1 {
-    font-size: 300%;
+    font-size: 200%;
+    font-weight: bold;
     color: white;
     text-shadow: 0.5vw 0.5vw 1vw black;
   }
@@ -37,9 +38,8 @@
   align-items: center;
 }
 
-
 /* Portrait */
-@media screen and (max-width: 1370px) and (orientation: portrait) { 
+@media screen and (max-width: 1370px) and (orientation: portrait) {
   .about-me {
     height: fit-content;
     min-height: 100%;
@@ -47,7 +47,7 @@
   }
   .about-me-title {
     h1 {
-      font-size: 200% !important;
+      font-size: 150% !important;
     }
   }
   .sections {
@@ -58,7 +58,9 @@
     flex-direction: column;
     justify-content: space-evenly !important;
   }
- }
+}
 
 /* Landscape */
-@media screen and (orientation:landscape) { /* Landscape styles here */ }
+@media screen and (orientation: landscape) {
+  /* Landscape styles here */
+}

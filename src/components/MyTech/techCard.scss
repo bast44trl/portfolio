@@ -43,21 +43,27 @@
       transition: opacity 1s ease-in, transform 0.8s;
       transform: rotateX(-90deg);
       & h4 {
+        display: flex;
+        align-items: center;
         font-family: "Gochi Hand", cursive;
         color: black;
         font-weight: bold;
-        font-size: 1em;
+        font-size: larger;
+        line-height: 1em;
         line-break: auto;
-        height: 15%;
+        height: -webkit-fill-available;
+        max-height: 85px;
         padding: 2px;
       }
       & p {
         color: black;
+        font-size: .9em;
         display: flex;
         align-items: center;
         font-size: 1em;
         text-overflow: auto;
         text-align: center;
+        padding-bottom: .5em;
       }
     }
   }

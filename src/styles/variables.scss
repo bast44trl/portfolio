@@ -1,5 +1,7 @@
 $text-shadow: 0.2vw 0.2vw 0.5vw black;
 $timeFromLeft: 2;
+$main-font: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif, cursive;
+$secondary-font: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 
 // ====== burger menu variables ========== //
 $burgerSize: 15vmin; // default : 7rem
@@ -8,48 +10,74 @@ $burgerBackgroundSize: 8vmin; // default : 6rem (burgerSize -1)
 $burgerBackgroundPos: 5vmin; // default : 6.5rem (burgerSize -0.5)
 $color-secondary-grey: #eee9f4;
 $color-primary-blue: #afd0ed;
-$color-primary-dark: #36393B;
+$color-primary-dark: #36393b;
 $color-white: #fff;
 $color-black: #000;
 
 // ===== pills backgrounds variables =========== //
-$operaHouse: url("https://images.pexels.com/photos/2434267/pexels-photo-2434267.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260");
-$childcare: url("https://images.pexels.com/photos/1001914/pexels-photo-1001914.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
-$store: url("https://images.pexels.com/photos/7679671/pexels-photo-7679671.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
-$koala: url("https://images.pexels.com/photos/7248214/pexels-photo-7248214.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
-$goldenGate: url("https://images.pexels.com/photos/4253831/pexels-photo-4253831.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260");
-$aupair: url("https://images.pexels.com/photos/5240511/pexels-photo-5240511.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
-$seattle: url("https://images.pexels.com/photos/1796730/pexels-photo-1796730.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750");
-$baseball: url("https://images.pexels.com/photos/264279/pexels-photo-264279.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
-$track: url("https://images.pexels.com/photos/163444/sport-treadmill-tor-route-163444.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260");
-$cycling: url("https://cdn.pixabay.com/photo/2019/09/18/06/58/speed-4485598_960_720.jpg");
-$spartan: url("https://images.unsplash.com/photo-1522866348293-55be2c6caa1f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80");
-$marathon: url("https://images.unsplash.com/photo-1613936360976-8f35cf0e5461?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80");
-$bass: url("https://images.pexels.com/photos/5650704/pexels-photo-5650704.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
-$bouldering: url("https://images.pexels.com/photos/5384037/pexels-photo-5384037.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
-$ironMan: url("https://images.unsplash.com/photo-1635863138275-d9b33299680b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1331&q=80");
-$hobbiton: url("https://cdn.pixabay.com/photo/2017/08/14/12/10/hobbiton-2640294_960_720.jpg");
+$operaHouse: url('https://images.pexels.com/photos/2434267/pexels-photo-2434267.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260');
+$childcare: url('https://images.pexels.com/photos/1001914/pexels-photo-1001914.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+$store: url('https://images.pexels.com/photos/7679671/pexels-photo-7679671.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+$koala: url('https://images.pexels.com/photos/7248214/pexels-photo-7248214.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+$goldenGate: url('https://images.pexels.com/photos/4253831/pexels-photo-4253831.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260');
+$aupair: url('https://images.pexels.com/photos/5240511/pexels-photo-5240511.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');
+$seattle: url('https://images.pexels.com/photos/1796730/pexels-photo-1796730.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750');
+$baseball: url('https://images.pexels.com/photos/264279/pexels-photo-264279.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+$track: url('https://images.pexels.com/photos/163444/sport-treadmill-tor-route-163444.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260');
+$cycling: url('https://cdn.pixabay.com/photo/2019/09/18/06/58/speed-4485598_960_720.jpg');
+$spartan: url('https://images.unsplash.com/photo-1522866348293-55be2c6caa1f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80');
+$marathon: url('https://images.unsplash.com/photo-1613936360976-8f35cf0e5461?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80');
+$bass: url('https://images.pexels.com/photos/5650704/pexels-photo-5650704.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+$bouldering: url('https://images.pexels.com/photos/5384037/pexels-photo-5384037.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+$ironMan: url('https://images.unsplash.com/photo-1635863138275-d9b33299680b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1331&q=80');
+$hobbiton: url('https://cdn.pixabay.com/photo/2017/08/14/12/10/hobbiton-2640294_960_720.jpg');
 
-@mixin text-main () {
+@mixin text-main() {
   color: white;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-family: $main-font;
   text-shadow: $text-shadow;
 }
 
-@mixin link ($color: #fff, $textShadow: $text-shadow, $scale: 1.1, $cursor: pointer, $anim: none) {
+@mixin link(
+  $color: #fff,
+  $textShadow: $text-shadow,
+  $scale: 1.1,
+  $cursor: pointer,
+  $anim: none
+) {
   @include text-main;
   text-decoration: none;
-  margin-right: 2vw;
+  margin-right: 0.8vw;
   text-shadow: $textShadow;
   color: $color;
   text-decoration: none;
-  transition: transform 0.3s;
   animation: $anim;
-  padding: 10px 10px;
+  display: flex;
+  align-items: center;
+  padding: 0 0.5vw;
   border-radius: 15px;
+  overflow: hidden;
+  transition: 0.3s all ease;
+  position: relative;
+  &::before {
+    content: '';
+    background-color: rgba($color: #000000, $alpha: 0.7);
+    width: 0;
+    height: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    transition: all 0.3s ease;
+  }
   &:hover {
     transform: scale($scale);
     cursor: $cursor;
+  }
+  &:hover::before {
+    width: 110%;
+    height: 100%;
   }
   &:visited {
     color: $color;
@@ -64,4 +92,15 @@ $hobbiton: url("https://cdn.pixabay.com/photo/2017/08/14/12/10/hobbiton-2640294_
   to {
     background-color: #fff;
   }
+}
+@keyframes showUp {
+  from {
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+  }
+}
+@mixin showUp($duration: 1s, $delay: 0s) {
+  animation: showUp $duration forwards $delay;
 }

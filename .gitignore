@@ -1,4 +1,5 @@
 # dependencies
+.env
 /node_modules
 /.pnp
 .pnp.js
@@ -8,6 +9,7 @@
 
 # production
 /build
+.htaccess
 
 # misc
 .DS_Store

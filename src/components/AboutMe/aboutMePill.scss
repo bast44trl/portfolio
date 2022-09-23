@@ -1,75 +1,79 @@
 .section {
-    width: 8%;
-    height: 0px;
+  width: 8%;
+  height: 0px;
+  opacity: 0;
+  border-radius: 7vw;
+  border: ridge 2px white;
+  position: relative;
+  margin: 0 0.5%;
+  color: white;
+  text-shadow: black 2px 2px 2px;
+  text-align: center;
+  box-shadow: 3px 3px 2px rgb(30, 30, 30);
+  transition: all 0.8s;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-top: 3%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  > .section-title h1 {
+    opacity: 0.5;
+    transform: scale(2) translateY(25%);
+    font-size: 50%;
+    transition: all 0.3s;
+  }
+  > .section-title h3,
+  .section-infos {
     opacity: 0;
-    border-radius: 7vw;
-    border: ridge 2px white;
-    position: relative;
-    margin: 0 .5%;
-    color: white;
-    text-shadow: black 2px 2px 2px;
-    text-align: center;
-    box-shadow: 3px 3px 2px rgb(30, 30, 30);
-    transition: all .8s;
-    background-size: cover;
-    background-repeat: no-repeat;
-    padding-top: 3%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    > .section-title h1 {
-      opacity: 0.5;
-      transform: scale(2) translateY(25%);
-      font-size: 50%;
-      transition: all 0.3s;
-    }
-    > .section-title h3,
-    .section-infos {
-      opacity: 0;
-      font-size: 20%;
-      transition: all 0.3s;
-    }
+    font-size: 20%;
+    transition: all 0.3s;
+  }
 }
 
 .section-title {
   h1 {
-    transition: all .8s;
+    transition: all 0.8s;
   }
   h3 {
-    transition: all .8s;
+    transition: all 0.8s;
   }
 }
 
 .section:nth-child(1) {
   background-image: $operaHouse, $childcare, $store, $koala;
   background-position: 80%;
-  animation: alive-height .8s forwards;
+  animation: alive-height 0.8s forwards;
   &:hover {
-    animation: alive-height .8s forwards, bgSlideAU 10s .8s infinite ease-in-out;
+    animation: alive-height 0.8s forwards,
+      bgSlideAU 10s 0.8s infinite ease-in-out;
   }
 }
 .section:nth-child(2) {
   background-image: $seattle, $goldenGate, $aupair, $baseball;
   background-position: 15%;
-  animation: alive-height .8s forwards;
+  animation: alive-height 0.8s forwards;
   &:hover {
-    animation: alive-height .8s forwards 0.3s, bgSlideUS 10s .9s infinite ease-in-out;
+    animation: alive-height 0.8s forwards 0.3s,
+      bgSlideUS 10s 0.9s infinite ease-in-out;
   }
 }
 .section:nth-child(3) {
   background-image: $marathon, $spartan, $cycling, $track;
   background-position: 20% 90%;
-  animation: alive-height .8s forwards 0.6s;
+  animation: alive-height 0.8s forwards 0.6s;
   &:hover {
-    animation: alive-height .8s forwards 0.6s, bgSlideSport 10s 1s infinite ease-in-out;
+    animation: alive-height 0.8s forwards 0.6s,
+      bgSlideSport 10s 1s infinite ease-in-out;
   }
 }
 .section:nth-child(4) {
   background-image: $bass, $ironMan, $bouldering, $hobbiton;
   background-position: 50%;
-  animation: alive-height .8s forwards 0.9s;
+  animation: alive-height 0.8s forwards 0.9s;
   &:hover {
-    animation: alive-height .8s forwards 0.9s, bgSlideHobbies 10s 1.1s infinite ease-in-out;
+    animation: alive-height 0.8s forwards 0.9s,
+      bgSlideHobbies 10s 1.1s infinite ease-in-out;
   }
 }
 
@@ -96,53 +100,53 @@
   }
 }
 
-
 // ================================ DESKTOP SCREENS ================================ //
 
 @media screen and (min-width: 1370px) {
-    .section:hover {
-      width: 55%;
-      height: 50vh;
-      background-size: cover;
-      border-radius: 5vw;
-      padding-top: 1%;
-      transition: all .8s;
-      .section-title {
+  .section:hover {
+    width: 55%;
+    height: 50vh;
+    background-size: cover;
+    border-radius: 5vw;
+    padding-top: 1%;
+    transition: all 0.8s;
+    .section-title {
+      opacity: 1;
+      h1 {
+        transition: all 0.8s;
         opacity: 1;
-        h1 {
-          transition: all .8s;
-          opacity: 1;
-          font-size: 300%;
-          transform: scale(1);
-        }
-        h3 {
-          transition: all .8s;
-          opacity: 1;
-          font-size: 200%;
-        }
+        font-size: 300%;
+        transform: scale(1);
       }
-      .section-infos {
-        height: 30%;
-        background-color: rgba(0, 0, 0, 0.6);
-        border-radius: 0 0 5vw 5vw;
-        z-index: 2;
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
-        line-height: 150%;
-        font-size: 1vw;
-        font-size-adjust: inherit;
-        padding: 4% 10%;
-        list-style: none;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        animation: coming .8s forwards .5s;
-        .spartan-a, .spartan-a:visited {
-          text-decoration: none;
-        }
+      h3 {
+        transition: all 0.8s;
+        opacity: 1;
+        font-size: 200%;
       }
-    } 
+    }
+    .section-infos {
+      height: 30%;
+      background-color: rgba(0, 0, 0, 0.6);
+      border-radius: 0 0 5vw 5vw;
+      z-index: 2;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      line-height: 150%;
+      font-size: 1vw;
+      font-size-adjust: inherit;
+      padding: 4% 10%;
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      animation: coming 0.8s forwards 0.5s;
+      .spartan-a,
+      .spartan-a:visited {
+        text-decoration: none;
+      }
+    }
   }
-  
+}
+
 @keyframes coming {
   from {
     opacity: 0;
@@ -157,17 +161,17 @@
                                                     MEDIA QUERIES
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
-  
+
 @media screen and (max-width: 1370px) and (orientation: portrait) {
   .section-open {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     & > .section-title-open h1 {
-      animation: sectionTypeOpening .8s forwards;
+      animation: sectionTypeOpening 0.8s forwards;
     }
     & .section-title-open h3 {
-      animation: sectionLengthOpening .8s forwards;
+      animation: sectionLengthOpening 0.8s forwards;
     }
     & .section-infos-open {
       display: flex;
@@ -177,14 +181,16 @@
     }
   }
   .section-close {
-    animation: returnHeight .8s forwards;
+    animation: returnHeight 0.8s forwards;
     > .section-title-close h1 {
       opacity: 0.5;
       transform: scale(2) translateY(25%);
       font-size: 100%;
     }
-    .section-infos-close, .section-title-close h3 {
-      animation: sectionInfosOpening 0.8s reverse forwards, coming reverse forwards;
+    .section-infos-close,
+    .section-title-close h3 {
+      animation: sectionInfosOpening 0.8s reverse forwards,
+        coming reverse forwards;
     }
   }
   .section-off {
@@ -204,10 +210,12 @@
       transform: scale(2) translateY(25%);
       font-size: 100%;
     }
-    .section-infos-off, .section-title-off h3 {
-      animation: sectionInfosOpening 0.8s reverse forwards, coming reverse forwards;
+    .section-infos-off,
+    .section-title-off h3 {
+      animation: sectionInfosOpening 0.8s reverse forwards,
+        coming reverse forwards;
     }
-}
+  }
   .section {
     width: 100%;
     opacity: 0;
@@ -223,10 +231,10 @@
   }
 
   .section:nth-child(1) {
-    animation: alive-width 1s forwards .6s;
+    animation: alive-width 1s forwards 0.6s;
   }
   .section:nth-child(2) {
-    animation: alive-width 1s forwards .9s;
+    animation: alive-width 1s forwards 0.9s;
   }
   .section:nth-child(3) {
     animation: alive-width 1s forwards 1.2s;
@@ -235,28 +243,35 @@
     animation: alive-width 1s forwards 1.5s;
   }
 
-
-// =================================== SECTION-OPEN =================================== //
-.section-open:nth-child(1) {
-  background-image: $operaHouse, $childcare, $store, $koala;
-  background-position: 80%;
-  animation: sectionOpening .5s forwards, bgSlideAU 10s .8s infinite ease-in-out;
-}
-.section-open:nth-child(2) {
-  background-image: $seattle, $goldenGate, $aupair, $baseball;
-  background-position: 15%;
-  animation: sectionOpening .5s forwards, bgSlideUS 10s .8s infinite ease-in-out;
-}
-.section-open:nth-child(3) {
-  background-image: $marathon, $spartan, $cycling, $track;
-  background-position: 20% 90%;
-  animation: sectionOpening .5s forwards, bgSlideSports 10s .8s infinite ease-in-out;
-}
-.section-open:nth-child(4) {
-  background-image: $bass, $ironMan, $bouldering, $hobbiton;
-  background-position: 50%;
-  animation: sectionOpening .5s forwards, bgSlideHobbies 10s .8s infinite ease-in-out;
-}
+  // =================================== SECTION-OPEN =================================== //
+  .section-open:nth-child(1) {
+    background-image: $operaHouse, $childcare, $store, $koala;
+    background-position: 80%;
+    animation: sectionOpening 0.5s forwards,
+      bgSlideAU 10s 0.8s infinite ease-in-out;
+    margin-bottom: 0.5em;
+  }
+  .section-open:nth-child(2) {
+    background-image: $seattle, $goldenGate, $aupair, $baseball;
+    background-position: 15%;
+    animation: sectionOpening 0.5s forwards,
+      bgSlideUS 10s 0.8s infinite ease-in-out;
+    margin-bottom: 0.5em;
+  }
+  .section-open:nth-child(3) {
+    background-image: $marathon, $spartan, $cycling, $track;
+    background-position: 20% 90%;
+    animation: sectionOpening 0.5s forwards,
+      bgSlideSports 10s 0.8s infinite ease-in-out;
+    margin-bottom: 0.5em;
+  }
+  .section-open:nth-child(4) {
+    background-image: $bass, $ironMan, $bouldering, $hobbiton;
+    background-position: 50%;
+    animation: sectionOpening 0.5s forwards,
+      bgSlideHobbies 10s 0.8s infinite ease-in-out;
+    margin-bottom: 0.5em;
+  }
   // =================================== SECTION-CLOSE =================================== //
   .section-close:nth-child(1) {
     background-image: $operaHouse, $childcare, $store, $koala;
@@ -275,23 +290,23 @@
     background-position: 50%;
   }
 
-    // =================================== SECTION-OFF =================================== //
-    .section-off:nth-child(1) {
-      background-image: $operaHouse, $childcare, $store, $koala;
-      background-position: 80%;
-    }
-    .section-off:nth-child(2) {
-      background-image: $seattle, $goldenGate, $aupair, $baseball;
-      background-position: 15%;
-    }
-    .section-off:nth-child(3) {
-      background-image: $marathon, $spartan, $cycling, $track;
-      background-position: 20% 90%;
-    }
-    .section-off:nth-child(4) {
-      background-image: $bass, $ironMan, $bouldering, $hobbiton;
-      background-position: 50%;
-    }
+  // =================================== SECTION-OFF =================================== //
+  .section-off:nth-child(1) {
+    background-image: $operaHouse, $childcare, $store, $koala;
+    background-position: 80%;
+  }
+  .section-off:nth-child(2) {
+    background-image: $seattle, $goldenGate, $aupair, $baseball;
+    background-position: 15%;
+  }
+  .section-off:nth-child(3) {
+    background-image: $marathon, $spartan, $cycling, $track;
+    background-position: 20% 90%;
+  }
+  .section-off:nth-child(4) {
+    background-image: $bass, $ironMan, $bouldering, $hobbiton;
+    background-position: 50%;
+  }
 
   // ======================= KEYFRAMES ======================= //
   @keyframes sectionOpening {
@@ -370,7 +385,7 @@
       background-repeat: no-repeat;
       padding-top: 3%;
     }
-  }  
+  }
   @keyframes alive-width {
     0% {
       width: 0;

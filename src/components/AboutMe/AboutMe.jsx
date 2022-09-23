@@ -1,4 +1,4 @@
-import React, { useContext, Suspense } from 'react';
+import React, { useContext } from 'react';
 
 import Context from '../../Context';
 import AboutMePill from './AboutMePill';
@@ -14,15 +14,18 @@ const AboutMe = () => {
         <h1>{french ? 'Quelques trucs sur moi' : 'Some stuff about myself'}</h1>
       </div>
       <div className="sections">
-        {aboutMeData.map((data, index) => (
-          <Suspense fallback={<Loader />} key={index}>
+        {aboutMeData.length < 4 ? (
+          <Loader />
+        ) : (
+          aboutMeData.map((data, index) => (
             <AboutMePill
+              key={index}
               type={french ? data.typeFR : data.typeEN}
               length={french ? data.lenghtFR : data.lenghtEN}
               details={french ? data.detailsFR : data.detailsEN}
             />
-          </Suspense>
-        ))}
+          ))
+        )}
       </div>
     </div>
   );

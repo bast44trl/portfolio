@@ -1,9 +1,12 @@
 import React, { useContext } from 'react';
 
 import Context from '../../../Context';
-import team from '../../../assets/stats/team.webp';
+/* import team from '../../../assets/stats/team.webp';
 import duration from '../../../assets/stats/duration.webp';
-import calendar from '../../../assets/stats/calendar.webp';
+import calendar from '../../../assets/stats/calendar.webp'; */
+import team from '../../../assets/stats/team.svg';
+import duration from '../../../assets/stats/duration.svg';
+import calendar from '../../../assets/stats/calendar.svg';
 
 const ProjectCard = (props) => {
   const {
