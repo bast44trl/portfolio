@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "https://www.bastientraille.fr/static/css/main.7f140a10.chunk.css",
-    "main.js": "https://www.bastientraille.fr/static/js/main.18fcad36.chunk.js",
-    "main.js.map": "https://www.bastientraille.fr/static/js/main.18fcad36.chunk.js.map",
+    "main.css": "https://www.bastientraille.fr/static/css/main.5d03ab01.chunk.css",
+    "main.js": "https://www.bastientraille.fr/static/js/main.6de699d4.chunk.js",
+    "main.js.map": "https://www.bastientraille.fr/static/js/main.6de699d4.chunk.js.map",
     "runtime-main.js": "https://www.bastientraille.fr/static/js/runtime-main.db1ff044.js",
     "runtime-main.js.map": "https://www.bastientraille.fr/static/js/runtime-main.db1ff044.js.map",
     "static/js/2.144e8f8f.chunk.js": "https://www.bastientraille.fr/static/js/2.144e8f8f.chunk.js",
     "static/js/2.144e8f8f.chunk.js.map": "https://www.bastientraille.fr/static/js/2.144e8f8f.chunk.js.map",
     "index.html": "https://www.bastientraille.fr/index.html",
-    "static/css/main.7f140a10.chunk.css.map": "https://www.bastientraille.fr/static/css/main.7f140a10.chunk.css.map",
+    "static/css/main.5d03ab01.chunk.css.map": "https://www.bastientraille.fr/static/css/main.5d03ab01.chunk.css.map",
     "static/js/2.144e8f8f.chunk.js.LICENSE.txt": "https://www.bastientraille.fr/static/js/2.144e8f8f.chunk.js.LICENSE.txt",
-    "static/media/calendar.1ecdccf8.webp": "https://www.bastientraille.fr/static/media/calendar.1ecdccf8.webp",
+    "static/media/calendar.0e3563ed.svg": "https://www.bastientraille.fr/static/media/calendar.0e3563ed.svg",
     "static/media/css3.4e47c312.svg": "https://www.bastientraille.fr/static/media/css3.4e47c312.svg",
     "static/media/curriculum.f21ded99.svg": "https://www.bastientraille.fr/static/media/curriculum.f21ded99.svg",
     "static/media/dobby.5b6d4c7e.webp": "https://www.bastientraille.fr/static/media/dobby.5b6d4c7e.webp",
-    "static/media/duration.820de038.webp": "https://www.bastientraille.fr/static/media/duration.820de038.webp",
+    "static/media/duration.6380a8da.svg": "https://www.bastientraille.fr/static/media/duration.6380a8da.svg",
     "static/media/email.7ece34fd.webp": "https://www.bastientraille.fr/static/media/email.7ece34fd.webp",
     "static/media/englishImg.3812eb6e.webp": "https://www.bastientraille.fr/static/media/englishImg.3812eb6e.webp",
     "static/media/englishResume.3409d20d.pdf": "https://www.bastientraille.fr/static/media/englishResume.3409d20d.pdf",
@@ -25,7 +25,7 @@
     "static/media/forestVideo.3268d924.mp4": "https://www.bastientraille.fr/static/media/forestVideo.3268d924.mp4",
     "static/media/frenchImg.c1ff2de0.webp": "https://www.bastientraille.fr/static/media/frenchImg.c1ff2de0.webp",
     "static/media/frenchResume.6b2dc4c4.pdf": "https://www.bastientraille.fr/static/media/frenchResume.6b2dc4c4.pdf",
-    "static/media/github.f9edc44f.svg": "https://www.bastientraille.fr/static/media/github.f9edc44f.svg",
+    "static/media/github.43e84a2b.svg": "https://www.bastientraille.fr/static/media/github.43e84a2b.svg",
     "static/media/html5.f318c8b1.svg": "https://www.bastientraille.fr/static/media/html5.f318c8b1.svg",
     "static/media/javascript.b879f838.svg": "https://www.bastientraille.fr/static/media/javascript.b879f838.svg",
     "static/media/lbm.86923e88.svg": "https://www.bastientraille.fr/static/media/lbm.86923e88.svg",
@@ -52,14 +52,14 @@
     "static/media/sunsetImg.aa3fc8d0.webp": "https://www.bastientraille.fr/static/media/sunsetImg.aa3fc8d0.webp",
     "static/media/sunsetVideo.6ec78fc4.mp4": "https://www.bastientraille.fr/static/media/sunsetVideo.6ec78fc4.mp4",
     "static/media/tailwind.315d0ac2.svg": "https://www.bastientraille.fr/static/media/tailwind.315d0ac2.svg",
-    "static/media/team.27cd4b61.webp": "https://www.bastientraille.fr/static/media/team.27cd4b61.webp",
+    "static/media/team.bb1cadd1.svg": "https://www.bastientraille.fr/static/media/team.bb1cadd1.svg",
     "static/media/typescript.a6305a73.svg": "https://www.bastientraille.fr/static/media/typescript.a6305a73.svg",
     "static/media/vs-code.b8b1e001.svg": "https://www.bastientraille.fr/static/media/vs-code.b8b1e001.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.db1ff044.js",
     "static/js/2.144e8f8f.chunk.js",
-    "static/css/main.7f140a10.chunk.css",
-    "static/js/main.18fcad36.chunk.js"
+    "static/css/main.5d03ab01.chunk.css",
+    "static/js/main.6de699d4.chunk.js"
   ]
 }
