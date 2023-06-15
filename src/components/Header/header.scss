@@ -17,12 +17,19 @@
       height: 100%;
       display: flex;
       align-items: center;
-      font-size: 1.4vw;
+      font-size: 1.2vw;
+      text-transform: uppercase;
       .nav-link {
         @include link;
       }
       .activeLink {
-        @include link ($color: rgb(77, 60, 81), $textShadow: 1px 1px 1px rgb(255, 255, 255), $scale: 1, $cursor: default, $anim: bgAppear 1s forwards);
+        @include link(
+          $color: rgb(77, 60, 81),
+          $textShadow: 1px 1px 1px rgb(255, 255, 255),
+          $scale: 1,
+          $cursor: default,
+          $anim: bgAppear 1s forwards
+        );
         &:hover::before {
           width: 0;
           height: 0;
@@ -63,29 +70,32 @@
    768-480     - tablet 
    480-less    - phone landscape & smaller
 --------------------------------------------*/
-@media all and (min-width: 1024px) and (max-width: 1280px) { }
+@media all and (min-width: 1024px) and (max-width: 1280px) {
+}
 
-@media all and (min-width: 768px) and (max-width: 1024px) { }
+@media all and (min-width: 768px) and (max-width: 1024px) {
+}
 
-@media all and (min-width: 480px) and (max-width: 768px) { }
+@media all and (min-width: 480px) and (max-width: 768px) {
+}
 
-@media all and (max-width: 480px) { }
+@media all and (max-width: 480px) {
+}
 
 @media all and (max-width: 1320px) {
   .menu * {
     display: none;
   }
- }
-
+}
 
 /* Portrait */
-@media screen and (orientation:portrait) { 
-  
- }
+@media screen and (orientation: portrait) {
+}
 
 /* Landscape */
-@media screen and (orientation:landscape) { /* Landscape styles here */ }
-
+@media screen and (orientation: landscape) {
+  /* Landscape styles here */
+}
 
 /* CSS for iPhone, iPad, and Retina Displays */
 
@@ -95,23 +105,23 @@
 
 /* Retina */
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5),
-only screen and (-o-min-device-pixel-ratio: 3/2),
-only screen and (min--moz-device-pixel-ratio: 1.5),
-only screen and (min-device-pixel-ratio: 1.5) {
+  only screen and (-o-min-device-pixel-ratio: 3/2),
+  only screen and (min--moz-device-pixel-ratio: 1.5),
+  only screen and (min-device-pixel-ratio: 1.5) {
 }
 
 /* iPhone Portrait */
-@media screen and (max-device-width: 480px) and (orientation:portrait) {
-} 
+@media screen and (max-device-width: 480px) and (orientation: portrait) {
+}
 
 /* iPhone Landscape */
-@media screen and (max-device-width: 480px) and (orientation:landscape) {
+@media screen and (max-device-width: 480px) and (orientation: landscape) {
 }
 
 /* iPad Portrait */
-@media screen and (min-device-width: 481px) and (orientation:portrait) {
+@media screen and (min-device-width: 481px) and (orientation: portrait) {
 }
 
 /* iPad Landscape */
-@media screen and (min-device-width: 481px) and (orientation:landscape) {
+@media screen and (min-device-width: 481px) and (orientation: landscape) {
 }
