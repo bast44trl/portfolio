@@ -1,6 +1,7 @@
 import lbm from '../../assets/projets/svg/lbm.svg';
 import dobby from '../../assets/projets/dobby.webp';
 import llm from '../../assets/projets/svg/llm.svg';
+import marcel from '../../assets/projets/svg/marcel.svg';
 import monCarnet from '../../assets/projets/svg/logoMonCarnet.svg';
 
 import logoExpress from '../../assets/logo/svg/express.svg';
@@ -47,7 +48,7 @@ export const projects = [
         'Third training project, made with imposed tech such as Prisma or TailWindCSS, and consisting in the creation of a digital vehicule maintenance book',
     },
   },
-  {
+  /* {
     link: 'https://bast44trl.github.io/laBelleMiche/',
     title: 'La Belle Miche',
     image: lbm,
@@ -62,6 +63,23 @@ export const projects = [
         "Le premier projet, quelques jours après mon entrée en formation à la Wild Code School, réalisé avec un brin d'humour, nous ayant surtout permit de prendre en main des outils tels que Git et GitHub, ainsi que l'utilisation de Flex et Grid en CSS",
       textEN:
         'My very first project, just few days after I started my training at Wild Code School. Realised with a tiny bit of humor, it allowed us to get used to Git and GitHub, but also made us use Flex and Grid on CSS',
+    },
+  }, */
+  {
+    link: 'https://lamarcelqueheille.fr',
+    title: 'La Marcel Queheille',
+    image: marcel,
+    techs: [logoReact, logoSass, logoGit, logoVsCode],
+    presentation: {
+      team: 1,
+      durationFR: '1 semaine',
+      durationEN: '1 week',
+      datesFR: 'Juin 2022',
+      datesEN: 'June 2022',
+      textFR:
+        "Site vitrine présentant la cyclo-sportive 'La Marcel Queheille', réalisé en 1 semaine avec React et Sass",
+      textEN:
+        'Showcase website for the cyclo-sportive "La Marcel Queheille", made in 1 week with React and Sass',
     },
   },
   {

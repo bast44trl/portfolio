@@ -55,8 +55,12 @@ const ProjectCard = (props) => {
                   <img src={team} alt="" />
                   <span>
                     {french
-                      ? `${presentationTeam} étudiants développeurs`
-                      : `${presentationTeam} student devs`}
+                      ? `${presentationTeam} étudiants dév${
+                          presentationTeam === 1 ? 'eloppeur' : 'eloppeurs'
+                        }}`
+                      : `${presentationTeam} student dev${
+                          presentationTeam === 1 ? 'eloper' : 'elopers'
+                        }`}
                   </span>
                 </div>
                 <div className="stats-calendar">
